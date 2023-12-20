@@ -15,7 +15,7 @@ function BasicExample() {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
             <Nav.Link as='span'>
-              <Link href='/someroute'>Some Route</Link>
+              <Link href='/municipios'>Municípios</Link>
             </Nav.Link>
             <Nav.Link as='span'>
               <Link href='/someroute'>Other Route</Link>
