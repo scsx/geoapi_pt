@@ -21,6 +21,7 @@ export default function Home() {
       </div>
 
       <p>PELPFE*</p>
+      <p><button type="button" className="btn btn-success">Success</button></p>
     </main>
   )
 }
