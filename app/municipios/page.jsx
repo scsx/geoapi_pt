@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const getData = async () => {
   const res = await fetch('https://json.geoapi.pt/municipios')
 
@@ -21,7 +23,19 @@ const Municipios = async () => {
     <div>
       <div className='container'>
         <h1>Municípios</h1>
-        {municipios && municipios.map((item) => <p>{item}</p>)}
+        <ul>
+          {municipios &&
+            municipios.map((item) => (
+              <li key={JSON.stringify(item)} data-key={JSON.stringify(item)}>
+                <Link href={`/municipios/${item}`}>
+                  {item}
+                </Link>
+                {/* <Link href={`/municipios/${encodeURIComponent(item)}`}>
+                  {item}
+                </Link> */}
+              </li>
+            ))}
+        </ul>
       </div>
     </div>
   )
