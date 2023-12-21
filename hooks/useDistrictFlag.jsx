@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
-const useDistrictFlag = (district) => {
+const useDistrictFlag = (district, className) => {
   const [distritoImage, setDistritoImage] = useState('')
   useEffect(() => {
     let districtLowerCase = district.toLowerCase()
@@ -36,6 +36,7 @@ const useDistrictFlag = (district) => {
   const Flag = () => (
     <Image
       src={`/distritos/${distritoImage}.png`}
+      className={className}
       width={200}
       height={200}
       alt={distritoImage}

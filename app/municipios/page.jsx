@@ -1,17 +1,10 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-const getData = async () => {
-  const res = await fetch('https://json.geoapi.pt/municipios')
-  if (!res.ok) {
-    throw new Error('Failed to fetch municipios')
-  }
-  return res.json()
-}
-
-const Municipios = async () => {
-  const municipios = await getData()
+const Municipios = () => {
+  const [municipios, setMunicipios] = useState([])
 
   // Exemplos para:
   // Lajes Das Flores
@@ -19,10 +12,21 @@ const Municipios = async () => {
   // Lagoa (açores)
   // https://json.geoapi.pt/municipio/Lagoa%20(açores)
 
+  useEffect(() => {
+    fetch('https://json.geoapi.pt/municipios')
+      .then((res) => res.json())
+      .then((data) => {
+        setMunicipios(data)
+        //setLoading(false)
+      })
+      .catch((error) => {
+        throw error
+      })
+  }, [])
+
   return (
     <div className='sitepage sitepage--municipios'>
       <div className='container'>
-
         <h1>Municípios</h1>
         <ul>
           {municipios &&

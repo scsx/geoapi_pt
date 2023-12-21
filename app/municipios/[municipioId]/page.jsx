@@ -1,4 +1,5 @@
 'use client'
+
 import { useState, useEffect } from 'react'
 import Badge from 'react-bootstrap/Badge'
 import Row from 'react-bootstrap/Row'
@@ -16,7 +17,7 @@ const MunicipioDetalhe = ({ params }) => {
   const [distrito, setDistrito] = useState('')
   const [isLoading, setLoading] = useState(true)
 
-  const [DistritoImage] = useDistrictFlag(distrito)
+  const [DistritoImage] = useDistrictFlag(distrito, 'municipio-detalhe__cardImg')
 
   console.log(municipioData)
 
@@ -39,15 +40,15 @@ const MunicipioDetalhe = ({ params }) => {
         <h1>{municipioId}</h1>
 
         {isLoading && <Loading />}
-
+        
         <Row>
           <Col>
-            <Card>
+            <Card className='municipio-detalhe__card'>
               <DistritoImage />
               <Card.Body>
-                <Card.Title>{municipioData && municipioData.distrito}</Card.Title>
-                <Card.Text>werggwr</Card.Text>
-                <Button variant='primary'>Go somewhere</Button>
+                <Card.Title>{municipioData && `Distrito: ${municipioData.distrito}`}</Card.Title>
+                <Card.Text>{municipioData && `População: ${municipioData.populacao}`}</Card.Text>
+                <Button variant='primary'>Go to Distrito (todo)</Button>
               </Card.Body>
             </Card>
           </Col>
