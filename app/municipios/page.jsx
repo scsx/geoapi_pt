@@ -4,7 +4,7 @@ const getData = async () => {
   const res = await fetch('https://json.geoapi.pt/municipios')
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    throw new Error('Failed to fetch municipios')
   }
 
   return res.json()
