@@ -20,7 +20,7 @@ const Municipios = async () => {
   // https://json.geoapi.pt/municipio/Lagoa%20(açores)
 
   return (
-    <div className='municipios'>
+    <div className='sitepage sitepage--municipios'>
       <div className='container'>
 
         <h1>Municípios</h1>

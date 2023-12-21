@@ -20,3 +20,15 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+// Common Page
+.sitepage {
+  padding: 3rem 0;
+  background-color: white;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+}

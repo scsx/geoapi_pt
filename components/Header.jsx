@@ -3,12 +3,12 @@
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import Link from 'next/link'
+import './Header.scss'
 
 function BasicExample() {
   return (
-    <Navbar expand='lg' className='bg-body-tertiary'>
+    <Navbar expand='lg' className='header bg-body-tertiary'>
       <Container>
         <Navbar.Brand href='#home'>geoapi.pt</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
