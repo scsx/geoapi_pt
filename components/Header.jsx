@@ -3,6 +3,7 @@
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 import Link from 'next/link'
 import './Header.scss'
 
@@ -17,20 +18,16 @@ function BasicExample() {
             <Nav.Link as='span'>
               <Link href='/municipios'>Municípios</Link>
             </Nav.Link>
-            <Nav.Link as='span'>
-              <Link href='/someroute'>Other Route</Link>
-            </Nav.Link>
-            {/*             <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
-              <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
-              <NavDropdown.Item href='#action/3.2'>
-                Another action
+            <NavDropdown title='Distritos' id='basic-nav-dropdown'>
+              <NavDropdown.Item href='/distritos/Lisboa'>
+                Lisboa
               </NavDropdown.Item>
-              <NavDropdown.Item href='#action/3.3'>Something</NavDropdown.Item>
+              <NavDropdown.Item href='/distritos/Porto'>Porto</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href='#action/3.4'>
-                Separated link
+              <NavDropdown.Item href='/distritos'>
+                Todos os distritos
               </NavDropdown.Item>
-            </NavDropdown> */}
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
