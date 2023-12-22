@@ -37,9 +37,8 @@ const useDistrictFlag = (district, className) => {
     <Image
       src={`/distritos/${distritoImage}.png`}
       className={className}
-      width={200}
-      height={200}
       alt={distritoImage}
+      layout='fill'
     />
   )
   return [Flag]

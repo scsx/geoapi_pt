@@ -1,5 +1,6 @@
 .municipio-detalhe {
   &__card {
+    position: relative;
     margin: 0 5px 5px 0;
     font-size: 14px;
     font-weight: 400;
@@ -9,7 +10,10 @@
   }
 
   &__cardImg {
-    margin: 1rem auto;
+    position: relative;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
   }
 
   &__item {
