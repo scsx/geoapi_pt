@@ -1,3 +1,3 @@
-export const returnDistrictImage = (text) => {
-  return text
+export const toLocaleString = (number) => {
+  return number.toLocaleString("pt-PT")
 }
