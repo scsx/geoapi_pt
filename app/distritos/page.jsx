@@ -8,6 +8,9 @@ import Loading from '@/components/Loading'
 
 const Distritos = () => {
   const [distritos, setDistritos] = useState([])
+  // Açores e Madeira têm vários códigos INE num array; trabalha-se o texto à parte
+  const [codigosIneAcores, setCodigosIneAcores] = useState('')
+  const [codigosIneMadeira, setCodigosIneMadeira] = useState('')
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -16,16 +19,22 @@ const Distritos = () => {
       .then((data) => {
         setDistritos(data)
         // console.log(data)
-
-        // item.codigoine.toString().replace(/.{2}/g, ', ')
-        data.map((item) => console.log(item.codigoine))
-
         setLoading(false)
       })
       .catch((error) => {
         throw error
       })
   }, [])
+
+  useEffect(() => {
+    distritos.map((dist) => {
+      if (dist.distrito === 'R. A. Açores') {
+        setCodigosIneAcores(dist.codigoine.toString().replaceAll(',', ', '))
+      } else if (dist.distrito === 'R. A. Madeira') {
+        setCodigosIneMadeira(dist.codigoine.toString().replaceAll(',', ', '))
+      } else return
+    })
+  }, [distritos])
 
   return (
     <div className='sitepage sitepage--distritos'>
@@ -51,14 +60,12 @@ const Distritos = () => {
                   <td>Mark</td>
                   <td>Otto</td>
                   <td>
-                    {Array.isArray(item.codigoine)
-                      ? item.codigoine.map((codigo, i, item.codigoine.length) =>
-                          i - 1 === item.codigoine.length ? codigo : codigo + ', '
-                        )
+                    {item.distrito === 'R. A. Açores'
+                      ? codigosIneAcores
+                      : item.distrito === 'R. A. Madeira'
+                      ? codigosIneMadeira
                       : item.codigoine}
                   </td>
-
-                  {/* {this.state.value == 'news'? <Text>data</Text>: null } */}
                 </tr>
               ))}
             </tbody>
