@@ -18,7 +18,7 @@ const Distritos = () => {
       .then((res) => res.json())
       .then((data) => {
         setDistritos(data)
-        // console.log(data)
+        console.log(data)
         setLoading(false)
       })
       .catch((error) => {
@@ -50,6 +50,7 @@ const Distritos = () => {
                 <th>Nome</th>
                 <th>Dados 2011</th>
                 <th>Dados 2022</th>
+                <th>Diferença</th>
                 <th>Código INE</th>
               </tr>
             </thead>
@@ -57,8 +58,41 @@ const Distritos = () => {
               {distritos.map((item) => (
                 <tr key={JSON.stringify(item.distrito)}>
                   <td>{item.distrito}</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
+                  <td>
+                    <ul>
+                      <li>
+                        População: {item.censos2011.N_INDIVIDUOS_RESIDENT}
+                      </li>
+                      <li>Alojamentos: {item.censos2011.N_ALOJAMENTOS}</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>População: {item.censos2021.N_INDIVIDUOS}</li>
+                      <li>
+                        Alojamentos: {item.censos2021.N_ALOJAMENTOS_TOTAL}
+                      </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>
+                        Pop diff:{' '}
+                        {item.censos2011.N_INDIVIDUOS_RESIDENT <
+                        item.censos2021.N_INDIVIDUOS
+                          ? '+' +
+                            Math.abs(
+                              item.censos2021.N_INDIVIDUOS -
+                                item.censos2011.N_INDIVIDUOS_RESIDENT
+                            )
+                          : '-' +
+                            Math.abs(
+                              item.censos2011.N_INDIVIDUOS_RESIDENT -
+                                item.censos2021.N_INDIVIDUOS
+                            )}
+                      </li>
+                    </ul>
+                  </td>
                   <td>
                     {item.distrito === 'R. A. Açores'
                       ? codigosIneAcores
