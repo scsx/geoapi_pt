@@ -29,6 +29,7 @@ const MunicipioDetalhe = ({ params }) => {
       .then((data) => {
         setMunicipioData(data)
         setDistrito(data.distrito)
+        console.log(distrito)
         setLoading(false)
       })
       .catch((error) => {

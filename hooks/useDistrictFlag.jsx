@@ -1,37 +1,13 @@
 import { useState, useEffect } from 'react'
+import { nomeDistrito } from '@/utils/utils'
 import Image from 'next/image'
 
-const useDistrictFlag = (district, className) => {
+const useDistrictFlag = (distrito, className) => {
   const [distritoImage, setDistritoImage] = useState('')
-  useEffect(() => {
-    let districtLowerCase = district.toLowerCase()
 
-    switch (districtLowerCase) {
-      case 'bragança':
-        setDistritoImage('braganca')
-        break
-      case 'évora':
-        setDistritoImage('evora')
-        break
-      case 'r. a. açores':
-        setDistritoImage('acores')
-        break
-      case 'r. a. madeira':
-        setDistritoImage('madeira')
-        break
-      case 'santarém':
-        setDistritoImage('santarem')
-        break
-      case 'viana do castelo':
-        setDistritoImage('viana')
-        break
-      case 'vila real':
-        setDistritoImage('vila-real')
-        break
-      default:
-        setDistritoImage(districtLowerCase)
-    }
-  }, [district])
+  useEffect(() => {
+    setDistritoImage(nomeDistrito(distrito))
+  }, [distrito])
 
   const Flag = () => (
     <Image
