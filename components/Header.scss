@@ -1,3 +1,7 @@
 .header {
     border-bottom: 1px solid #b9b9b9;
+
+    .nav-link a {
+        color: var(--bs-navbar-color);
+    }
 }

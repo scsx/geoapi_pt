@@ -5,11 +5,11 @@ import Link from 'next/link'
 import Badge from 'react-bootstrap/Badge'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 
 import useDistrictFlag from '@/hooks/useDistrictFlag'
 import Loading from '@/components/Loading'
+import { toLocaleString } from '@/utils/utils'
 import './page.scss'
 
 const MunicipioDetalhe = ({ params }) => {
@@ -51,13 +51,31 @@ const MunicipioDetalhe = ({ params }) => {
                   <DistritoImage />
                 </div>
                 <Card.Body>
-                  <Card.Title>{`Distrito: ${municipioData.distrito}`}</Card.Title>
-                  <Card.Text>{`População: ${municipioData.populacao}`}</Card.Text>
-                  <Button variant='primary'>Go to Distrito (todo)</Button>
+                  <Card.Title>
+                    Distrito:{' '}
+                    <Link
+                      className='municipio-detalhe__Link'
+                      href={`/distritos/${municipioData.distrito}`}>
+                      {municipioData.distrito}
+                    </Link>
+                  </Card.Title>
+                  <Card.Text className='mt-4'>
+                    {`População: ${toLocaleString(+municipioData.populacao)}`}<br/>
+                    {`Área em hectares: ${municipioData.areaha}`}<br/>
+                    {`Densidade pop.: ${Math.round(
+                      municipioData.populacao / municipioData.areaha
+                    )} hab./km²`}<br/>
+                    {`Código Postal: ${municipioData.codigopostal}`}<br/>
+                    {`Email: ${municipioData.email}`}<br/>
+                  </Card.Text>
                 </Card.Body>
               </Card>
 
-                <Link className='btn btn-outline-secondary mt-4' href={`/municipios`}>Voltar a municípios</Link>
+              <Link
+                className='btn btn-outline-secondary mt-4'
+                href={`/municipios`}>
+                Voltar a municípios
+              </Link>
             </Col>
             <Col>
               <div className='municipio-detalhe'>
