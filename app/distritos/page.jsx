@@ -20,7 +20,6 @@ const Distritos = () => {
       .then((res) => res.json())
       .then((data) => {
         setDistritos(data)
-        console.log(data)
         setLoading(false)
       })
       .catch((error) => {

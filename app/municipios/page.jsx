@@ -2,9 +2,11 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Loading from '@/components/Loading'
 
 const Municipios = () => {
   const [municipios, setMunicipios] = useState([])
+  const [isLoading, setLoading] = useState(true)
 
   // Exemplos para:
   // Lajes Das Flores
@@ -17,7 +19,7 @@ const Municipios = () => {
       .then((res) => res.json())
       .then((data) => {
         setMunicipios(data)
-        //setLoading(false)
+        setLoading(false)
       })
       .catch((error) => {
         throw error
@@ -28,6 +30,8 @@ const Municipios = () => {
     <div className='sitepage sitepage--municipios'>
       <div className='container'>
         <h1>Municípios</h1>
+        {isLoading && <Loading />}
+        
         <ul>
           {municipios &&
             municipios.map((item) => (
