@@ -138,8 +138,8 @@ const Distritos = () => {
                 href='https://www.rtp.pt/noticias/pais/distrito-de-viana-do-castelo-perdeu-mais-de-13-mil-habitantes-na-ultima-decada_n1338669'
                 className='btn btn-link'
                 target='_blank'>
-                Distrito de Viana do Castelo perdeu mais de 13 mil habitantes na
-                última década <i>(RTP)</i>
+                DB errada? Distrito de Viana do Castelo perdeu mais de 13 mil
+                habitantes na última década <i>(RTP)</i>
               </a>
             </p>
           </>
