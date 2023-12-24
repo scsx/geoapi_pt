@@ -11,7 +11,7 @@ function BasicExample() {
   return (
     <Navbar expand='lg' className='header bg-body-tertiary'>
       <Container>
-        <Navbar.Brand href='#home'>geoapi.pt</Navbar.Brand>
+        <Navbar.Brand href='/'>geoapi.pt</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
