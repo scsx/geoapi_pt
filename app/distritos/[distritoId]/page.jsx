@@ -5,8 +5,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Link from 'next/link'
-import useDistrictFlag from '@/hooks/useDistrictFlag'
 import Loading from '@/components/Loading'
+import useDistrictFlag from '@/hooks/useDistrictFlag'
+import useDistrictHero from '@/hooks/useDictrictHero'
 import './page.scss'
 
 const DistritoDetalhe = ({ params }) => {
@@ -18,6 +19,8 @@ const DistritoDetalhe = ({ params }) => {
     distritoId,
     'distrito-detalhe__cardImg'
   )
+
+  const [DistritoHero] = useDistrictHero(distritoId)
 
   useEffect(() => {
     fetch(`https://json.geoapi.pt/distrito/${distritoId}`)
@@ -33,9 +36,8 @@ const DistritoDetalhe = ({ params }) => {
 
   return (
     <div className='sitepage sitepage--distritos-detalhe'>
+      <DistritoHero />
       <div className='container'>
-        <h1>{distritoId}</h1>
-
         {isLoading && <Loading />}
         {distritoData && (
           <Row>

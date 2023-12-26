@@ -10,6 +10,9 @@ export const nomeDistrito = (nome) => {
     case 'bragança':
       distritoNomeLocal = 'braganca'
       break
+    case 'castelo branco':
+      distritoNomeLocal = 'castelo-branco'
+      break
     case 'évora':
       distritoNomeLocal = 'evora'
       break

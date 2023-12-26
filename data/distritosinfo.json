@@ -1,0 +1,54 @@
+{
+  "acores": {
+    "desc": "Na imensidão azul do Atlântico, a Mãe natureza criou uma terra repleta de beleza natural e pronta a ser explorada: o Arquipélago dos Açores.",
+    "hex": "#f7e70a"
+  },
+  "aveiro": {
+    "desc": "Ao visitar Aveiro descobrimos uma paisagem com marca de água. Junto ao mar e à ria, Aveiro é atravessada por uma rede de canais por onde passeiam barcos moliceiros.",
+    "hex": "#dc3632"
+  },
+  "beja": {
+    "desc": "Uma visita a Beja num ambiente de calma alentejana, à descoberta de conquistas e de amores escondidos.",
+    "hex": "#dc3632"
+  },
+  "braga": {
+    "desc": "Construída há mais de 2000 anos, “Bracara Augusta” foi justamente fundada por Augusto, ficando numa das principais vias romanas da Península Ibérica.",
+    "hex": "#024f97"
+  },
+  "braganca": {
+    "desc": "Este concelho do Norte de Portugal, em Trás-os-Montes, foi crucial na defesa da fronteira portuguesa e carrega um legado histórico de elevada importância na constituição da nacionalidade.",
+    "hex": "#024f97"
+  },
+  "castelo-branco": {
+    "desc": "Castelo Branco é uma cidade raiana portuguesa, sede de município e capital do distrito homónimos. Preste especial atenção aos monumentos que se situam em redor da praça, como a antiga Domus Municipalis de estilo manuelino.",
+    "hex": "#000000"
+  },
+  "coimbra": {
+    "desc": "No Centro de Portugal, plantada à beira do rio Mondego, ergue-se a mui nobre cidade de Coimbra e antiga capital de Portugal.",
+    "hex": "#6b4871"
+  },
+  "evora": {
+    "desc": "Junte Templo Romano, Capela dos Ossos e Praça do Giraldo e provavelmente já sabe que vamos levá-lo a visitar Évora, a cidade mais emblemática do Alentejo.",
+    "hex": "#dc3632"
+  },
+  "faro": {
+    "desc": "A capital do Algarve, o destino balnear mais cobiçado no sul de Portugal, tem muito mais para oferecer do que julga. Tem património histórico, natural e cultural.",
+    "hex": "#dc3632"
+  },
+  "guarda": {
+    "desc": "Visitar a Guarda é o desafio que lhe lançamos, numa viagem ao interior do Centro de Portugal para conhecer a Cidade dos 5 F’s (Forte, Farta, Fria, Fiel e Formosa) e a mais alta de Portugal.",
+    "hex": "#dc3632"
+  },
+  "leiria": {
+    "desc": "No centro litoral de Portugal, esta capital de distrito atrai por tantos motivos: património histórico, natural e arqueológico valiosíssimos, templos religiosos notáveis, praia e rio, matas e pinhal, lagoas e salinas.",
+    "hex": "#dc3632"
+  },
+  "lisboa": {
+    "desc": "Sobre a margem direita do amplo estuário do rio Tejo, a capital de Portugal assente sobre encantadoras colinas, desfruta de uma situação geográfica ímpar. Tem luz excepcional, encantamento de escritores, fotógrafos e cineastas.",
+    "hex": "#000000"
+  },
+  "madeira": {
+    "desc": "No meio do Atlântico, as ilhas da Madeira e do Porto Santo são um refúgio de beleza natural. Entre o azul do mar e o verde-esmeralda da vegetação sobressai o colorido exótico das flores, num arquipélago em que dois terços são área protegida.",
+    "hex": "#6b4871"
+  }
+}

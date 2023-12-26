@@ -35,4 +35,33 @@ a {
   .tab-pane {
     padding-left: 1rem;
   }
+
+  .sitepage-hero {
+    position: relative;
+    min-height: 50%;
+    padding-top: 3rem;
+
+    .hero__Img {
+      position: relative !important;
+      width: 100px !important;
+      height: auto !important;
+      margin-left: 0.5rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      display: inline-block;
+      line-height: 1;
+      padding: 1rem;
+      margin-bottom: 0;
+    }
+
+    .hero__Desc {
+      font-weight: 700;
+      background-color: white;
+      display: block;
+      padding: 1rem;
+      max-width: 50%;
+    }
+  }
 }
