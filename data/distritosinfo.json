@@ -50,5 +50,13 @@
   "madeira": {
     "desc": "No meio do Atlântico, as ilhas da Madeira e do Porto Santo são um refúgio de beleza natural. Entre o azul do mar e o verde-esmeralda da vegetação sobressai o colorido exótico das flores, num arquipélago em que dois terços são área protegida.",
     "hex": "#6b4871"
+  },
+  "portalegre": {
+    "desc": "A urbe, com cerca de 16 mil habitantes, desenvolveu-se principalmente a partir do século XVI, época em que foi elevada a sede de Bispado e à categoria de Cidade.",
+    "hex": "#000000"
+  },
+  "porto": {
+    "desc": "A urbe, com cerca de 16 mil habitantes, desenvolveu-se principalmente a partir do século XVI, época em que foi elevada a sede de Bispado e à categoria de Cidade.",
+    "hex": "#417948"
   }
 }
