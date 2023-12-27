@@ -1,7 +1,7 @@
 {
   "acores": {
     "desc": "Na imensidão azul do Atlântico, a Mãe natureza criou uma terra repleta de beleza natural e pronta a ser explorada: o Arquipélago dos Açores.",
-    "hex": "#f7e70a"
+    "hex": "#ecdc00"
   },
   "aveiro": {
     "desc": "Ao visitar Aveiro descobrimos uma paisagem com marca de água. Junto ao mar e à ria, Aveiro é atravessada por uma rede de canais por onde passeiam barcos moliceiros.",
@@ -58,5 +58,25 @@
   "porto": {
     "desc": "A urbe, com cerca de 16 mil habitantes, desenvolveu-se principalmente a partir do século XVI, época em que foi elevada a sede de Bispado e à categoria de Cidade.",
     "hex": "#417948"
+  },
+  "santarem": {
+    "desc": "A tomada de Santarém por Sunerico, em 460, dita o fim da dominação romana, abrindo caminho para a inclusão da cidade no reino visigodo, com capital em Toulouse. Num contexto em que Lisboa reforçava o seu papel de verdadeira capital e centro da nação, a Santarém quinhentista vai assumir-se como pólo regional a nível económico e cultural.",
+    "hex": "#dc3632"
+  },
+  "setubal": {
+    "desc": "Setúbal contrasta entre a terra e o mar, a urbe e o natural, a tradição e a modernidade. No concelho e na capital do distrito, concentram-se importantes polos industriais e de serviços. Aqui, faz todo o sentido a imagem de marca: “Setúbal, é um mundo”.",
+    "hex": "#6b4871"
+  },
+  "viana": {
+    "desc": "A presença do rio, do monte e do mar, conferem à cidade dotes paisagísticos de excelência que encantam os sentidos, proporcionam um clima psicológico de descompressão e são propícios à ocupação sadia e aprazível dos tempos livres.",
+    "hex": "#ecdc00"
+  },
+  "vila-real": {
+    "desc": "O primeiro foral de Vila Real foi concedido por D. Dinis (r. 1279-1325), em 1289. Por ele, garantia o rei aos seus habitantes o direito de recusar hospedagem a fidalgos e cavaleiros, que assim deveriam pernoitar fora dos seus muros. Tal não impediu que a Vila viesse a acolher nos sécs. XVII, XVIII e XIX muitas nobres famílias, cujas residências foram sendo absorvidas no tecido urbano.",
+    "hex": "#417948"
+  },
+  "viseu": {
+    "desc": "Viseu é uma cidade histórica de Portugal e da Europa, com mais de 2500 anos de história. Com ocupação humana desde a Idade do Ferro, foi sucessivamente Civitas romana, berço da ideia de nacionalidade, corte da mais insigne geração de Reis e príncipes portugueses, cidade renascentista.",
+    "hex": "#dc3632"
   }
 }
