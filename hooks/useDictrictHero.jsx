@@ -24,22 +24,23 @@ const useDistrictHero = (distrito) => {
         backgroundPosition: 'center',
         backgroundSize: 'cover'
       }}>
-      <DistritoImage />
-
-      <h1
-        className='display-5 fw-bold text-white'
-        style={{
-          backgroundColor: heroInfo && heroInfo.hex
-        }}>
-        {distrito}
-      </h1>
-      <p
-        className='lead mb-4 hero__Desc'
-        style={{
-          color: heroInfo && heroInfo.hex
-        }}>
-        {heroInfo && heroInfo.desc}
-      </p>
+      <div className='container'>
+        <DistritoImage />
+        <h1
+          className='display-5 fw-bold text-white'
+          style={{
+            backgroundColor: heroInfo && heroInfo.hex
+          }}>
+          {distrito}
+        </h1>
+        <p
+          className='lead mb-4 hero__Desc'
+          style={{
+            color: heroInfo && heroInfo.hex
+          }}>
+          {heroInfo && heroInfo.desc}
+        </p>
+      </div>
     </div>
   )
 

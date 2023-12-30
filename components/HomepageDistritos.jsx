@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from 'react'
 import { nomeDistrito } from '@/utils/utils'
-import Link from 'next/link'
+import Loading from '@/components/Loading'
 import useReadMore from '@/hooks/useReadMore'
 import distritosInfo from '@/data/distritosinfo'
 import useDistrictFlag from '@/hooks/useDistrictFlag'
+import Link from 'next/link'
 
 // Este component foi criado para poder usar o custom hook useReadMore, porque não pode ser chamado directamente dentro de um loop.
 const DistritosCardHtml = (props) => {
@@ -42,12 +43,14 @@ const DistritosCardHtml = (props) => {
 
 const HomepageDistritos = () => {
   const [distritos, setDistritos] = useState([])
+  const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
     fetch('https://json.geoapi.pt/distritos')
       .then((res) => res.json())
       .then((data) => {
         setDistritos(data)
+        setLoading(false)
       })
       .catch((error) => {
         throw error
@@ -58,17 +61,20 @@ const HomepageDistritos = () => {
     <div className='sitepage sitepage--hp'>
       <div className='container px-4 py-5'>
         <h2 className='pb-2 border-bottom'>Distritos</h2>
-        <div className='row g-4 py-5 row-cols-1 row-cols-lg-3'>
-          {distritos.map((dis) => {
-            return (
-              <div
-                className='col d-flex align-items-start hpcard'
-                key={dis.distrito}>
-                <DistritosCardHtml {...dis} />
-              </div>
-            )
-          })}
-        </div>
+        {isLoading && <Loading />}
+        {distritos.length > 0 && (
+          <div className='row g-4 py-5 row-cols-1 row-cols-lg-3'>
+            {distritos.map((dis) => {
+              return (
+                <div
+                  className='col d-flex align-items-start hpcard'
+                  key={dis.distrito}>
+                  <DistritosCardHtml {...dis} />
+                </div>
+              )
+            })}
+          </div>
+        )}
       </div>
     </div>
   )
