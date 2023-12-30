@@ -64,21 +64,31 @@ a {
       max-width: 50%;
     }
   }
+
+  &.sitepage--hp {
+    .hpcard {
+      &__cardImg {
+        position: relative !important;
+        height: auto !important;
+        width: 60px !important;
+      }
+    }
+  }
 }
 
 // Custom Hooks
 .readmore {
   &__inner--false {
     position: relative;
-    height: 50px;
+    max-height: 50px;
     overflow: hidden;
 
     &:after {
-      content: "...";
+      content: '...';
       position: absolute;
       background-color: white;
-      bottom: 0;
-      right: 0;
+      bottom: 5px;
+      right: 5px;
     }
   }
   &__inner--true {
@@ -87,6 +97,6 @@ a {
 
   .btn.btn-link {
     padding: 0;
-    margin: .5rem 0 1rem 0;
+    margin: 0.5rem 0 1rem 0;
   }
 }

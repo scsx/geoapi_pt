@@ -1,32 +1,73 @@
 'use client'
 
-import React from 'react'
+import { useState, useEffect } from 'react'
+import { nomeDistrito } from '@/utils/utils'
+import Link from 'next/link'
 import useReadMore from '@/hooks/useReadMore'
+import distritosInfo from '@/data/distritosinfo'
+import useDistrictFlag from '@/hooks/useDistrictFlag'
 
-const HomepageDistritos = () => {
+// Este component foi criado para poder usar o custom hook useReadMore, porque não pode ser chamado directamente dentro de um loop.
+const DistritosCardHtml = (props) => {
+  const [distritoName, setDistritoName] = useState('')
+
+  useEffect(() => {
+    setDistritoName(nomeDistrito(props.distrito))
+  }, [])
+
+  const [DistritoImage] = useDistrictFlag(distritoName, 'hpcard__cardImg')
+
   const [DistritoText] = useReadMore(
-    'We create the boolean state with the useState hook. useState returns an array of two values, the first is the value of the state, the second is a function that updates the state when it is called.',
+    distritosInfo[nomeDistrito(props.distrito)].desc,
     'Read more',
     'readmore--homepage'
   )
+  return (
+    <>
+      <div className='icon-square flex-shrink-0 me-3'>
+        <DistritoImage />
+      </div>
+      <div>
+        <h3>{props.distrito}</h3>
+        <DistritoText />
+        <Link
+          href={`/distritos/${props.distrito}`}
+          className='btn btn-primary btn-sm'>
+          Ver
+        </Link>
+      </div>
+    </>
+  )
+}
+
+const HomepageDistritos = () => {
+  const [distritos, setDistritos] = useState([])
+
+  useEffect(() => {
+    fetch('https://json.geoapi.pt/distritos')
+      .then((res) => res.json())
+      .then((data) => {
+        setDistritos(data)
+      })
+      .catch((error) => {
+        throw error
+      })
+  }, [])
 
   return (
-    <div>
-      <div className='container px-4 py-5' id='hanging-icons'>
+    <div className='sitepage sitepage--hp'>
+      <div className='container px-4 py-5'>
         <h2 className='pb-2 border-bottom'>Distritos</h2>
         <div className='row g-4 py-5 row-cols-1 row-cols-lg-3'>
-          <div className='col d-flex align-items-start'>
-            <div className='icon-square bg-light text-dark flex-shrink-0 me-3'>
-              <img src='https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/store.png' />
-            </div>
-            <div>
-              <h2>Évora</h2>
-              <DistritoText />
-              <a href='#' className='btn btn-primary'>
-                Primary button
-              </a>
-            </div>
-          </div>
+          {distritos.map((dis) => {
+            return (
+              <div
+                className='col d-flex align-items-start hpcard'
+                key={dis.distrito}>
+                <DistritosCardHtml {...dis} />
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
