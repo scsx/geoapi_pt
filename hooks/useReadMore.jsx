@@ -1,17 +1,25 @@
+'use client'
+
 import { useState } from 'react'
 
-const useReadMore = (buttonText, text) => {
+const useReadMore = (text, buttonText, classname) => {
   const [visible, setVisible] = useState(false)
 
-  const Flag = () => (
-    <Image
-      src={`/distritos/${distritoImage}.png`}
-      className={className}
-      alt={distritoImage}
-      layout='fill'
-    />
+  const handleToggle = () => {
+    setVisible((current) => !current)
+  }
+
+  const readMoreText = () => (
+    <div className={`readmore ${classname}`}>
+      <div className={`readmore__inner readmore__inner--${visible}`}>
+        {text}
+      </div>
+      <button className='btn btn-link' onClick={handleToggle}>
+        {buttonText}
+      </button>
+    </div>
   )
-  return [Flag]
+  return [readMoreText]
 }
 
 export default useReadMore

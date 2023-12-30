@@ -1,6 +1,15 @@
+'use client'
+
 import React from 'react'
+import useReadMore from '@/hooks/useReadMore'
 
 const HomepageDistritos = () => {
+  const [DistritoText] = useReadMore(
+    'We create the boolean state with the useState hook. useState returns an array of two values, the first is the value of the state, the second is a function that updates the state when it is called.',
+    'Read more',
+    'readmore--homepage'
+  )
+
   return (
     <div>
       <div className='container px-4 py-5' id='hanging-icons'>
@@ -12,11 +21,7 @@ const HomepageDistritos = () => {
             </div>
             <div>
               <h2>Évora</h2>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-                We'll add onto it with another sentence and probably just keep
-                going until we run out of words.
-              </p>
+              <DistritoText />
               <a href='#' className='btn btn-primary'>
                 Primary button
               </a>
