@@ -61,13 +61,18 @@ const MunicipioDetalhe = ({ params }) => {
                     </Link>
                   </Card.Title>
                   <Card.Text className='mt-4'>
-                    {`População: ${toLocaleString(+municipioData.populacao)}`}<br/>
-                    {`Área em hectares: ${municipioData.areaha}`}<br/>
+                    {`População: ${toLocaleString(+municipioData.populacao)}`}
+                    <br />
+                    {`Área em hectares: ${municipioData.areaha}`}
+                    <br />
                     {`Densidade pop.: ${Math.round(
                       municipioData.populacao / municipioData.areaha
-                    )} hab./km²`}<br/>
-                    {`Código Postal: ${municipioData.codigopostal}`}<br/>
-                    {`Email: ${municipioData.email}`}<br/>
+                    )} hab./km²`}
+                    <br />
+                    {`Código Postal: ${municipioData.codigopostal}`}
+                    <br />
+                    {`Email: ${municipioData.email}`}
+                    <br />
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -83,11 +88,13 @@ const MunicipioDetalhe = ({ params }) => {
                 <div className='municipio-detalhe__lista'>
                   <div className='municipio-detalhe__lista'>
                     {municipioData.geojsons.freguesias.map((freg) => (
-                      <Badge
+                      <Link
                         key={freg.properties.Freguesia}
-                        className='municipio-detalhe__item'>
-                        {freg.properties.Freguesia}
-                      </Badge>
+                        href={`/municipios/${municipioData.distrito}/freguesias/${freg.properties.Freguesia}`}>
+                        <Badge className='municipio-detalhe__item'>
+                          {freg.properties.Freguesia}
+                        </Badge>
+                      </Link>
                     ))}
                   </div>
                 </div>
