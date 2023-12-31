@@ -1,9 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 const Freguesia = ({ params }) => {
-  const municipioId = decodeURIComponent(params.municipioId)
   const freguesiaId = decodeURIComponent(params.freguesiaId)
   const [freguesiaData, setFreguesiaData] = useState(null)
 
@@ -22,8 +22,35 @@ const Freguesia = ({ params }) => {
   return (
     <div className='sitepage sitepage--freguesia-detalhe'>
       <div className='container'>
-        <h1>Freguesia: {freguesiaId}</h1>
-        {freguesiaData && <h1>Pop: {freguesiaData.censos2021.N_INDIVIDUOS}</h1>}
+        {freguesiaData && (
+          <>
+            <h1>
+              <small>
+                <Link
+                  className='municipio-detalhe__Link'
+                  href={`/municipios/${freguesiaData.municipio}`}>
+                  {freguesiaData.municipio}
+                  &gt;
+                </Link>
+              </small>
+              <br />
+              {freguesiaId}
+            </h1>
+
+            <h3>População</h3>
+            <p>{freguesiaData.censos2021.N_INDIVIDUOS}</p>
+            <h3>Sexos</h3>
+            <table className='table'>
+              <tbody>
+                <tr>
+                  <td className='mulheres'>Mulheres</td>
+                  <td className='homens'>Homens</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>{freguesiaData.censos2021.N_EDIFICIOS_CONSTR_ANTES_1945}</p>
+          </>
+        )}
       </div>
     </div>
   )
