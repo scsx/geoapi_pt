@@ -40,3 +40,7 @@ export const nomeDistrito = (nome) => {
 
   return distritoNomeLocal
 }
+
+export const calcPercentage = (total, part) => {
+  return ((part * 100) / total).toFixed()
+}

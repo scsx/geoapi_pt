@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+span.divider {
+  margin: 0 1rem;
+}
+
 // Common Page
 .sitepage {
   padding: 3rem 0;
@@ -66,6 +70,35 @@ a {
       display: block;
       padding: 1rem;
       max-width: 50%;
+    }
+  }
+
+  .tablesexes {
+    td.mulheres {
+      background-color: #fce9ed;
+      color: red;
+    }
+    td.homens {
+      background-color: #e9f2fc;
+      color: blue;
+    }
+  }
+
+  .tableages {
+    td {
+      height: 40px;
+    }
+    td.age0 {
+      background-color: #cfe2ff;
+    }
+    td.age15 {
+      background-color: #9ec5fe;
+    }
+    td.age25 {
+      background-color: #6ea8fe;
+    }
+    td.age65 {
+      background-color: #3d8bfd;
     }
   }
 
