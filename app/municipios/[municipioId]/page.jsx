@@ -9,7 +9,7 @@ import Card from 'react-bootstrap/Card'
 
 import useDistrictFlag from '@/hooks/useDistrictFlag'
 import Loading from '@/components/Loading'
-import { toLocaleString } from '@/utils/utils'
+import { toLocaleString, capitalizeFirstLetters } from '@/utils/utils'
 import './page.scss'
 
 const MunicipioDetalhe = ({ params }) => {
@@ -28,8 +28,7 @@ const MunicipioDetalhe = ({ params }) => {
       .then((res) => res.json())
       .then((data) => {
         setMunicipioData(data)
-        setDistrito(data.distrito)
-        console.log(distrito)
+        setDistrito(capitalizeFirstLetters(data.distrito))
         setLoading(false)
       })
       .catch((error) => {
@@ -56,8 +55,8 @@ const MunicipioDetalhe = ({ params }) => {
                     Distrito:{' '}
                     <Link
                       className='municipio-detalhe__Link'
-                      href={`/distritos/${municipioData.distrito}`}>
-                      {municipioData.distrito}
+                      href={`/distritos/${distrito}`}>
+                      {distrito}
                     </Link>
                   </Card.Title>
                   <Card.Text className='mt-4'>

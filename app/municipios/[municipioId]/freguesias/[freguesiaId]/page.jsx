@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Link from 'next/link'
 import { calcPercentage } from '@/utils/utils'
 
@@ -25,20 +27,36 @@ const Freguesia = ({ params }) => {
       <div className='container'>
         {freguesiaData && (
           <>
-            <h1>
+            <h1 className='mb-5'>
               <small>
                 <Link
                   className='municipio-detalhe__Link'
                   href={`/municipios/${freguesiaData.municipio}`}>
                   {freguesiaData.municipio}
-                  &gt;
                 </Link>
               </small>
               <br />
               {freguesiaId}
             </h1>
+            <Row>
+              <Col className='mb-4'>
+                <h3>
+                  População{' '}
+                  <span className='badge text-bg-primary'>
+                    {freguesiaData.censos2021.N_INDIVIDUOS}
+                  </span>
+                </h3>
+              </Col>
+              <Col>
+                <h3>Site</h3>
+                <p>{freguesiaData.sitio}</p>
+              </Col>
+              <Col>
+                <h3>Email</h3>
+                <p>{freguesiaData.email}</p>
+              </Col>
+            </Row>
 
-            <h3 className='mb-4'>População <span className="badge text-bg-primary">{freguesiaData.censos2021.N_INDIVIDUOS}</span></h3>
             <h3>Sexos</h3>
             <table className='table tablesexes'>
               <tbody>

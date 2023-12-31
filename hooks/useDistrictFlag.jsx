@@ -6,6 +6,7 @@ const useDistrictFlag = (distrito, className) => {
   const [distritoImage, setDistritoImage] = useState('')
 
   useEffect(() => {
+    console.log(distritoImage)
     setDistritoImage(nomeDistrito(distrito))
   }, [distrito])
 
@@ -17,6 +18,7 @@ const useDistrictFlag = (distrito, className) => {
       layout='fill'
     />
   )
+
   return [Flag]
 }
 

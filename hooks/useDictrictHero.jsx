@@ -20,7 +20,7 @@ const useDistrictHero = (distrito) => {
     <div
       className='sitepage-hero mb-5'
       style={{
-        backgroundImage: `url(${`/distritos_bg/${heroImage}.jpg`})`,
+        backgroundImage: heroImage && `url(${`/distritos_bg/${heroImage}.jpg`})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover'
       }}>

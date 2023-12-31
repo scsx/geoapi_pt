@@ -44,3 +44,12 @@ export const nomeDistrito = (nome) => {
 export const calcPercentage = (total, part) => {
   return ((part * 100) / total).toFixed()
 }
+
+export const capitalizeFirstLetters = (text) => {
+  const lower = text.toLowerCase()
+  let words = lower.split(' ')
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1)
+  }
+  return words.toString()
+}
