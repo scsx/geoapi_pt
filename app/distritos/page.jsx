@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Table from 'react-bootstrap/Table'
 import Link from 'next/link'
 
+import getDistritos from '@/api/getDistritos'
 import Loading from '@/components/Loading'
 import { toLocaleString } from '@/utils/utils'
 import './page.scss'
@@ -16,15 +17,14 @@ const Distritos = () => {
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('https://json.geoapi.pt/distritos')
-      .then((res) => res.json())
-      .then((data) => {
+    let mounted = true
+    getDistritos().then((data) => {
+      if (mounted) {
         setDistritos(data)
         setLoading(false)
-      })
-      .catch((error) => {
-        throw error
-      })
+      }
+    })
+    return () => (mounted = false)
   }, [])
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const Distritos = () => {
 
         {isLoading && <Loading />}
 
-        {distritos.length > 0 && (
+        {distritos && distritos.length > 0 && (
           <>
             <Table striped bordered hover className='distritos-detalhe__table'>
               <thead>

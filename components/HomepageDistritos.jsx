@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { nomeDistrito } from '@/utils/utils'
+import getDistritos from '@/api/getDistritos'
 import Loading from '@/components/Loading'
 import useReadMore from '@/hooks/useReadMore'
 import distritosInfo from '@/data/distritosinfo'
@@ -46,15 +47,14 @@ const HomepageDistritos = () => {
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('https://json.geoapi.pt/distritos')
-      .then((res) => res.json())
-      .then((data) => {
+    let mounted = true
+    getDistritos().then((data) => {
+      if (mounted) {
         setDistritos(data)
         setLoading(false)
-      })
-      .catch((error) => {
-        throw error
-      })
+      }
+    })
+    return () => (mounted = false)
   }, [])
 
   return (
