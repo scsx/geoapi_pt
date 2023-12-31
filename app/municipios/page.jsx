@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import getMunicipios from '@/api/getMunicipios'
 import Link from 'next/link'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
@@ -12,12 +13,39 @@ const Municipios = () => {
   const [existingLetters, setExistingLetters] = useState([])
   const [letter, setLetter] = useState('Todos')
 
-  // Exemplos para:
-  // Lajes Das Flores
-  // https://json.geoapi.pt/municipio/Lajes%20Das%20Flores
-  // Lagoa (açores)
-  // https://json.geoapi.pt/municipio/Lagoa%20(açores)
+  useEffect(() => {
+    let mounted = true
 
+    getMunicipios().then((data) => {
+      if (mounted) {
+        const sortedAlph = data.sort(function (a, b) {
+          return a.localeCompare(b)
+        })
+
+        setMunicipios(sortedAlph)
+        setLoading(false)
+
+        // Obter todas as primeiras letras de cada item, sem acentos
+        let allLetters = sortedAlph.map((mun) => {
+          return mun
+            .charAt(0)
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+        })
+
+        // Remover duplicados
+        allLetters = allLetters.filter(
+          (item, index) => allLetters.indexOf(item) === index
+        )
+
+        // Update state
+        setExistingLetters(allLetters)
+      }
+    })
+
+    return () => (mounted = false)
+  }, [])
+  /* 
   useEffect(() => {
     fetch('https://json.geoapi.pt/municipios')
       .then((res) => res.json())
@@ -48,7 +76,7 @@ const Municipios = () => {
       .catch((error) => {
         throw error
       })
-  }, [])
+  }, []) */
 
   return (
     <div className='sitepage sitepage--municipios'>
