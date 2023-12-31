@@ -9,17 +9,18 @@ import Card from 'react-bootstrap/Card'
 
 import useDistrictFlag from '@/hooks/useDistrictFlag'
 import Loading from '@/components/Loading'
-import { toLocaleString, capitalizeFirstLetters } from '@/utils/utils'
+import { toLocaleString, nomeDistrito, capitalizeFirstLetters } from '@/utils/utils'
 import './page.scss'
 
 const MunicipioDetalhe = ({ params }) => {
   const municipioId = decodeURIComponent(params.municipioId)
   const [municipioData, setMunicipioData] = useState(null)
   const [distrito, setDistrito] = useState('')
+  const [distritoVisibleName, setDistritoVisibleName] = useState('')
   const [isLoading, setLoading] = useState(true)
 
   const [DistritoImage] = useDistrictFlag(
-    distrito,
+    nomeDistrito(distrito),
     'municipio-detalhe__cardImg'
   )
 
@@ -28,7 +29,8 @@ const MunicipioDetalhe = ({ params }) => {
       .then((res) => res.json())
       .then((data) => {
         setMunicipioData(data)
-        setDistrito(capitalizeFirstLetters(data.distrito))
+        setDistrito(data.distrito)
+        setDistritoVisibleName(capitalizeFirstLetters(data.distrito))
         setLoading(false)
       })
       .catch((error) => {
@@ -55,8 +57,8 @@ const MunicipioDetalhe = ({ params }) => {
                     Distrito:{' '}
                     <Link
                       className='municipio-detalhe__Link'
-                      href={`/distritos/${distrito}`}>
-                      {distrito}
+                      href={`/distritos/${distritoVisibleName}`}>
+                      {distritoVisibleName}
                     </Link>
                   </Card.Title>
                   <Card.Text className='mt-4'>

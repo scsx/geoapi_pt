@@ -3,18 +3,17 @@ import { nomeDistrito } from '@/utils/utils'
 import Image from 'next/image'
 
 const useDistrictFlag = (distrito, className) => {
-  const [distritoImage, setDistritoImage] = useState('')
+  const [distritoImage, setDistritoImage] = useState('/empty.png')
 
   useEffect(() => {
-    console.log(distritoImage)
-    setDistritoImage(nomeDistrito(distrito))
+    setDistritoImage(`/distritos/${nomeDistrito(distrito)}.png`)
   }, [distrito])
 
   const Flag = () => (
     <Image
-      src={`/distritos/${distritoImage}.png`}
+      src={distritoImage}
       className={className}
-      alt={distritoImage}
+      alt={distrito}
       layout='fill'
     />
   )
