@@ -27,11 +27,11 @@ const PrettyNumber = (props) => {
   const getComp = (Comp) => <Comp></Comp>
 
   return (
-    <div className='prettynumber'>
+    <span className={`prettynumber ${props.cssclass}`}>
       {arrOfDigits.map((digit, index) => {
         return <span key={`key--${index}`}>{getComp(faNumbers[digit])}</span>
       })}
-    </div>
+    </span>
   )
 }
 

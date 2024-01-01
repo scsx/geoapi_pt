@@ -12,7 +12,11 @@ import useDistrictFlag from '@/hooks/useDistrictFlag'
 import Loading from '@/components/Loading'
 import PrettyNumber from '@/components/PrettyNumber'
 
-import { toLocaleString, nomeDistrito, capitalizeFirstLetters } from '@/utils/utils'
+import {
+  toLocaleString,
+  nomeDistrito,
+  capitalizeFirstLetters
+} from '@/utils/utils'
 import './page.scss'
 
 const MunicipioDetalhe = ({ params }) => {
@@ -47,7 +51,7 @@ const MunicipioDetalhe = ({ params }) => {
         <h1>{municipioId}</h1>
 
         {isLoading && <Loading />}
-        
+
         {municipioData && (
           <Row>
             <Col>
@@ -57,15 +61,23 @@ const MunicipioDetalhe = ({ params }) => {
                 </div>
                 <Card.Body>
                   <Card.Title>
-                    Distrito:{' '} 
-                    <Link
-                      className='municipio-detalhe__Link'
-                      href={`/distritos/${distritoVisibleName}`}>
-                      {distritoVisibleName}
-                    </Link>
+                    <h3>
+                      Distrito:{' '}
+                      <Link
+                        className='municipio-detalhe__Link'
+                        href={`/distritos/${distritoVisibleName}`}>
+                        {distritoVisibleName}
+                      </Link>
+                    </h3>
                   </Card.Title>
-                  <Card.Text className='mt-4'>
-                    <h4>População: <PrettyNumber number={municipioData.populacao} /></h4>
+                  <Card.Text className='mt-4' as='div'>
+                    <h3>
+                      População:{' '}
+                      <PrettyNumber
+                        number={municipioData.populacao}
+                        cssclass='d-inline-block'
+                      />
+                    </h3>
                     {`População: ${toLocaleString(+municipioData.populacao)}`}
                     <br />
                     {`Área em hectares: ${municipioData.areaha}`}
