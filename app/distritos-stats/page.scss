@@ -1,25 +1,85 @@
-.sitepage--distats {
+.sitepage.sitepage--distats {
+  table.table-sexos {
+    border: 1px solid #ccc;
 
-  td.nametd {
-    width: 25%;
-  }
-  
-  td.default-men {
-    background-color: #52749b;
-    padding-right: 10px;
-    color: white;
-    position: relative;
-    text-align: right;
+    * {
+      font-size: 12px;
+    }
 
-    .mulheres {
-      position: absolute;
-      background-color: #de6c84;
+    td.nametd {
+      width: 25%;
+      font-family: 'PoppinsSemiBold';
+    }
+
+    td.default-men {
+      background-color: #52749b;
+      padding-right: 10px;
       color: white;
-      padding: 4px 10px;
-      top: 0;
-      height: 100%;
-      left: 0;
-      text-align: left;
+      position: relative;
+      text-align: right;
+
+      .mulheres {
+        position: absolute;
+        background-color: #de6c84;
+        color: white;
+        padding: 4px 10px;
+        top: 0;
+        height: 100%;
+        left: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  table.table-idades {
+    border: 1px solid #ccc;
+
+    * {
+      font-size: 12px;
+    }
+
+    th {
+      font-family: 'PoppinsSemiBold';
+      background-color: #d8d3c7;
+      color: #333;
+      font-size: 14px;
+    }
+
+    td.nametd {
+      width: 25%;
+      font-family: 'PoppinsSemiBold';
+    }
+
+    td.idades {
+      position: relative;
+      padding: 0;
+
+      div {
+        color: white;
+        padding: 4px 10px;
+        top: 0;
+        height: 100%;
+        left: 0;
+        text-align: left;
+      }
+
+      div.d-flex {
+        padding: 0;
+        background-color: #0d6efd;
+      }
+
+      .criancas {
+        background-color: #9ec5fe;
+      }
+      .jovens {
+        background-color: #6ea8fe;
+      }
+      .adultos {
+        background-color: #3d8bfd;
+      }
+      .seniores {
+        background-color: #0d6efd;
+      }
     }
   }
 }
