@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-const useReadMore = (text, buttonText, classname) => {
+const useReadMore = (text, buttonText, buttonTextHide, classname) => {
   const [visible, setVisible] = useState(false)
 
   const handleToggle = () => {
@@ -15,7 +15,7 @@ const useReadMore = (text, buttonText, classname) => {
         {text}
       </div>
       <button className='btn btn-link' onClick={handleToggle}>
-        {buttonText}
+        {visible ? buttonTextHide : buttonText}
       </button>
     </div>
   )

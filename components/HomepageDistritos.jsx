@@ -8,6 +8,7 @@ import useReadMore from '@/hooks/useReadMore'
 import distritosInfo from '@/data/distritosinfo'
 import useDistrictFlag from '@/hooks/useDistrictFlag'
 import Link from 'next/link'
+import './HomepageDistritos.scss'
 
 // Este component foi criado para poder usar o custom hook useReadMore, porque não pode ser chamado directamente dentro de um loop.
 const DistritosCardHtml = (props) => {
@@ -22,6 +23,7 @@ const DistritosCardHtml = (props) => {
   const [DistritoText] = useReadMore(
     distritosInfo[nomeDistrito(props.distrito)].desc,
     'Read more',
+    'Hide',
     'readmore--homepage'
   )
   return (
@@ -35,7 +37,7 @@ const DistritosCardHtml = (props) => {
         <Link
           href={`/distritos/${props.distrito}`}
           className='btn btn-primary btn-sm'>
-          Ver
+          Ver Distrito
         </Link>
       </div>
     </>
@@ -60,7 +62,7 @@ const HomepageDistritos = () => {
   return (
     <div className='sitepage sitepage--hp'>
       <div className='container px-4 py-5'>
-        <h2 className='pb-2 border-bottom'>Distritos</h2>
+        <h1>Distritos</h1>
         {isLoading && <Loading />}
         {distritos.length > 0 && (
           <div className='row g-4 py-5 row-cols-1 row-cols-lg-3'>
