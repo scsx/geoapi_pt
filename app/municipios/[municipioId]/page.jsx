@@ -74,6 +74,7 @@ const MunicipioDetalhe = ({ params }) => {
                     <br />
                     {`Email: ${municipioData.email}`}
                     <br />
+                    {`Cód. Postal: ${municipioData.codigopostal}`}
                   </Card.Text>
                 </Card.Body>
               </Card>

@@ -27,6 +27,9 @@ function BasicExample() {
               <NavDropdown.Item href='/distritos'>
                 Todos os distritos
               </NavDropdown.Item>
+              <NavDropdown.Item href='/distritos-stats'>
+                Estatísticas de distritos
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

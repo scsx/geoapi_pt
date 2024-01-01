@@ -15,7 +15,6 @@ const Freguesia = ({ params }) => {
       .then((res) => res.json())
       .then((data) => {
         setFreguesiaData(data)
-        console.log(data)
       })
       .catch((error) => {
         throw error

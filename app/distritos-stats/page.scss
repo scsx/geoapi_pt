@@ -1,0 +1,25 @@
+.sitepage--distats {
+
+  td.nametd {
+    width: 25%;
+  }
+  
+  td.default-men {
+    background-color: #52749b;
+    padding-right: 10px;
+    color: white;
+    position: relative;
+    text-align: right;
+
+    .mulheres {
+      position: absolute;
+      background-color: #de6c84;
+      color: white;
+      padding: 4px 10px;
+      top: 0;
+      height: 100%;
+      left: 0;
+      text-align: left;
+    }
+  }
+}
