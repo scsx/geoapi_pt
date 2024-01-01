@@ -1,4 +1,25 @@
+@font-face {
+  font-family: 'Restora';
+  src: local('Restora'), url('../fonts/Restora.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'RestoraBold';
+  src: local('RestoraBold'), url('../fonts/RestoraBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Regular'), url('../fonts/Poppins-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PoppinsSemiBold';
+  src: local('Poppins-SemiBold'), url('../fonts/Poppins-SemiBold.otf') format('opentype');
+}
+
 * {
+  font-family: 'Poppins';
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -9,11 +30,20 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   border-radius: 0;
-  background: white;
+  background-color: $bodybg;
 }
 
 body {
-  color: black;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: 'RestoraBold';
 }
 
 a {
@@ -28,7 +58,6 @@ span.divider {
 // Common Page
 .sitepage {
   padding: 3rem 0;
-  background-color: white;
 
   h1 {
     font-size: 3rem;
@@ -38,10 +67,6 @@ span.divider {
     small {
       font-size: 1.5rem;
     }
-  }
-
-  .tab-pane {
-    padding-left: 1rem;
   }
 
   .sitepage-hero {

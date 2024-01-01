@@ -1,7 +1,46 @@
-.header {
-    border-bottom: 1px solid #b9b9b9;
+@import '../styles/custom-vars.scss';
 
-    .nav-link a {
-        color: var(--bs-navbar-color);
+.header.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid $bordercolor;
+
+  .navbar-brand {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    border-right: 1px solid $bordercolor;
+
+    span.pt {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      border-right: 1px solid $bordercolor;
+
+      svg {
+        transform: scale(1.75);
+        margin: 0.75rem 0.75rem 0 0;
+      }
     }
+
+    span.nome {
+      font-size: 1rem;
+      padding: 1rem;
+      font-family: 'RestoraBold';
+      line-height: 1;
+    }
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem !important;
+    font-family: 'PoppinsSemiBold';
+    border-right: 1px solid $bordercolor;
+    color: var(--bs-navbar-brand-color);
+
+    a {
+      color: var(--bs-navbar-color);
+      font-family: 'PoppinsSemiBold';
+      color: var(--bs-navbar-brand-color);
+    }
+  }
 }

@@ -5,13 +5,18 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Link from 'next/link'
+import { GiPortugal } from 'react-icons/gi'
 import './Header.scss'
 
 function BasicExample() {
   return (
     <Navbar expand='lg' className='header bg-body-tertiary'>
       <Container>
-        <Navbar.Brand href='/'>geoapi.pt</Navbar.Brand>
+        <Navbar.Brand href='/'>
+          <span className='pt'><GiPortugal /></span>
+          <span className='nome'>geoapi.pt</span>
+          
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>

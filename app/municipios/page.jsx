@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import Loading from '@/components/Loading'
+import './page.scss'
 
 const Municipios = () => {
   const [municipios, setMunicipios] = useState([])
@@ -52,12 +53,11 @@ const Municipios = () => {
         <h1>Municípios</h1>
         {isLoading && <Loading />}
 
-        {municipios && (
+        {municipios.length > 0 && (
           <Tabs
             id='municipiosTabs'
             activeKey={letter}
-            onSelect={(key) => setLetter(key)}
-            className='mb-3'>
+            onSelect={(key) => setLetter(key)}>
             <Tab eventKey='Todos' title='Todos'>
               {municipios.map((mun) => (
                 <Link
