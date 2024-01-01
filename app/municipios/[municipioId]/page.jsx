@@ -8,7 +8,10 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 
 import useDistrictFlag from '@/hooks/useDistrictFlag'
+
 import Loading from '@/components/Loading'
+import PrettyNumber from '@/components/PrettyNumber'
+
 import { toLocaleString, nomeDistrito, capitalizeFirstLetters } from '@/utils/utils'
 import './page.scss'
 
@@ -44,7 +47,7 @@ const MunicipioDetalhe = ({ params }) => {
         <h1>{municipioId}</h1>
 
         {isLoading && <Loading />}
-
+        
         {municipioData && (
           <Row>
             <Col>
@@ -54,7 +57,7 @@ const MunicipioDetalhe = ({ params }) => {
                 </div>
                 <Card.Body>
                   <Card.Title>
-                    Distrito:{' '}
+                    Distrito:{' '} 
                     <Link
                       className='municipio-detalhe__Link'
                       href={`/distritos/${distritoVisibleName}`}>
@@ -62,6 +65,7 @@ const MunicipioDetalhe = ({ params }) => {
                     </Link>
                   </Card.Title>
                   <Card.Text className='mt-4'>
+                    <h4>População: <PrettyNumber number={municipioData.populacao} /></h4>
                     {`População: ${toLocaleString(+municipioData.populacao)}`}
                     <br />
                     {`Área em hectares: ${municipioData.areaha}`}
