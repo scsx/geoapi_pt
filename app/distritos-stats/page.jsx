@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { calcPercentage } from '@/utils/utils'
 import getDistritos from '@/api/getDistritos'
+import Loading from '@/components/Loading'
 import './page.scss'
 
 const DistritosStats = () => {
@@ -80,90 +81,94 @@ const DistritosStats = () => {
       <div className='container'>
         <h1>Estatísticas de Distritos</h1>
         <h3 className='mb-3'>Percentagem Mulheres vs Homens</h3>
-        <table className='table table-sm table-sexos'>
-          <tbody>
-            {racioSexos.map((dis) => {
-              return (
-                <tr key={dis.nome}>
-                  <td className='nametd'>{dis.nome}</td>
-                  <td className='default-men'>
-                    <div
-                      className='mulheres'
+        {racioSexos.length === 0 && <Loading />}
+        {racioSexos.length > 0 && (
+          <table className='table table-sm table-sexos'>
+            <tbody>
+              {racioSexos.map((dis) => {
+                return (
+                  <tr key={dis.nome}>
+                    <td className='nametd'>{dis.nome}</td>
+                    <td className='default-men'>
+                      <div
+                        className='mulheres'
+                        style={{
+                          width: `${dis.percentagemMulheres}%`
+                        }}>
+                        {dis.percentagemMulheres}%
+                      </div>
+                      {100 - dis.percentagemMulheres}%
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        )}
+
+        <h3 className='mt-5 mb-3'>Distribuição de Idades (+ jovens)</h3>
+        {racioIdades.length === 0 && <Loading />}
+        {racioIdades.length > 0 && (
+          <table className='table table-sm table-idades'>
+            <thead>
+              <tr>
+                <th>Distrito</th>
+                <th className='text-center'>0-14 / 15-24 / 25-64 / 65+</th>
+              </tr>
+            </thead>
+            <tbody>
+              {racioIdades.map((dis) => {
+                return (
+                  <tr key={dis.nome}>
+                    <td
+                      className='nametd'
                       style={{
-                        width: `${dis.percentagemMulheres}%`
+                        width: '25%'
                       }}>
-                      {dis.percentagemMulheres}%
-                    </div>
-                    {100 - dis.percentagemMulheres}%
-                  </td>
-                </tr>
-              )
-            })}
-          </tbody>
-        </table>
-
-        <h3 className='mt-5 mb-3'>Distribuição de Idades (+ jovens)</h3>
-        <table className='table table-sm table-idades'>
-          <thead>
-            <tr>
-              <th>Distrito</th>
-              <th className='text-center'>0-14 / 15-24 / 25-64 / 65+</th>
-            </tr>
-          </thead>
-          <tbody>
-            {racioIdades.map((dis) => {
-              return (
-                <tr key={dis.nome}>
-                  <td
-                    className='nametd'
-                    style={{
-                      width: '25%'
-                    }}>
-                    {dis.nome}
-                  </td>
-                  <td
-                    className='idades'
-                    style={{
-                      width: '75%'
-                    }}>
-                    <div className='d-flex w-100'>
-                      <div
-                        className='criancas'
-                        style={{
-                          width: `${dis.idades.criancas}%`
-                        }}>
-                        {dis.idades.criancas}%
+                      {dis.nome}
+                    </td>
+                    <td
+                      className='idades'
+                      style={{
+                        width: '75%'
+                      }}>
+                      <div className='d-flex w-100'>
+                        <div
+                          className='criancas'
+                          style={{
+                            width: `${dis.idades.criancas}%`
+                          }}>
+                          {dis.idades.criancas}%
+                        </div>
+                        <div
+                          className='jovens'
+                          style={{
+                            width: `${dis.idades.jovens}%`
+                          }}>
+                          {dis.idades.jovens}%
+                        </div>
+                        <div
+                          className='adultos'
+                          style={{
+                            width: `${dis.idades.adultos}%`
+                          }}>
+                          {dis.idades.adultos}%
+                        </div>
+                        <div
+                          className='seniores'
+                          style={{
+                            width: `${dis.idades.seniores}%`
+                          }}>
+                          {dis.idades.seniores}%
+                        </div>
                       </div>
-                      <div
-                        className='jovens'
-                        style={{
-                          width: `${dis.idades.jovens}%`
-                        }}>
-                        {dis.idades.jovens}%
-                      </div>
-                      <div
-                        className='adultos'
-                        style={{
-                          width: `${dis.idades.adultos}%`
-                        }}>
-                        {dis.idades.adultos}%
-                      </div>
-                      <div
-                        className='seniores'
-                        style={{
-                          width: `${dis.idades.seniores}%`
-                        }}>
-                        {dis.idades.seniores}%
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              )
-            })}
-          </tbody>
-        </table>
-
-        <h3 className='mt-5 mb-3'>Distribuição de Idades (+ jovens)</h3>
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   )
