@@ -10,8 +10,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## TODO
 - Resolver quando duas freguesias têm o mesmo nome
--- Vilela (freg. Póvoa de Lanhoso) também retorna resultados para Vilela (Paredes)
--- Fornelos (freg. Barcelos) também retorna resultados para Fornelos (Cinfães)
+    - Vilela (freg. Póvoa de Lanhoso) também retorna resultados para Vilela (Paredes)
+    - Fornelos (freg. Barcelos) também retorna resultados para Fornelos (Cinfães)
 
 
 ## Getting Started
