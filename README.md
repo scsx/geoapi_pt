@@ -9,7 +9,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [https://react-icons.github.io/react-icons/](https://react-icons.github.io/react-icons/)
 
 ## TODO
-- Vilela (freg. Póvoa de Lanhoso) retorna resultados para si e Vilela (Paredes)
+- Resolver quando duas freguesias têm o mesmo nome
+-- Vilela (freg. Póvoa de Lanhoso) também retorna resultados para Vilela (Paredes)
+-- Fornelos (freg. Barcelos) também retorna resultados para Fornelos (Cinfães)
 
 
 ## Getting Started
