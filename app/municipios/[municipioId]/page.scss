@@ -1,26 +1,32 @@
+@import '../../../styles/custom-vars';
+
 .sitepage.sitepage--municipios-detalhe {
   h1 {
-    margin-top: -1rem;
+    margin-top: -2rem;
+
+    .codigo {
+      float: right;
+      text-align: right;
+      margin-top: 3.5rem;
+    }
   }
 
-  .municipio-detalhe {
-    &__card {
-      position: relative;
-      margin: 0 5px 5px 0;
-      font-size: 14px;
-      font-weight: 400;
-      color: black;
-      background-color: white !important;
-      border: 1px solid #ccc;
-    }
+  .list-group-item b {
+    margin-left: 1rem;
 
-    &__cardImg {
+    small {
+      color: $brownishtext;
+    }
+  }
+  .brasao {
+    img {
       position: relative !important;
-      margin: 10px;
       width: 150px !important;
       height: auto !important;
     }
+  }
 
+  .municipio-detalhe {
     &__Link {
       font-family: 'RestoraBold';
     }
@@ -32,6 +38,45 @@
       color: black;
       background-color: white !important;
       border: 1px solid var(--bs-primary);
+    }
+
+    &__item:hover {
+      color: white;
+      background-color: var(--bs-primary) !important;
+    }
+  }
+
+  .table-edificios {
+    th {
+      text-align: center;
+      vertical-align: middle;
+      padding: 18px;
+      color: white;
+      background-color: darken($griege, 30%);
+    }
+    th ~ th {
+      border-left: 1px solid #908f8f;
+    }
+
+    td {
+      padding: .8rem 8px;
+      color: white;
+
+      &.old0 {
+        background-color: darken($griege, 20%);
+      }
+      &.old1 {
+        background-color: darken($griege, 10%);
+      }
+      &.old2 {
+        background-color: $griege;
+      }
+      &.old3 {
+        background-color: lighten($griege, 5%);
+      }
+      &.old4 {
+        background-color: lighten($griege, 10%);
+      }
     }
   }
 }

@@ -10,12 +10,14 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: local('Poppins-Regular'), url('../fonts/Poppins-Regular.otf') format('opentype');
+  src: local('Poppins-Regular'),
+    url('../fonts/Poppins-Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'PoppinsSemiBold';
-  src: local('Poppins-SemiBold'), url('../fonts/Poppins-SemiBold.otf') format('opentype');
+  src: local('Poppins-SemiBold'),
+    url('../fonts/Poppins-SemiBold.otf') format('opentype');
 }
 
 * {
@@ -51,14 +53,24 @@ a {
   text-decoration: none;
 }
 
+b {
+  font-family: 'PoppinsSemiBold';
+}
+
 span.divider {
   margin: 0 1rem;
+}
+
+// Because of "União das freguesias de Alandroal (Nossa Senhora da Conceição), São Brás dos Matos (Mina do Bugalho) e Juromenha (Nossa Senhora do Loreto)"
+.badge {
+  white-space: unset;
+  text-align: left;
 }
 
 .graphics404 {
   font-size: 5rem;
   margin-bottom: 5rem;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 // Common Page

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Badge from 'react-bootstrap/Badge'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
+import ListGroup from 'react-bootstrap/ListGroup'
 
 import useDistrictFlag from '@/hooks/useDistrictFlag'
 
@@ -13,9 +13,10 @@ import Loading from '@/components/Loading'
 import PrettyNumber from '@/components/PrettyNumber'
 
 import {
-  toLocaleString,
   nomeDistrito,
-  capitalizeFirstLetters
+  capitalizeFirstLetters,
+  toLocaleString,
+  calcPercentage
 } from '@/utils/utils'
 import './page.scss'
 
@@ -53,6 +54,14 @@ const MunicipioDetalhe = ({ params }) => {
         {municipioData && (
           <>
             <h1>
+              <small className='codigo'>
+                INE
+                <br />
+                <PrettyNumber
+                  number={municipioData.codigoine}
+                  cssclass='d-inline-block'
+                />
+              </small>
               <small>
                 <Link
                   className='municipio-detalhe__Link'
@@ -65,59 +74,232 @@ const MunicipioDetalhe = ({ params }) => {
             </h1>
 
             <Row>
-              <Col>
-                <Card className='municipio-detalhe__card'>
-                  <div className='municipio-detalhe__cardImg'>
-                    <DistritoImage />
-                  </div>
-                  <Card.Body>
-                    <Card.Text className='mt-4' as='div'>
-                      <h3>
-                        População:{' '}
-                        <PrettyNumber
-                          number={municipioData.populacao}
-                          cssclass='d-inline-block'
-                        />
-                      </h3>
-                      <br />
-                      {`Área em hectares: ${municipioData.areaha}`}
-                      <br />
-                      {`Densidade pop.: ${Math.round(
+              <Col sm='6'>
+                <h3 className='mb-4'>Dados Gerais</h3>
+                <ListGroup>
+                  <ListGroup.Item>
+                    População: <b>{toLocaleString(municipioData.populacao)}</b>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Eleitores:{' '}
+                    <b>
+                      {toLocaleString(municipioData.eleitores)}{' '}
+                      <small>
+                        (
+                        {calcPercentage(
+                          municipioData.populacao,
+                          municipioData.eleitores
+                        )}
+                        %)
+                      </small>
+                    </b>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Núcleos familiares:{' '}
+                    <b>
+                      {toLocaleString(
+                        municipioData.censos2021.N_NUCLEOS_FAMILIARES
+                      )}
+                    </b>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Área em hectares: <b>{municipioData.areaha}</b>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Densidade pop:{' '}
+                    <b>
+                      {Math.round(
                         municipioData.populacao / municipioData.areaha
-                      )} hab./km²`}
-                      <br />
-                      {`Código Postal: ${municipioData.codigopostal}`}
-                      <br />
-                      {`Email: ${municipioData.email}`}
-                      <br />
-                      {`Cód. Postal: ${municipioData.codigopostal}`}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-
-                <Link
-                  className='btn btn-outline-secondary mt-4'
-                  href={`/municipios`}>
-                  Voltar a municípios
-                </Link>
+                      )}{' '}
+                      hab./km²
+                    </b>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Código Postal: <b>{municipioData.codigopostal}</b>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Email:{' '}
+                    <b>
+                      <a href={`mailto:${municipioData.email}`}>
+                        {municipioData.email}
+                      </a>
+                    </b>
+                  </ListGroup.Item>
+                </ListGroup>
               </Col>
-              <Col>
+              <Col sm='6'>
                 <div className='municipio-detalhe'>
                   <h3 className='mb-4'>Freguesias</h3>
                   <div className='municipio-detalhe__lista'>
                     {municipioData.geojsons.freguesias.map((freg) => (
                       <Link
                         key={freg.properties.Freguesia}
-                        href={`/municipios/${municipioData.distrito}/freguesias/${freg.properties.Freguesia}`}>
+                        href={`/municipios/${municipioId}/freguesias/${freg.properties.Freguesia}`}>
                         <Badge className='municipio-detalhe__item'>
                           {freg.properties.Freguesia}
                         </Badge>
                       </Link>
                     ))}
                   </div>
+
+                  <h3 className='my-4'>Brasão Distrito</h3>
+                  <div className='brasao'>
+                    <DistritoImage />
+                  </div>
                 </div>
               </Col>
             </Row>
+
+            <h3 className='mt-5 mb-4'>Edifícios</h3>
+            <h5>
+              Total:{' '}
+              {toLocaleString(municipioData.censos2021.N_EDIFICIOS_CLASSICOS)}
+            </h5>
+            <table className='table table-sm table-edificios'>
+              <thead>
+                <tr key={municipioData.censos2021.N_EDIFICIOS_CLASSICOS}>
+                  <th
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_ANTES_1945
+                      )}%`
+                    }}>
+                    -1945
+                  </th>
+                  <th
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1946_1980
+                      )}%`
+                    }}>
+                    1946-1980
+                  </th>
+                  <th
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1981_2000
+                      )}%`
+                    }}>
+                    1981-2000
+                  </th>
+                  <th
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2001_2010
+                      )}%`
+                    }}>
+                    2001-2010
+                  </th>
+                  <th
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2011_2021
+                      )}%`
+                    }}>
+                    2011-
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr key={municipioData.censos2021.N_EDIFICIOS_CLASSICOS}>
+                  <td
+                    className='old0'
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_ANTES_1945
+                      )}%`
+                    }}>
+                    <b>
+                      {calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_ANTES_1945
+                      )}
+                      %
+                    </b>
+                  </td>
+
+                  <td
+                    className='old1'
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1946_1980
+                      )}%`
+                    }}>
+                    <b>
+                      {calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1946_1980
+                      )}
+                      %
+                    </b>
+                  </td>
+
+                  <td
+                    className='old2'
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1981_2000
+                      )}%`
+                    }}>
+                    <b>
+                      {calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1981_2000
+                      )}
+                      %
+                    </b>
+                  </td>
+
+                  <td
+                    className='old3'
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2001_2010
+                      )}%`
+                    }}>
+                    <b>
+                      {calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2001_2010
+                      )}
+                      %
+                    </b>
+                  </td>
+
+                  <td
+                    className='old4'
+                    style={{
+                      width: `${calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2011_2021
+                      )}%`
+                    }}>
+                    <b>
+                      {calcPercentage(
+                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
+                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2011_2021
+                      )}
+                      %{' '}
+                    </b>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <Link
+              className='btn btn-outline-secondary mt-4'
+              href={`/municipios`}>
+              Voltar a municípios
+            </Link>
           </>
         )}
       </div>

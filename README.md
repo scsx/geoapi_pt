@@ -9,7 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [https://react-icons.github.io/react-icons/](https://react-icons.github.io/react-icons/)
 
 ## TODO
-- All done
+- Vilela (freg. Póvoa de Lanhoso) retorna resultados para si e Vilela (Paredes)
 
 
 ## Getting Started

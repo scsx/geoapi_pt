@@ -1,5 +1,9 @@
 export const toLocaleString = (number) => {
-  return number.toLocaleString('pt-PT')
+  if(typeof number === 'string') {
+    number = +number
+  }
+
+  return number.toLocaleString('fr-FR') // pt-PT doesn't format 7831 correctly
 }
 
 export const nomeDistrito = (nome) => {

@@ -49,7 +49,9 @@ const Freguesia = ({ params }) => {
               </Col>
               <Col>
                 <h3>Site</h3>
-                <p>{freguesiaData.sitio.length > 0 ? freguesiaData.sitio : '--'}</p>
+                <p>
+                  {freguesiaData.sitio.length > 0 ? freguesiaData.sitio : '--'}
+                </p>
               </Col>
               <Col>
                 <h3>Email</h3>

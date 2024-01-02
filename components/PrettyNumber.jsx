@@ -21,6 +21,7 @@ const PrettyNumber = (props) => {
   }
 
   const arrOfDigits = Array.from(number)
+  
   // Store all components in array.
   const faNumbers = [Fa0, Fa1, Fa2, Fa3, Fa4, Fa5, Fa6, Fa7, Fa8, Fa9]
   // Function to retrieve component.
