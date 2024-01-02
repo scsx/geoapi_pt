@@ -10,10 +10,10 @@
   }
 
   &__cardImg {
-    position: relative;
+    position: relative !important;
     margin: 10px;
-    width: 200px;
-    height: 200px;
+    width: 150px !important;
+    height: auto !important;
   }
 
   &__item {

@@ -1,7 +1,7 @@
 {
   "acores": {
     "desc": "Na imensidão azul do Atlântico, a Mãe natureza criou uma terra repleta de beleza natural e pronta a ser explorada: o Arquipélago dos Açores.",
-    "hex": "#ecdc00"
+    "hex": "#061d60"
   },
   "aveiro": {
     "desc": "Ao visitar Aveiro descobrimos uma paisagem com marca de água. Junto ao mar e à ria, Aveiro é atravessada por uma rede de canais por onde passeiam barcos moliceiros.",
@@ -49,7 +49,7 @@
   },
   "madeira": {
     "desc": "No meio do Atlântico, as ilhas da Madeira e do Porto Santo são um refúgio de beleza natural. Entre o azul do mar e o verde-esmeralda da vegetação sobressai o colorido exótico das flores, num arquipélago em que dois terços são área protegida.",
-    "hex": "#6b4871"
+    "hex": "#005eb8"
   },
   "portalegre": {
     "desc": "A urbe, com cerca de 16 mil habitantes, desenvolveu-se principalmente a partir do século XVI, época em que foi elevada a sede de Bispado e à categoria de Cidade.",

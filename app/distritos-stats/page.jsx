@@ -67,6 +67,7 @@ const DistritosStats = () => {
     let mounted = true
     getDistritos().then((data) => {
       if (mounted) {
+        console.log(data)
         getSexesRatio(data)
         getAgesRatio(data)
       }
@@ -161,6 +162,8 @@ const DistritosStats = () => {
             })}
           </tbody>
         </table>
+
+        <h3 className='mt-5 mb-3'>Distribuição de Idades (+ jovens)</h3>
       </div>
     </div>
   )

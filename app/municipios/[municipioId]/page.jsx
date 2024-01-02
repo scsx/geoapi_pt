@@ -62,7 +62,7 @@ const MunicipioDetalhe = ({ params }) => {
                 <Card.Body>
                   <Card.Title>
                     <h3>
-                      Distrito:{' '}
+                      {distritoVisibleName.includes('R.') ? 'Região Autónoma ' : 'Distrito '}
                       <Link
                         className='municipio-detalhe__Link'
                         href={`/distritos/${distritoVisibleName}`}>
@@ -78,7 +78,6 @@ const MunicipioDetalhe = ({ params }) => {
                         cssclass='d-inline-block'
                       />
                     </h3>
-                    {`População: ${toLocaleString(+municipioData.populacao)}`}
                     <br />
                     {`Área em hectares: ${municipioData.areaha}`}
                     <br />
@@ -103,8 +102,8 @@ const MunicipioDetalhe = ({ params }) => {
             </Col>
             <Col>
               <div className='municipio-detalhe'>
+                <h3 className='mb-4'>Freguesias</h3>
                 <div className='municipio-detalhe__lista'>
-                  <div className='municipio-detalhe__lista'>
                     {municipioData.geojsons.freguesias.map((freg) => (
                       <Link
                         key={freg.properties.Freguesia}
@@ -114,7 +113,6 @@ const MunicipioDetalhe = ({ params }) => {
                         </Badge>
                       </Link>
                     ))}
-                  </div>
                 </div>
               </div>
             </Col>
