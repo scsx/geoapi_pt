@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Link from 'next/link'
+import './page.scss'
 import { calcPercentage } from '@/utils/utils'
 
 const Freguesia = ({ params }) => {
@@ -29,7 +30,7 @@ const Freguesia = ({ params }) => {
             <h1 className='mb-5'>
               <small>
                 <Link
-                  className='municipio-detalhe__Link'
+                  className='freguesia-detalhe__Link'
                   href={`/municipios/${freguesiaData.municipio}`}>
                   {freguesiaData.municipio}
                 </Link>
@@ -48,7 +49,7 @@ const Freguesia = ({ params }) => {
               </Col>
               <Col>
                 <h3>Site</h3>
-                <p>{freguesiaData.sitio}</p>
+                <p>{freguesiaData.sitio.length > 0 ? freguesiaData.sitio : '--'}</p>
               </Col>
               <Col>
                 <h3>Email</h3>

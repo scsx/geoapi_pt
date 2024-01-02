@@ -148,8 +148,8 @@ span.divider {
     &:after {
       content: '...';
       position: absolute;
-      background-color: white;
-      bottom: 5px;
+      background-color: $bodybg;
+      bottom: 0;
       right: 5px;
     }
   }

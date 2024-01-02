@@ -48,62 +48,63 @@ const MunicipioDetalhe = ({ params }) => {
   return (
     <div className='sitepage sitepage--municipios-detalhe'>
       <div className='container'>
-        <h1>{municipioId}</h1>
-
         {isLoading && <Loading />}
 
         {municipioData && (
-          <Row>
-            <Col>
-              <Card className='municipio-detalhe__card'>
-                <div className='municipio-detalhe__cardImg'>
-                  <DistritoImage />
-                </div>
-                <Card.Body>
-                  <Card.Title>
-                    <h3>
-                      {distritoVisibleName.includes('R.') ? 'Região Autónoma ' : 'Distrito '}
-                      <Link
-                        className='municipio-detalhe__Link'
-                        href={`/distritos/${distritoVisibleName}`}>
-                        {distritoVisibleName}
-                      </Link>
-                    </h3>
-                  </Card.Title>
-                  <Card.Text className='mt-4' as='div'>
-                    <h3>
-                      População:{' '}
-                      <PrettyNumber
-                        number={municipioData.populacao}
-                        cssclass='d-inline-block'
-                      />
-                    </h3>
-                    <br />
-                    {`Área em hectares: ${municipioData.areaha}`}
-                    <br />
-                    {`Densidade pop.: ${Math.round(
-                      municipioData.populacao / municipioData.areaha
-                    )} hab./km²`}
-                    <br />
-                    {`Código Postal: ${municipioData.codigopostal}`}
-                    <br />
-                    {`Email: ${municipioData.email}`}
-                    <br />
-                    {`Cód. Postal: ${municipioData.codigopostal}`}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+          <>
+            <h1>
+              <small>
+                <Link
+                  className='municipio-detalhe__Link'
+                  href={`/distritos/${distritoVisibleName}`}>
+                  {distritoVisibleName}
+                </Link>
+              </small>
+              <br />
+              {municipioId}
+            </h1>
 
-              <Link
-                className='btn btn-outline-secondary mt-4'
-                href={`/municipios`}>
-                Voltar a municípios
-              </Link>
-            </Col>
-            <Col>
-              <div className='municipio-detalhe'>
-                <h3 className='mb-4'>Freguesias</h3>
-                <div className='municipio-detalhe__lista'>
+            <Row>
+              <Col>
+                <Card className='municipio-detalhe__card'>
+                  <div className='municipio-detalhe__cardImg'>
+                    <DistritoImage />
+                  </div>
+                  <Card.Body>
+                    <Card.Text className='mt-4' as='div'>
+                      <h3>
+                        População:{' '}
+                        <PrettyNumber
+                          number={municipioData.populacao}
+                          cssclass='d-inline-block'
+                        />
+                      </h3>
+                      <br />
+                      {`Área em hectares: ${municipioData.areaha}`}
+                      <br />
+                      {`Densidade pop.: ${Math.round(
+                        municipioData.populacao / municipioData.areaha
+                      )} hab./km²`}
+                      <br />
+                      {`Código Postal: ${municipioData.codigopostal}`}
+                      <br />
+                      {`Email: ${municipioData.email}`}
+                      <br />
+                      {`Cód. Postal: ${municipioData.codigopostal}`}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+
+                <Link
+                  className='btn btn-outline-secondary mt-4'
+                  href={`/municipios`}>
+                  Voltar a municípios
+                </Link>
+              </Col>
+              <Col>
+                <div className='municipio-detalhe'>
+                  <h3 className='mb-4'>Freguesias</h3>
+                  <div className='municipio-detalhe__lista'>
                     {municipioData.geojsons.freguesias.map((freg) => (
                       <Link
                         key={freg.properties.Freguesia}
@@ -113,10 +114,11 @@ const MunicipioDetalhe = ({ params }) => {
                         </Badge>
                       </Link>
                     ))}
+                  </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
+          </>
         )}
       </div>
     </div>

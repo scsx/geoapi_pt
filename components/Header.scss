@@ -24,7 +24,7 @@
     }
 
     span.nome {
-      font-size: 1rem;
+      font-size: 1.1rem;
       padding: 1rem;
       font-family: 'RestoraBold';
       line-height: 1;
@@ -32,7 +32,7 @@
   }
 
   .nav-link {
-    padding: 0.75rem 1rem !important;
+    padding: 0.8rem 1rem !important;
     font-family: 'PoppinsSemiBold';
     border-right: 1px solid $bordercolor;
     color: var(--bs-navbar-brand-color);
@@ -42,5 +42,12 @@
       font-family: 'PoppinsSemiBold';
       color: var(--bs-navbar-brand-color);
     }
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+    left: -1px;
+    border-radius: 0;
+    border-color: $bordercolor;
   }
 }

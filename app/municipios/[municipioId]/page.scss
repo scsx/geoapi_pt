@@ -1,27 +1,37 @@
-.municipio-detalhe {
-  &__card {
-    position: relative;
-    margin: 0 5px 5px 0;
-    font-size: 14px;
-    font-weight: 400;
-    color: black;
-    background-color: white !important;
-    border: 1px solid #ccc;
+.sitepage.sitepage--municipios-detalhe {
+  h1 {
+    margin-top: -1rem;
   }
 
-  &__cardImg {
-    position: relative !important;
-    margin: 10px;
-    width: 150px !important;
-    height: auto !important;
-  }
+  .municipio-detalhe {
+    &__card {
+      position: relative;
+      margin: 0 5px 5px 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: black;
+      background-color: white !important;
+      border: 1px solid #ccc;
+    }
 
-  &__item {
-    margin: 0 5px 5px 0;
-    font-size: 14px;
-    font-weight: 400;
-    color: black;
-    background-color: white !important;
-    border: 1px solid var(--bs-primary);
+    &__cardImg {
+      position: relative !important;
+      margin: 10px;
+      width: 150px !important;
+      height: auto !important;
+    }
+
+    &__Link {
+      font-family: 'RestoraBold';
+    }
+
+    &__item {
+      margin: 0 5px 5px 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: black;
+      background-color: white !important;
+      border: 1px solid var(--bs-primary);
+    }
   }
 }
