@@ -68,7 +68,6 @@ const DistritosStats = () => {
     let mounted = true
     getDistritos().then((data) => {
       if (mounted) {
-        console.log(data)
         getSexesRatio(data)
         getAgesRatio(data)
       }

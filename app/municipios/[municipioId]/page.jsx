@@ -74,7 +74,7 @@ const MunicipioDetalhe = ({ params }) => {
             </h1>
 
             <Row>
-              <Col sm='6'>
+              <Col sm='4'>
                 <h3 className='mb-4'>Dados Gerais</h3>
                 <ListGroup>
                   <ListGroup.Item>
@@ -127,7 +127,7 @@ const MunicipioDetalhe = ({ params }) => {
                   </ListGroup.Item>
                 </ListGroup>
               </Col>
-              <Col sm='6'>
+              <Col sm='4'>
                 <div className='municipio-detalhe'>
                   <h3 className='mb-4'>Freguesias</h3>
                   <div className='municipio-detalhe__lista'>
@@ -141,11 +141,12 @@ const MunicipioDetalhe = ({ params }) => {
                       </Link>
                     ))}
                   </div>
-
-                  <h3 className='my-4'>Brasão Distrito</h3>
-                  <div className='brasao'>
-                    <DistritoImage />
-                  </div>
+                </div>
+              </Col>
+              <Col sm='4'>
+                <h3 className='mb-4'>Brasão Distrito</h3>
+                <div className='brasao'>
+                  <DistritoImage />
                 </div>
               </Col>
             </Row>

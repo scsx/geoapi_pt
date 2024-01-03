@@ -14,6 +14,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - Fornelos (Barcelos & Cinfães & Fafe)
     - Ponta Delgada ainda tem problemas nos dados
 - /municipios Évora não aparece em "E", só em "Todos"
+- Move .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() to utils
 
 ## Getting Started
 

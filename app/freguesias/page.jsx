@@ -54,20 +54,6 @@ const Freguesias = () => {
     setFreguesias(allFreg)
     setFreguesiasVisible(allFreg)
     setLoading(false)
-
-    // TESTES
-    const people = [
-      { name: 'Tom', age: 30 },
-      { name: 'John', age: 40 },
-      { name: 'Dillon', age: 30 }
-    ]
-
-    const results = people.filter((obj) => {
-      return obj.age === 30
-    })
-
-    console.log(results)
-    // TESTES
   }, [freguesiasJson])
 
   const filterFreg = (event) => {
@@ -88,12 +74,17 @@ const Freguesias = () => {
       <div className='container'>
         <h1>Freguesias</h1>
 
-        <input
-          type='text'
-          className='form-control mb-5'
-          placeholder='Pesquisar'
-          onChange={filterFreg}
-        />
+        <div className='d-flex search'>
+          <input
+            type='text'
+            className='form-control'
+            placeholder='Pesquisar'
+            onChange={filterFreg}
+          />
+          <span className='totalfreg'>
+            {freguesiasVisible.length > 0 && `${freguesiasVisible.length} freguesias`}
+          </span>
+        </div>
 
         {isLoading && <Loading />}
 
