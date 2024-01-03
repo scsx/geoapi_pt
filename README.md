@@ -12,6 +12,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - ~Resolver quando duas freguesias têm o mesmo nome~
     - Vilela (Póvoa de Lanhoso & Paredes)
     - Fornelos (Barcelos & Cinfães & Fafe)
+    - Ponta Delgada ainda tem problemas nos dados
 - /municipios Évora não aparece em "E", só em "Todos"
 
 ## Getting Started

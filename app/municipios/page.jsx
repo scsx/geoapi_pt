@@ -19,7 +19,7 @@ const Municipios = () => {
 
     getMunicipios().then((data) => {
       if (mounted) {
-        const sortedAlph = data.sort(function (a, b) {
+        const sortedAlph = data.sort((a, b) => {
           return a.localeCompare(b)
         })
 
