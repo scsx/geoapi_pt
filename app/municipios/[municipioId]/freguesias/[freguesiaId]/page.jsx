@@ -15,6 +15,7 @@ const Freguesia = ({ params }) => {
     fetch(`https://json.geoapi.pt/freguesia/${freguesiaId}`)
       .then((res) => res.json())
       .then((data) => {
+        console.log(data)
         setFreguesiaData(data)
       })
       .catch((error) => {

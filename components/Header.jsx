@@ -20,9 +20,6 @@ function BasicExample() {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
-            <Nav.Link as='span'>
-              <Link href='/municipios'>Municípios</Link>
-            </Nav.Link>
             <NavDropdown title='Distritos' id='basic-nav-dropdown'>
               <NavDropdown.Item href='/distritos/Lisboa'>
                 Lisboa
@@ -36,6 +33,12 @@ function BasicExample() {
                 Estatísticas de distritos
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link as='span'>
+              <Link href='/municipios'>Municípios</Link>
+            </Nav.Link>
+            <Nav.Link as='span'>
+              <Link href='/freguesias'>Freguesias</Link>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
