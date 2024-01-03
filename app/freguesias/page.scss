@@ -1,5 +1,10 @@
 .sitepage.sitepage--freguesias {
   .freglist {
     columns: 4;
+
+    a {
+        display: block;
+        margin-bottom: .5rem;
+    }
   }
 }

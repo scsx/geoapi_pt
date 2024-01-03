@@ -13,22 +13,29 @@ const Freguesias = () => {
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
+    // Check parishes with the same name like: Lamas (Braga / Macedo de Cavaleiros / Miranda do Corvo)
     const freguesiasAllData = []
     let ultimaFreguesia = null
 
     freguesiasJson.map((f, i) => {
       const nomeMunicipio = f.match(/\(([^)]+)\)/)[1]
       const nomeFreguesia = f.replace(/ *\([^)]*\) */g, '')
+      let isDuplicate = false
 
       if (freguesiasAllData.length > 0) {
         ultimaFreguesia = freguesiasAllData[freguesiasAllData.length - 1].nome
+      }
+
+      if (nomeFreguesia === ultimaFreguesia) {
+        isDuplicate = true
+        freguesiasAllData[freguesiasAllData.length - 1].duplicate = isDuplicate
       }
 
       freguesiasAllData.push({
         nome: nomeFreguesia,
         nomeMaisMunicipio: f,
         municipio: nomeMunicipio,
-        duplicate: nomeFreguesia === ultimaFreguesia ? true : false
+        duplicate: isDuplicate
       })
     })
 
@@ -46,7 +53,11 @@ const Freguesias = () => {
         {freguesias && freguesias.length > 0 && (
           <div className='freglist'>
             {freguesias.map((f) => (
-              <p key={f.nomeMaisMunicipio}>{f.duplicate ? f.nomeMaisMunicipio : f.nome}</p>
+              <Link
+                href={`/municipios/${f.municipio}/freguesias/${f.nome}`}
+                key={f.nomeMaisMunicipio}>
+                {f.duplicate ? f.nomeMaisMunicipio : f.nome}
+              </Link>
             ))}
           </div>
         )}
