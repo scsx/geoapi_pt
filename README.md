@@ -9,7 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [https://react-icons.github.io/react-icons/](https://react-icons.github.io/react-icons/)
 
 ## TODO
-- Resolver quando duas freguesias têm o mesmo nome
+- ~Resolver quando duas freguesias têm o mesmo nome~
     - Vilela (Póvoa de Lanhoso & Paredes)
     - Fornelos (Barcelos & Cinfães & Fafe)
 - /municipios Évora não aparece em "E", só em "Todos"
