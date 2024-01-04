@@ -3,25 +3,31 @@
 import { useState, useEffect } from 'react'
 import { nomeDistrito } from '@/utils/utils'
 import getDistritos from '@/api/getDistritos'
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Loading from '@/components/Loading'
+import VideoModal from './VideoModal'
 import useReadMore from '@/hooks/useReadMore'
-import distritosInfo from '@/data/distritosinfo'
+import distritosInfo from '@/data/custom/distritosinfo'
 import useDistrictFlag from '@/hooks/useDistrictFlag'
 import Link from 'next/link'
 import './HomepageDistritos.scss'
 
 // Este component foi criado para poder usar o custom hook useReadMore, porque não pode ser chamado directamente dentro de um loop.
-const DistritosCardHtml = (props) => {
+const DistritosCardHtml = ({distrito}) => {
   const [distritoName, setDistritoName] = useState('')
+  const [distritoLink, setDistritoLink] = useState('')
+  const [youtubeCode, setYoutubeCode] = useState('')
 
   useEffect(() => {
-    setDistritoName(nomeDistrito(props.distrito))
+    setDistritoName(nomeDistrito(distrito))
+    setDistritoLink(`/distritos/${distrito}`)
+    setYoutubeCode(distritosInfo[nomeDistrito(distrito)].youtubeVideoCode)
   }, [])
 
   const [DistritoImage] = useDistrictFlag(distritoName, 'hpcard__cardImg')
 
   const [DistritoText] = useReadMore(
-    distritosInfo[nomeDistrito(props.distrito)].desc,
+    distritosInfo[nomeDistrito(distrito)].desc,
     'Read more',
     'Hide',
     'readmore--homepage'
@@ -32,18 +38,24 @@ const DistritosCardHtml = (props) => {
         <DistritoImage />
       </div>
       <div>
-        <h3>{props.distrito}</h3>
+        <h3>{distrito}</h3>
         <DistritoText />
-        <Link
-          href={`/distritos/${props.distrito}`}
-          className='btn btn-primary btn-sm'>
-          Ver Distrito
-        </Link>
+        <ButtonGroup size="sm">
+          <Link
+            href={distritoLink}
+            className='btn btn-primary'>
+            Detalhes
+          </Link>
+          {/* {JSON.stringify(distritosInfo.acores.hex)} */}
+          {/* <VideoModal youtubecode={distritosInfo[distritoName].youtubeVideoCode} /> */}
+          <VideoModal youtubecode={youtubeCode} distrito={distrito} link={distritoLink} />
+        </ButtonGroup>
       </div>
     </>
   )
 }
 
+// Main Component
 const HomepageDistritos = () => {
   const [distritos, setDistritos] = useState([])
   const [isLoading, setLoading] = useState(true)

@@ -1,0 +1,30 @@
+@import '../styles/custom-vars';
+
+.videomodal__modal {
+  .modal-header {
+    background-color: darken($griege, 50%);
+    border-bottom-color: $griege;
+
+    .modal-title {
+      color: lighten($griege, 20%);
+    }
+
+    .btn-close {
+      background: #5a5448 var(--bs-btn-close-bg) center/1em auto no-repeat;
+    }
+  }
+
+  .modal-footer {
+    background-color: darken($griege, 50%);
+    border-top-color: $griege;
+  }
+
+  .modal-body {
+    padding: 0;
+    background-color: black;
+
+    & > div {
+        margin: 0 auto;
+    }
+  }
+}

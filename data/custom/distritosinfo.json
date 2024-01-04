@@ -1,82 +1,102 @@
 {
   "acores": {
     "desc": "Na imensidão azul do Atlântico, a Mãe natureza criou uma terra repleta de beleza natural e pronta a ser explorada: o Arquipélago dos Açores.",
-    "hex": "#061d60"
+    "hex": "#061d60",
+    "youtubeVideoCode": "-z7_Dq_aGoA"
   },
   "aveiro": {
     "desc": "Ao visitar Aveiro descobrimos uma paisagem com marca de água. Junto ao mar e à ria, Aveiro é atravessada por uma rede de canais por onde passeiam barcos moliceiros.",
-    "hex": "#dc3632"
+    "hex": "#dc3632",
+    "youtubeVideoCode": "RQYgn_xjiiU"
   },
   "beja": {
     "desc": "Uma visita a Beja num ambiente de calma alentejana, à descoberta de conquistas e de amores escondidos.",
-    "hex": "#dc3632"
+    "hex": "#dc3632",
+    "youtubeVideoCode": "EyfK_JSjntE"
   },
   "braga": {
     "desc": "Construída há mais de 2000 anos, “Bracara Augusta” foi justamente fundada por Augusto, ficando numa das principais vias romanas da Península Ibérica.",
-    "hex": "#024f97"
+    "hex": "#024f97",
+    "youtubeVideoCode": "OTIROVqif4Q"
   },
   "braganca": {
     "desc": "Este concelho do Norte de Portugal, em Trás-os-Montes, foi crucial na defesa da fronteira portuguesa e carrega um legado histórico de elevada importância na constituição da nacionalidade.",
-    "hex": "#024f97"
+    "hex": "#024f97",
+    "youtubeVideoCode": "cwdjlkafbUY"
   },
   "castelo-branco": {
     "desc": "Castelo Branco é uma cidade raiana portuguesa, sede de município e capital do distrito homónimos. Preste especial atenção aos monumentos que se situam em redor da praça, como a antiga Domus Municipalis de estilo manuelino.",
-    "hex": "#000000"
+    "hex": "#000000",
+    "youtubeVideoCode": "UtkPrs5JSOQ"
   },
   "coimbra": {
     "desc": "No Centro de Portugal, plantada à beira do rio Mondego, ergue-se a mui nobre cidade de Coimbra e antiga capital de Portugal.",
-    "hex": "#6b4871"
+    "hex": "#6b4871",
+    "youtubeVideoCode": "KJGHluvXQWc"
   },
   "evora": {
     "desc": "Junte Templo Romano, Capela dos Ossos e Praça do Giraldo e provavelmente já sabe que vamos levá-lo a visitar Évora, a cidade mais emblemática do Alentejo.",
-    "hex": "#dc3632"
+    "hex": "#dc3632",
+    "youtubeVideoCode": "rOd0OerVVKY"
   },
   "faro": {
     "desc": "A capital do Algarve, o destino balnear mais cobiçado no sul de Portugal, tem muito mais para oferecer do que julga. Tem património histórico, natural e cultural.",
-    "hex": "#dc3632"
+    "hex": "#dc3632",
+    "youtubeVideoCode": "l4D1Ow2gwpI"
   },
   "guarda": {
     "desc": "Visitar a Guarda é o desafio que lhe lançamos, numa viagem ao interior do Centro de Portugal para conhecer a Cidade dos 5 F’s (Forte, Farta, Fria, Fiel e Formosa) e a mais alta de Portugal.",
-    "hex": "#dc3632"
+    "hex": "#dc3632",
+    "youtubeVideoCode": "ZlrQJ1cETM8"
   },
   "leiria": {
     "desc": "No centro litoral de Portugal, esta capital de distrito atrai por tantos motivos: património histórico, natural e arqueológico valiosíssimos, templos religiosos notáveis, praia e rio, matas e pinhal, lagoas e salinas.",
-    "hex": "#dc3632"
+    "hex": "#dc3632",
+    "youtubeVideoCode": "Rw1HoqDhM2I"
   },
   "lisboa": {
     "desc": "Sobre a margem direita do amplo estuário do rio Tejo, a capital de Portugal assente sobre encantadoras colinas, desfruta de uma situação geográfica ímpar. Tem luz excepcional, encantamento de escritores, fotógrafos e cineastas.",
-    "hex": "#000000"
+    "hex": "#000000",
+    "youtubeVideoCode": "ph36uRZWV3E"
   },
   "madeira": {
     "desc": "No meio do Atlântico, as ilhas da Madeira e do Porto Santo são um refúgio de beleza natural. Entre o azul do mar e o verde-esmeralda da vegetação sobressai o colorido exótico das flores, num arquipélago em que dois terços são área protegida.",
-    "hex": "#005eb8"
+    "hex": "#005eb8",
+    "youtubeVideoCode": "_yaTi2snuJA"
   },
   "portalegre": {
     "desc": "A urbe, com cerca de 16 mil habitantes, desenvolveu-se principalmente a partir do século XVI, época em que foi elevada a sede de Bispado e à categoria de Cidade.",
-    "hex": "#000000"
+    "hex": "#000000",
+    "youtubeVideoCode": "etLuK_vYh94"
   },
   "porto": {
     "desc": "A urbe, com cerca de 16 mil habitantes, desenvolveu-se principalmente a partir do século XVI, época em que foi elevada a sede de Bispado e à categoria de Cidade.",
-    "hex": "#417948"
+    "hex": "#417948",
+    "youtubeVideoCode": "4Srtzj2svdE"
   },
   "santarem": {
     "desc": "A tomada de Santarém por Sunerico, em 460, dita o fim da dominação romana, abrindo caminho para a inclusão da cidade no reino visigodo, com capital em Toulouse. Num contexto em que Lisboa reforçava o seu papel de verdadeira capital e centro da nação, a Santarém quinhentista vai assumir-se como pólo regional a nível económico e cultural.",
-    "hex": "#dc3632"
+    "hex": "#dc3632",
+    "youtubeVideoCode": "zw0usWtLYcs"
   },
   "setubal": {
     "desc": "Setúbal contrasta entre a terra e o mar, a urbe e o natural, a tradição e a modernidade. No concelho e na capital do distrito, concentram-se importantes polos industriais e de serviços. Aqui, faz todo o sentido a imagem de marca: “Setúbal, é um mundo”.",
-    "hex": "#6b4871"
+    "hex": "#6b4871",
+    "youtubeVideoCode": "j9BAcJtbDe0"
   },
   "viana": {
     "desc": "A presença do rio, do monte e do mar, conferem à cidade dotes paisagísticos de excelência que encantam os sentidos, proporcionam um clima psicológico de descompressão e são propícios à ocupação sadia e aprazível dos tempos livres.",
-    "hex": "#ecdc00"
+    "hex": "#ecdc00",
+    "youtubeVideoCode": "CGYiDnGYU6Q"
   },
   "vila-real": {
     "desc": "O primeiro foral de Vila Real foi concedido por D. Dinis (r. 1279-1325), em 1289. Por ele, garantia o rei aos seus habitantes o direito de recusar hospedagem a fidalgos e cavaleiros, que assim deveriam pernoitar fora dos seus muros. Tal não impediu que a Vila viesse a acolher nos sécs. XVII, XVIII e XIX muitas nobres famílias, cujas residências foram sendo absorvidas no tecido urbano.",
-    "hex": "#417948"
+    "hex": "#417948",
+    "youtubeVideoCode": "tsxpJxr1dxI"
   },
   "viseu": {
     "desc": "Viseu é uma cidade histórica de Portugal e da Europa, com mais de 2500 anos de história. Com ocupação humana desde a Idade do Ferro, foi sucessivamente Civitas romana, berço da ideia de nacionalidade, corte da mais insigne geração de Reis e príncipes portugueses, cidade renascentista.",
-    "hex": "#dc3632"
+    "hex": "#dc3632",
+    "youtubeVideoCode": "vzzNr6FnoSI"
   }
 }

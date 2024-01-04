@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { nomeDistrito } from '@/utils/utils'
-import distritosInfo from '@/data/distritosinfo'
+import distritosInfo from '@/data/custom/distritosinfo'
 import useDistrictFlag from '@/hooks/useDistrictFlag'
 
 const useDistrictHero = (distrito) => {
