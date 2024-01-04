@@ -16,6 +16,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - /municipios Évora não aparece em "E", só em "Todos"
 - Move .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() to utils
 
+## Notes
+[https://www.notion.so/scsx/GeoAPI_PT-React-Next-2024-b915c1ae06e6405ba15d48240e6d3906](https://www.notion.so/scsx/GeoAPI_PT-React-Next-2024-b915c1ae06e6405ba15d48240e6d3906)
+
 ## Getting Started
 
 First, run the development server:

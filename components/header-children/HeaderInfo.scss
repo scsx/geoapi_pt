@@ -1,0 +1,18 @@
+.headerdrop {
+  .dropdown-toggle {
+    font-size: 14px;
+    text-decoration: none;
+    color: #b9b9b9;
+  }
+
+  .dropdown-menu {
+    left: auto !important;
+    right: 0;
+    max-width: 300px;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+    }
+  }
+}

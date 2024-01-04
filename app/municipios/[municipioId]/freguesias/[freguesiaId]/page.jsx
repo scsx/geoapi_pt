@@ -12,7 +12,7 @@ const Freguesia = ({ params }) => {
   const freguesiaId = decodeURIComponent(params.freguesiaId)
   const [freguesiaData, setFreguesiaData] = useState(null)
 
-  useEffect(() => {
+  useEffect(() => {    
     fetch(`https://json.geoapi.pt/freguesia/${freguesiaId}`)
       .then((res) => res.json())
       .then((data) => {

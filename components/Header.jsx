@@ -1,49 +1,74 @@
 'use client'
 
+import { createContext } from 'react'
+import { GiPortugal } from 'react-icons/gi'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Link from 'next/link'
-import { GiPortugal } from 'react-icons/gi'
+import HeaderInfo from './header-children/HeaderInfo'
 import './Header.scss'
 
-function BasicExample() {
+export const navigatorContext = createContext()
+
+function Header() {
+  const navInfo = {
+    platform: navigator.platform,
+    vendor: navigator.vendor,
+    hardwareConcurrency: navigator.gpu.hardwareConcurrency,
+    appCodeName: navigator.appCodeName,
+    appName: navigator.appName,
+    appVersion: navigator.appVersion,
+    connectionEffectiveType: navigator.connection.effectiveType,
+    deviceMemory: navigator.deviceMemory
+  }
+
   return (
-    <Navbar expand='lg' className='header bg-body-tertiary'>
-      <Container>
-        <Navbar.Brand href='/'>
-          <span className='pt'><GiPortugal /></span>
-          <span className='nome'>geoapi.pt</span>
-          
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto'>
-            <NavDropdown title='Distritos' id='basic-nav-dropdown'>
-              <NavDropdown.Item href='/distritos/Lisboa'>
-                Lisboa
-              </NavDropdown.Item>
-              <NavDropdown.Item href='/distritos/Porto'>Porto</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href='/distritos'>
-                Todos os distritos
-              </NavDropdown.Item>
-              <NavDropdown.Item href='/distritos-stats'>
-                Estatísticas de distritos
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link as='span'>
-              <Link href='/municipios'>Municípios</Link>
-            </Nav.Link>
-            <Nav.Link as='span'>
-              <Link href='/freguesias'>Freguesias</Link>
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <navigatorContext.Provider value={navInfo}>
+      <Navbar
+        expand='lg'
+        className='header bg-body-tertiary justify-content-between'>
+        <Container>
+          <Navbar.Brand href='/'>
+            <span className='pt'>
+              <GiPortugal />
+            </span>
+            <span className='nome'>geoapi.pt</span>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='me-auto'>
+              <NavDropdown title='Distritos' id='basic-nav-dropdown'>
+                <NavDropdown.Item href='/distritos/Lisboa'>
+                  Lisboa
+                </NavDropdown.Item>
+                <NavDropdown.Item href='/distritos/Porto'>
+                  Porto
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href='/distritos'>
+                  Todos os distritos
+                </NavDropdown.Item>
+                <NavDropdown.Item href='/distritos-stats'>
+                  Estatísticas de distritos
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link as='span'>
+                <Link href='/municipios'>Municípios</Link>
+              </Nav.Link>
+              <Nav.Link as='span'>
+                <Link href='/freguesias'>Freguesias</Link>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+          <Navbar.Collapse className='justify-content-end'>
+            <HeaderInfo />
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </navigatorContext.Provider>
   )
 }
 
-export default BasicExample
+export default Header
