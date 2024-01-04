@@ -78,7 +78,7 @@ const DistritosStats = () => {
   return (
     <div className='sitepage sitepage--distats'>
       <div className='container'>
-        <h1>Estatísticas de Distritos</h1>
+        <h1>Distritos - Demografia</h1>
         <h3 className='mb-3'>Percentagem Mulheres vs Homens</h3>
         {racioSexos.length === 0 && <Loading />}
         {racioSexos.length > 0 && (

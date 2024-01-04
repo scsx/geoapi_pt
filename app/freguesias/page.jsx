@@ -11,7 +11,7 @@ const freguesiasJson = require('../../data/geoapi_pt-Backups/freguesias.json')
 const Freguesias = () => {
   const [freguesias, setFreguesias] = useState([])
   const [freguesiasVisible, setFreguesiasVisible] = useState([])
-  const [total, setTotal] = useState(0)
+  const [searching, setSearching] = useState(false)
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -21,10 +21,17 @@ const Freguesias = () => {
     let ultimaFreguesia = null
 
     freguesiasJson.map((f) => {
-      const nomeMunicipio = f.match(/\(([^)]+)\)/)[1]
-      const nomeFreguesia = f.replace(/ *\([^)]*\) */g, '')
+      // Com uma pequena ajuda do ChatGPT
+      // Encontrar o último set de parentesis (há sempre 1 ou 2) e retirar de lá o nome do municipio.
+      const matches = f.match(/\(([^)]+)\)/g)
+      const nomeMunicipio = matches[matches.length - 1].replace(/^\(|\)$/g, '')
+
+      // O contrário da operação anterior dá o nome da freguesia.
+      const nomeFreguesia = f.replace(/\([^)]*\)$/, '').trim()
       let isDuplicate = false
 
+      // Depois de o array populado encontrar a entrada anterior para detectar nomes iguais.
+      // Quando há dois sets de parentesis não funciona bem mas os urls funcionam à mesma e os nomes não se confundem.
       if (allFregRaw.length > 0) {
         ultimaFreguesia = allFregRaw[allFregRaw.length - 1].nome
       }
@@ -34,6 +41,7 @@ const Freguesias = () => {
         allFregRaw[allFregRaw.length - 1].duplicate = isDuplicate
       }
 
+      // Criar um array temporario com os dados incluindo nomes sem acentos, para se poder ordenar, filtrar.
       allFregRaw.push({
         nome: nomeFreguesia,
         nomeEscaped: nomeFreguesia
@@ -60,12 +68,14 @@ const Freguesias = () => {
     const query = event.target.value.toLowerCase()
 
     if (query !== '') {
+      setSearching(true)
       const filteredFreg = freguesias.filter((freg) => {
         return freg.nomeEscaped.includes(query)
       })
       setFreguesiasVisible(filteredFreg)
     } else {
       setFreguesiasVisible(freguesias)
+      setSearching(false)
     }
   }
 
@@ -82,18 +92,20 @@ const Freguesias = () => {
             onChange={filterFreg}
           />
           <span className='totalfreg'>
-            {freguesiasVisible.length > 0 && `${freguesiasVisible.length} freguesias`}
+            {freguesiasVisible.length > 0 &&
+              `${freguesiasVisible.length} freguesias`}
           </span>
         </div>
 
         {isLoading && <Loading />}
 
         {freguesiasVisible && freguesiasVisible.length > 0 && (
-          <div className='freglist'>
+          <div className={`freglist${searching ? ' searching' : ''}`}>
             {freguesiasVisible.map((f) => (
               <Link
                 href={`/municipios/${f.municipio}/freguesias/${f.nome}`}
                 data-escapedname={f.nomeEscaped}
+                data-duplicate={f.duplicate}
                 key={f.nomeMaisMunicipio}>
                 {f.duplicate ? f.nomeMaisMunicipio : f.nome}
               </Link>

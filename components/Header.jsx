@@ -7,7 +7,7 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Link from 'next/link'
-import HeaderInfo from './header-children/HeaderInfo'
+import HeaderDropdown from './header-children/HeaderDropdown'
 import './Header.scss'
 
 export const navigatorContext = createContext()
@@ -16,11 +16,9 @@ function Header() {
   const navInfo = {
     platform: navigator.platform,
     vendor: navigator.vendor,
-    hardwareConcurrency: navigator.gpu.hardwareConcurrency,
     appCodeName: navigator.appCodeName,
     appName: navigator.appName,
-    appVersion: navigator.appVersion,
-    connectionEffectiveType: navigator.connection.effectiveType,
+    connection: navigator.connection.effectiveType,
     deviceMemory: navigator.deviceMemory
   }
 
@@ -51,7 +49,7 @@ function Header() {
                   Todos os distritos
                 </NavDropdown.Item>
                 <NavDropdown.Item href='/distritos-stats'>
-                  Estatísticas de distritos
+                  Distritos - Demografia
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as='span'>
@@ -63,7 +61,7 @@ function Header() {
             </Nav>
           </Navbar.Collapse>
           <Navbar.Collapse className='justify-content-end'>
-            <HeaderInfo />
+            <HeaderDropdown />
           </Navbar.Collapse>
         </Container>
       </Navbar>
