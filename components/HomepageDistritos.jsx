@@ -61,8 +61,7 @@ const HomepageDistritos = () => {
 
   return (
     <div className='sitepage sitepage--hp'>
-      <div className='container px-4 py-5'>
-        <h1>Distritos</h1>
+      <div className='container px-4'>
         {isLoading && <Loading />}
         {distritos.length > 0 && (
           <div className='row g-4 py-5 row-cols-1 row-cols-lg-3'>
