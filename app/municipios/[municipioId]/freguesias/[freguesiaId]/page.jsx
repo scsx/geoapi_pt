@@ -1,9 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import getFreguesia from '@/api/getFreguesia'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Link from 'next/link'
+import Loading from '@/components/Loading'
 import './page.scss'
 import { calcPercentage } from '@/utils/utils'
 
@@ -11,27 +13,29 @@ const Freguesia = ({ params }) => {
   const municipioId = decodeURIComponent(params.municipioId)
   const freguesiaId = decodeURIComponent(params.freguesiaId)
   const [freguesiaData, setFreguesiaData] = useState(null)
+  const [isLoading, setLoading] = useState(true)
 
-  useEffect(() => {    
-    fetch(`https://json.geoapi.pt/freguesia/${freguesiaId}`)
-      .then((res) => res.json())
-      .then((data) => {
-        // Check for parishes with the same name (data is an array, instead of object)
+  useEffect(() => {
+    let mounted = true
+    getFreguesia(freguesiaId).then((data) => {
+      if (mounted) {
         if (Array.isArray(data)) {
           const filtered = data.filter((freg) => freg.municipio === municipioId)
           setFreguesiaData(filtered[0])
         } else {
           setFreguesiaData(data)
+          setLoading(false)
         }
-      })
-      .catch((error) => {
-        throw error
-      })
+      }
+    })
+    return () => (mounted = false)
   }, [params])
 
   return (
     <div className='sitepage sitepage--freguesia-detalhe'>
       <div className='container'>
+        {isLoading && <Loading />}
+
         {freguesiaData && (
           <>
             <h1 className='mb-5'>
