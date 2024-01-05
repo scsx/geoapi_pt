@@ -1,9 +1,9 @@
-import HomepageDistritos from "@/components/HomepageDistritos"
+import Homepage from "@/components/Homepage"
 
 const Home = () => {
   return (
     <main>
-      <HomepageDistritos />
+      <Homepage />
     </main>
   )
 }

@@ -48,11 +48,8 @@ function Header() {
                   Todos os distritos
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href='/distritos'>
-                  Apresentação
-                </NavDropdown.Item>
-                <NavDropdown.Item href='/distritos-stats'>
-                  Distritos - Demografia
+                <NavDropdown.Item href='/distritos-demografia'>
+                  Demografia
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as='span'>

@@ -1,4 +1,26 @@
 .sitepage.sitepage--distats {
+  .nav-tabs .nav-item {
+    &:first-of-type .nav-link {
+      padding-left: 0;
+      &:hover,
+      &.active {
+        border-left: none;
+        border-top-left-radius: 0;
+      }
+    }
+    .nav-link {
+      font-family: 'PoppinsSemiBold';
+
+      &.active {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .tab-pane {
+    padding-top: 1rem;
+  }
+
   table.table-sexos {
     border: 1px solid #ccc;
 
@@ -80,6 +102,39 @@
       .seniores {
         background-color: #0d6efd;
       }
+    }
+  }
+
+  .popgain__table {
+    &.table-striped > tbody > tr:nth-of-type(odd) > * {
+      --bs-table-bg-type: #f4f3f1;
+    }
+
+    td {
+      font-size: 14px;
+    }
+
+    .popgain__tableIne {
+      width: 150px;
+    }
+
+    .popgain__tableUl {
+      margin: 0.5rem 0;
+    }
+
+    .popgain__tableTitleLink {
+      font-size: 1.25rem;
+      font-family: 'RestoraBold';
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .popgain__bold--green {
+      color: var(--bs-teal);
+    }
+
+    .popgain__bold--red {
+      color: var(--bs-red);
     }
   }
 }

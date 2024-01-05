@@ -1,19 +1,17 @@
-.distritos-detalhe {
-  &__tableIne {
-    width: 150px;
+.sitepage.sitepage--hp {
+  .hpcard {
+    padding-bottom: 2rem;
   }
-  &__tableUl {
-    margin: 0.5rem 0;
-  }
-  &__tableTitleLink {
-    font-size: 1.25rem;
-    display: inline-block;
-    margin-top: .5rem;
-  }
-  &__bold--green {
-    color: var(--bs-teal);
-  }
-  &__bold--red {
-    color: var(--bs-red);
+
+  .readmore--homepage {
+    font-size: 13px;
+
+    .readmore__inner--false {
+      max-height: 40px;
+    }
+
+    .btn.btn-link {
+      font-size: 13px;
+    }
   }
 }
