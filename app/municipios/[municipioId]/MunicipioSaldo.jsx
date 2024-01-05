@@ -30,7 +30,6 @@ const MunicipioSaldo = ({ municipio, calcPercentage }) => {
       }
     }
 
-    console.log(saldoEstruturado)
     notFound = false
   }
 
@@ -41,50 +40,54 @@ const MunicipioSaldo = ({ municipio, calcPercentage }) => {
   let largestChange
 
   // Iterate through the keys in the object
-  for (const key in saldoEstruturado.anos) {
-    // Check if the value is a number
-    if (typeof saldoEstruturado.anos[key] === 'number') {
-      // Calculate the distance from zero
-      const distance = Math.abs(saldoEstruturado.anos[key])
+  if (filteredByMunicipio.length > 0) {
+    for (const key in saldoEstruturado.anos) {
+      // Check if the value is a number
+      if (typeof saldoEstruturado.anos[key] === 'number') {
+        // Calculate the distance from zero
+        const distance = Math.abs(saldoEstruturado.anos[key])
 
-      // Update maxDistance and maxYear if the current value is farther from zero
-      if (distance > maxDistance) {
-        maxDistance = distance
-        maxYear = key
+        // Update maxDistance and maxYear if the current value is farther from zero
+        if (distance > maxDistance) {
+          maxDistance = distance
+          maxYear = key
+        }
       }
     }
-  }
 
-  largestChange = saldoEstruturado.anos[maxYear]
-  console.log(largestChange)
+    largestChange = Math.abs(saldoEstruturado.anos[maxYear])
+  }
 
   return (
     <div className='saldo'>
-      {saldoMunicipio && (
+      {saldoEstruturado.anos && (
         <div className='saldograph'>
-          {Object.keys(saldoEstruturado.anos).map((item, i) => (
+          {Object.keys(saldoEstruturado.anos).map((ano, i) => (
             <div className='saldograph__info' key={i}>
               <div
                 className={`saldograph__bar ${
-                  saldoEstruturado.anos[item] > 0 ? 'pos' : 'neg'
+                  saldoEstruturado.anos[ano] > 0 ? 'pos' : 'neg'
                 }`}
                 style={{
                   height: `${
-                    Math.abs(saldoEstruturado.anos[item]) === largestChange
+                    Math.abs(saldoEstruturado.anos[ano]) === largestChange
                       ? '100'
                       : calcPercentage(
                           largestChange,
-                          Math.abs(saldoMunicipio[item])
+                          Math.abs(saldoMunicipio[ano])
                         )
-                  }%`
+                  }%`,
+                  bottom: saldoEstruturado.anos[ano] > 0 ? '105%' : 'auto',
+                  top: saldoEstruturado.anos[ano] > 0 ? 'auto' : '40%'
                 }}></div>
-              {item + ' ' + saldoEstruturado.anos[item] + ' ' + largestChange}
+              <b>{ano}</b>
+              {saldoEstruturado.anos[ano]}
             </div>
           ))}
         </div>
       )}
 
-      {notFound && <p>Nada. Será que quis dizer...</p>}
+      {notFound && <p>Nada. Será que quis dizer [por fazer]</p>}
     </div>
   )
 }

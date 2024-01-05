@@ -83,24 +83,31 @@
 
   .saldograph {
     display: flex;
-    padding: 4rem 0;
-    position: relative;
+    height: 150px;
+    margin: 170px auto 80px auto;
 
     &__info {
       text-align: center;
+      position: relative;
+      width: calc(100% / 12);
+
+      b {
+        display: block;
+        font-family: 'Restora';
+      }
     }
 
     &__bar {
       position: absolute;
-      width: calc(100% / 12);
-      top: 0;
+      width: 96%;
+      left: 2%;
 
       &.pos {
-        background-color: green;
+        background-color: #8bc98b;
       }
 
       &.neg {
-        background-color: red;
+        background-color: #f78585;
       }
     }
   }

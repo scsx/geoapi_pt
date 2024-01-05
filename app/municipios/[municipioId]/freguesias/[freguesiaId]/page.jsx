@@ -22,6 +22,7 @@ const Freguesia = ({ params }) => {
         if (Array.isArray(data)) {
           const filtered = data.filter((freg) => freg.municipio === municipioId)
           setFreguesiaData(filtered[0])
+          setLoading(false)
         } else {
           setFreguesiaData(data)
           setLoading(false)
@@ -70,7 +71,7 @@ const Freguesia = ({ params }) => {
               </Col>
             </Row>
 
-            <h3>Sexos</h3>
+            <h3 className='mt-4'>Sexos</h3>
             <table className='table tablesexes'>
               <tbody>
                 <tr>
@@ -107,7 +108,7 @@ const Freguesia = ({ params }) => {
                 </tr>
               </tbody>
             </table>
-            <h3 className='mt-4'>Idades</h3>
+            <h3 className='mt-5'>Idades</h3>
             <table className='table tableages'>
               <tbody>
                 <tr>

@@ -17,7 +17,7 @@ const HeaderDropdownItems = () => {
         navState.map((key) => (
           <li key={key}>{`${key}: ${navigatorInfo[key]}`}</li>
         ))}
-        <li><i>Used to test context</i></li>
+        <li><i>Used context</i></li>
     </ul>
   )
 }
