@@ -163,7 +163,7 @@ const MunicipioDetalhe = ({ params }) => {
             />
 
             <h3 className='mt-5 mb-4'>Saldo Migratório</h3>
-            <MunicipioSaldo municipio={municipioId} />
+            <MunicipioSaldo municipio={municipioId} calcPercentage={calcPercentage} />
 
             <Link
               className='btn btn-outline-secondary mt-4'

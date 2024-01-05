@@ -80,4 +80,28 @@
       }
     }
   }
+
+  .saldograph {
+    display: flex;
+    padding: 4rem 0;
+    position: relative;
+
+    &__info {
+      text-align: center;
+    }
+
+    &__bar {
+      position: absolute;
+      width: calc(100% / 12);
+      top: 0;
+
+      &.pos {
+        background-color: green;
+      }
+
+      &.neg {
+        background-color: red;
+      }
+    }
+  }
 }
