@@ -44,9 +44,12 @@ function Header() {
                 <NavDropdown.Item href='/distritos/Porto'>
                   Porto
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
                 <NavDropdown.Item href='/distritos'>
                   Todos os distritos
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href='/distritos'>
+                  Apresentação
                 </NavDropdown.Item>
                 <NavDropdown.Item href='/distritos-stats'>
                   Distritos - Demografia
