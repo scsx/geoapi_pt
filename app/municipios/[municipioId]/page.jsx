@@ -9,6 +9,8 @@ import ListGroup from 'react-bootstrap/ListGroup'
 
 import useDistrictFlag from '@/hooks/useDistrictFlag'
 
+import MunicipioEdificios from './MunicipioEdificios'
+import MunicipioSaldo from './MunicipioSaldo'
 import Loading from '@/components/Loading'
 import PrettyNumber from '@/components/PrettyNumber'
 
@@ -152,149 +154,16 @@ const MunicipioDetalhe = ({ params }) => {
             </Row>
 
             <h3 className='mt-5 mb-4'>Edifícios</h3>
-            <h5>
-              Total:{' '}
-              {toLocaleString(municipioData.censos2021.N_EDIFICIOS_CLASSICOS)}
-            </h5>
-            <table className='table table-sm table-edificios'>
-              <thead>
-                <tr key={municipioData.censos2021.N_EDIFICIOS_CLASSICOS}>
-                  <th
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_ANTES_1945
-                      )}%`
-                    }}>
-                    -1945
-                  </th>
-                  <th
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1946_1980
-                      )}%`
-                    }}>
-                    1946-1980
-                  </th>
-                  <th
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1981_2000
-                      )}%`
-                    }}>
-                    1981-2000
-                  </th>
-                  <th
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2001_2010
-                      )}%`
-                    }}>
-                    2001-2010
-                  </th>
-                  <th
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2011_2021
-                      )}%`
-                    }}>
-                    2011-
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr key={municipioData.censos2021.N_EDIFICIOS_CLASSICOS}>
-                  <td
-                    className='old0'
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_ANTES_1945
-                      )}%`
-                    }}>
-                    <b>
-                      {calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_ANTES_1945
-                      )}
-                      %
-                    </b>
-                  </td>
+            <MunicipioEdificios
+              censos={municipioData.censos2021}
+              total={toLocaleString(
+                municipioData.censos2021.N_EDIFICIOS_CLASSICOS
+              )}
+              calcPercentage={calcPercentage}
+            />
 
-                  <td
-                    className='old1'
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1946_1980
-                      )}%`
-                    }}>
-                    <b>
-                      {calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1946_1980
-                      )}
-                      %
-                    </b>
-                  </td>
-
-                  <td
-                    className='old2'
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1981_2000
-                      )}%`
-                    }}>
-                    <b>
-                      {calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_1981_2000
-                      )}
-                      %
-                    </b>
-                  </td>
-
-                  <td
-                    className='old3'
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2001_2010
-                      )}%`
-                    }}>
-                    <b>
-                      {calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2001_2010
-                      )}
-                      %
-                    </b>
-                  </td>
-
-                  <td
-                    className='old4'
-                    style={{
-                      width: `${calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2011_2021
-                      )}%`
-                    }}>
-                    <b>
-                      {calcPercentage(
-                        municipioData.censos2021.N_EDIFICIOS_CLASSICOS,
-                        municipioData.censos2021.N_EDIFICIOS_CONSTR_2011_2021
-                      )}
-                      %{' '}
-                    </b>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <h3 className='mt-5 mb-4'>Saldo Migratório</h3>
+            <MunicipioSaldo municipio={municipioId} />
 
             <Link
               className='btn btn-outline-secondary mt-4'
