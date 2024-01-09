@@ -7,9 +7,7 @@ const Homepage = () => {
   return (
     <div className='sitepage sitepage--hp'>
       <div className='container'>
-        <div className="text-center">
-          <PortugalSVG />
-        </div>
+        <PortugalSVG />
       </div>
     </div>
   )
