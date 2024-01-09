@@ -28,6 +28,7 @@ const MunicipioDetalhe = ({ params }) => {
   const [distrito, setDistrito] = useState('')
   const [distritoVisibleName, setDistritoVisibleName] = useState('')
   const [isLoading, setLoading] = useState(true)
+  const [simpleNames, setSimpleNames] = useState(true)
 
   const [DistritoImage] = useDistrictFlag(
     nomeDistrito(distrito),
@@ -131,14 +132,26 @@ const MunicipioDetalhe = ({ params }) => {
               </Col>
               <Col sm='4'>
                 <div className='municipio-detalhe'>
-                  <h3 className='mb-4'>Freguesias</h3>
+                  <h3 className='mb-4'>
+                    Freguesias{' '}
+                    <button
+                      className='municipio-detalhe__UF btn btn-link'
+                      onClick={() => setSimpleNames(!simpleNames)}>
+                      nomes {simpleNames ? 'completos' : 'simples'}
+                    </button>
+                  </h3>
                   <div className='municipio-detalhe__lista'>
                     {municipioData.geojsons.freguesias.map((freg) => (
                       <Link
                         key={freg.properties.Freguesia}
                         href={`/municipios/${municipioId}/freguesias/${freg.properties.Freguesia}`}>
                         <Badge className='municipio-detalhe__item'>
-                          {freg.properties.Freguesia}
+                          {simpleNames
+                            ? freg.properties.Freguesia.replace(
+                                'União das freguesias de ',
+                                ''
+                              )
+                            : freg.properties.Freguesia}
                         </Badge>
                       </Link>
                     ))}
@@ -163,7 +176,10 @@ const MunicipioDetalhe = ({ params }) => {
             />
 
             <h3 className='mt-5 mb-4'>Saldo Migratório</h3>
-            <MunicipioSaldo municipio={municipioId} calcPercentage={calcPercentage} />
+            <MunicipioSaldo
+              municipio={municipioId}
+              calcPercentage={calcPercentage}
+            />
 
             <Link
               className='btn btn-outline-secondary mt-4'
