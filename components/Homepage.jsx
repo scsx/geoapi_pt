@@ -1,6 +1,6 @@
 'use client'
 
-import { GiPortugal } from 'react-icons/gi'
+import PortugalSVG from './PortugalSVG'
 import './Homepage.scss'
 
 const Homepage = () => {
@@ -8,7 +8,7 @@ const Homepage = () => {
     <div className='sitepage sitepage--hp'>
       <div className='container'>
         <div className="text-center">
-          <GiPortugal />
+          <PortugalSVG />
         </div>
       </div>
     </div>
