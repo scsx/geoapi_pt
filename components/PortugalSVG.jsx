@@ -1,9 +1,6 @@
 import './PortugalSVG.scss'
 
-const PortugalSVG = () => {
-  const handleMouseEnter = (e) => {
-    console.log(e.target.parentElement.querySelector('title').innerHTML)
-  }
+const PortugalSVG = ({ distritoIn, distritoOut }) => {
   return (
     <div className='portugal_svg'>
       <svg
@@ -12,21 +9,20 @@ const PortugalSVG = () => {
         xmlns='http://www.w3.org/2000/svg'
         x='0px'
         y='0px'
-        width='911.249px'
-        height='547.488px'
+        width='1200px'
+        height='600px'
         viewBox='-531.751 0 911.249 547.488'
         enableBackground='new -531.751 0 911.249 547.488'>
-        <title id='title8'>svg1627</title>
-        <title id='title146'>layer1</title>
         <g
           id='shape24-55'
-          transform='translate(3.31459,-93.7889)'
-          onClick={handleMouseEnter}>
+          transform='translate(80,-93.7889)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
           <title id='title154'>Madeira</title>
           <path
             id='path158'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M-215.271,600.846
@@ -52,12 +48,16 @@ const PortugalSVG = () => {
 		C-169.188,634.122-170.17,631.991-169.336,629.712'
           />
         </g>
-        <g id='shape25-58' transform='translate(7.48893,-4.53486)'>
+        <g
+          id='shape25-58'
+          transform='translate(-80,-40.53486)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
           <title id='title161'>Açores</title>
           <path
             id='path165'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M-310.431,281.069
@@ -96,9 +96,12 @@ const PortugalSVG = () => {
 		C-274.484,254.288-277.699,262.185-278.946,257.55'
           />
         </g>
-        <g id='shape28-63' transform='translate(201.446,-351.582)'>
-          <title id='title173'>path2558</title>
-          <desc id='desc175'>Viseu</desc>
+        <g
+          id='shape28-63'
+          transform='translate(201.446,-351.582)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title173'>Viseu</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='82.86'
@@ -107,8 +110,8 @@ const PortugalSVG = () => {
             cx='41.4283'></vTextRect>
           <path
             id='path177'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M48.821,462.561
@@ -167,9 +170,12 @@ const PortugalSVG = () => {
 		C48.1,462.351,48.459,462.46,48.821,462.561z'
           />
         </g>
-        <g id='shape29-66' transform='translate(150.208,-188.065)'>
-          <title id='title182'>path2568</title>
-          <desc id='desc184'>Santarém</desc>
+        <g
+          id='shape29-66'
+          transform='translate(150.208,-188.065)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title182'>Santarém</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='95.12'
@@ -178,7 +184,7 @@ const PortugalSVG = () => {
             cx='47.5576'></vTextRect>
           <path
             id='path186'
-            fill='white'
+            fill='#8bc98b'
             stroke='#339966'
             strokeWidth='0.55'
             strokeMiterlimit='3'
@@ -239,9 +245,12 @@ const PortugalSVG = () => {
 		c1.2-0.74,2.61-2.42,2.479-3.9c-0.989-0.69-2.279-0.659-3.129-1.979C80.01,474.11,79.25,472.59,79.029,471.22L79.029,471.22z'
           />
         </g>
-        <g id='shape30-69' transform='translate(176.746,-130.74)'>
-          <title id='title191'>path2576</title>
-          <desc id='desc193'>Évora</desc>
+        <g
+          id='shape30-69'
+          transform='translate(176.746,-130.74)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title191'>Évora</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='125.58'
@@ -250,8 +259,8 @@ const PortugalSVG = () => {
             cx='62.7889'></vTextRect>
           <path
             id='path195'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M70.97,473.451
@@ -312,9 +321,12 @@ const PortugalSVG = () => {
 		c-0.42,0.279-0.811,2.239-1.82,2.75c-0.811,1.51-2.561-0.621-2.84,1.229C70.46,473.22,70.71,473.33,70.97,473.451z'
           />
         </g>
-        <g id='shape31-72' transform='translate(109.728,-182.476)'>
-          <title id='title200'>path2580</title>
-          <desc id='desc202'>Lisboa</desc>
+        <g
+          id='shape31-72'
+          transform='translate(109.728,-182.476)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title200'>Lisboa</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='58.61'
@@ -323,8 +335,8 @@ const PortugalSVG = () => {
             cx='29.3033'></vTextRect>
           <path
             id='path204'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M55.11,510.771
@@ -360,9 +372,12 @@ const PortugalSVG = () => {
 		C54,510.96,54.55,510.83,55.11,510.771L55.11,510.771z'
           />
         </g>
-        <g id='shape32-75' transform='translate(163.573,-43.277)'>
-          <title id='title209'>path2584</title>
-          <desc id='desc211'>Beja</desc>
+        <g
+          id='shape32-75'
+          transform='translate(163.573,-43.277)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title209'>Beja</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='153.31'
@@ -371,8 +386,8 @@ const PortugalSVG = () => {
             cx='76.6533'></vTextRect>
           <path
             id='path213'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M78.72,451.66
@@ -435,9 +450,12 @@ const PortugalSVG = () => {
 		c0.72,0.221,1.18,1.091,1.649,1.671c0.59,0.12,1.03,0.28,1.48,0.68c0.92-0.2,1.05,0.771,1.1,1.47L78.72,451.66z'
           />
         </g>
-        <g id='shape33-78' transform='translate(168.874,-421.133)'>
-          <title id='title218'>path2588</title>
-          <desc id='desc220'>Porto</desc>
+        <g
+          id='shape33-78'
+          transform='translate(168.874,-421.133)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title218'>Porto</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='70.17'
@@ -446,8 +464,8 @@ const PortugalSVG = () => {
             cx='35.0829'></vTextRect>
           <path
             id='path222'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M67.62,516.381
@@ -492,9 +510,12 @@ const PortugalSVG = () => {
 		C67.279,516.901,67.58,516.71,67.62,516.381z'
           />
         </g>
-        <g id='shape43-105' transform='translate(161.818,-483.405)'>
-          <title id='title299'>path3030</title>
-          <desc id='desc301'>Viana do Castelo</desc>
+        <g
+          id='shape43-105'
+          transform='translate(161.818,-483.405)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title299'>Viana do Castelo</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='61.21'
@@ -503,8 +524,8 @@ const PortugalSVG = () => {
             cx='30.6048'></vTextRect>
           <path
             id='path303'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M52.451,520.16
@@ -539,9 +560,12 @@ const PortugalSVG = () => {
 		c-0.54-0.69-0.66-1.57-0.96-2.36c-0.71,0.12-1.431,0.34-2.14,0.49h0.02C52.3,520.19,52.37,520.171,52.451,520.16z'
           />
         </g>
-        <g id='shape34-81' transform='translate(167.265,-453.721)'>
-          <title id='title227'>path2590</title>
-          <desc id='desc229'>Braga</desc>
+        <g
+          id='shape34-81'
+          transform='translate(167.265,-453.721)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title227'>Braga</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='77.29'
@@ -550,8 +574,8 @@ const PortugalSVG = () => {
             cx='38.6436'></vTextRect>
           <path
             id='path231'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M20.61,515.69
@@ -595,9 +619,12 @@ const PortugalSVG = () => {
 		L20.61,515.69L20.61,515.69z'
           />
         </g>
-        <g id='shape35-84' transform='translate(219.295,-433.431)'>
-          <title id='title236'>path2600</title>
-          <desc id='desc238'>Vila Real</desc>
+        <g
+          id='shape35-84'
+          transform='translate(219.295,-433.431)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title236'>Vila Real</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='74.02'
@@ -606,8 +633,8 @@ const PortugalSVG = () => {
             cx='37.0085'></vTextRect>
           <path
             id='path240'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M17.2,528.68
@@ -656,9 +683,12 @@ const PortugalSVG = () => {
 		C17.32,528.63,17.261,528.65,17.2,528.68L17.2,528.68z'
           />
         </g>
-        <g id='shape36-87' transform='translate(274.087,-424.32)'>
-          <title id='title245'>path2610</title>
-          <desc id='desc247'>Bragança</desc>
+        <g
+          id='shape36-87'
+          transform='translate(274.087,-424.32)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title245'>Bragança</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='95.07'
@@ -667,8 +697,8 @@ const PortugalSVG = () => {
             cx='47.53'></vTextRect>
           <path
             id='path249'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M67.04,478.89
@@ -713,9 +743,12 @@ const PortugalSVG = () => {
 		c-0.46-1.1-1.58-1.43-2.58-1.85c-0.319-0.88-0.85-0.44-1.229,0.03C66.21,479.111,66.71,479.041,67.04,478.89L67.04,478.89z'
           />
         </g>
-        <g id='shape38-90' transform='translate(117.978,-237.808)'>
-          <title id='title254'>path2734</title>
-          <desc id='desc256'>Leiria</desc>
+        <g
+          id='shape38-90'
+          transform='translate(117.978,-237.808)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title254'>Leiria</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='103.68'
@@ -724,8 +757,8 @@ const PortugalSVG = () => {
             cx='51.8357'></vTextRect>
           <path
             id='path258'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M38.29,470.321
@@ -782,9 +815,12 @@ const PortugalSVG = () => {
 		c0.87-2.47,1.68-4.97,2.72-7.38c0.19-0.33,0.23-0.94,0.54-1.04L38.29,470.321L38.29,470.321z'
           />
         </g>
-        <g id='shape39-93' transform='translate(201.08,-190.405)'>
-          <title id='title263'>path2742</title>
-          <desc id='desc265'>Portalegre</desc>
+        <g
+          id='shape39-93'
+          transform='translate(201.08,-190.405)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title263'>Portalegre</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='112.76'
@@ -793,8 +829,8 @@ const PortugalSVG = () => {
             cx='56.3758'></vTextRect>
           <path
             id='path267'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M15.31,498.19
@@ -845,9 +881,12 @@ const PortugalSVG = () => {
 		c-1.54-0.119-3.271,1.471-3.101,2.971C17.73,496.51,16.08,497.61,15.31,498.19z'
           />
         </g>
-        <g id='shape40-96' transform='translate(168.349,-346.883)'>
-          <title id='title272'>path2814</title>
-          <desc id='desc274'>Aveiro</desc>
+        <g
+          id='shape40-96'
+          transform='translate(168.349,-346.883)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title272'>Aveiro</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='54.78'
@@ -856,8 +895,8 @@ const PortugalSVG = () => {
             cx='27.3878'></vTextRect>
           <path
             id='path276'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M32.11,541
@@ -908,9 +947,12 @@ const PortugalSVG = () => {
 		c0.64,0.34,1.32,0.54,1.89,0.93l0.051,0.05L32.11,541z'
           />
         </g>
-        <g id='shape41-99' transform='translate(240.913,-341.79)'>
-          <title id='title281'>path2892</title>
-          <desc id='desc283'>Guarda</desc>
+        <g
+          id='shape41-99'
+          transform='translate(240.913,-341.79)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title281'>Guarda</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='84.96'
@@ -919,8 +961,8 @@ const PortugalSVG = () => {
             cx='42.4782'></vTextRect>
           <path
             id='path285'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M2.37,519.79
@@ -969,9 +1011,12 @@ const PortugalSVG = () => {
 		C2.32,520.771,2.35,520.28,2.37,519.79z'
           />
         </g>
-        <g id='shape42-102' transform='translate(158.353,-311.143)'>
-          <title id='title290'>path2900</title>
-          <desc id='desc292'>Coimbra</desc>
+        <g
+          id='shape42-102'
+          transform='translate(158.353,-311.143)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title290'>Coimbra</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='93.25'
@@ -980,8 +1025,8 @@ const PortugalSVG = () => {
             cx='46.6202'></vTextRect>
           <path
             id='path294'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M43.509,501.65
@@ -1035,9 +1080,12 @@ const PortugalSVG = () => {
 		c0.051,0.13,0.12,0.29,0.211,0.46c0.01-0.57,0.83-0.8,1.289-1.05C44.089,503.43,43.14,502.621,43.509,501.65L43.509,501.65z'
           />
         </g>
-        <g id='shape44-109' transform='translate(126.939,-86.6921)'>
-          <title id='title310'>path3040</title>
-          <desc id='desc312'>Setúbal</desc>
+        <g
+          id='shape44-109'
+          transform='translate(126.939,-86.6921)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title310'>Setúbal</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='93.78'
@@ -1046,8 +1094,8 @@ const PortugalSVG = () => {
             cx='46.8854'></vTextRect>
           <path
             id='path314'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M90.36,488.091
@@ -1099,9 +1147,12 @@ const PortugalSVG = () => {
 		c1.93-0.28,3.01-2.141,5.11-1.92c1.899-1.28,0.89-4.15,0.399-6C92.36,490.671,90.52,489.751,90.36,488.091L90.36,488.091z'
           />
         </g>
-        <g id='shape45-112' transform='translate(149.058,-6.51057)'>
-          <title id='title319'>path2586</title>
-          <desc id='desc321'>Faro</desc>
+        <g
+          id='shape45-112'
+          transform='translate(149.058,-6.51057)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title319'>Faro</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='131.1'
@@ -1110,8 +1161,8 @@ const PortugalSVG = () => {
             cx='65.546'></vTextRect>
           <path
             id='path323'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M125.58,525.41
@@ -1205,9 +1256,12 @@ const PortugalSVG = () => {
 		C125.17,525.12,125.4,525.25,125.58,525.41L125.58,525.41z'
           />
         </g>
-        <g id='shape37-115' transform='translate(206.782,-270.826)'>
-          <title id='title328'>path2716</title>
-          <desc id='desc330'>Castelo Branco</desc>
+        <g
+          id='shape37-115'
+          transform='translate(206.782,-270.826)'
+          onMouseEnter={(e) => distritoIn(e)}
+          onMouseLeave={distritoOut}>
+          <title id='title328'>Castelo Branco</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
             width='112.69'
@@ -1216,8 +1270,8 @@ const PortugalSVG = () => {
             cx='56.3415'></vTextRect>
           <path
             id='path332'
-            fill='white'
-            stroke='black'
+            fill='#8bc98b'
+            stroke='green'
             strokeWidth='0.55'
             strokeMiterlimit='3'
             d='M4.731,528.06

@@ -1,3 +1,8 @@
 .portugal_svg {
   text-align: center;
+
+  path:hover {
+    fill: #a0947d;
+    cursor: pointer;
+  }
 }
