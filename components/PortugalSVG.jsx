@@ -19,7 +19,7 @@ const PortugalSVG = ({ distritoIn, distritoOut, distritoVisit }) => {
           onMouseEnter={(e) => distritoIn(e)}
           onMouseLeave={distritoOut}
           onClick={(e) => distritoVisit(e)}>
-          <title id='title154'>Madeira</title>
+          <title id='title154'>R. A. Madeira</title>
           <path
             id='path158'
             fill='#8bc98b'
@@ -55,7 +55,7 @@ const PortugalSVG = ({ distritoIn, distritoOut, distritoVisit }) => {
           onMouseEnter={(e) => distritoIn(e)}
           onMouseLeave={distritoOut}
           onClick={(e) => distritoVisit(e)}>
-          <title id='title161'>Açores</title>
+          <title id='title161'>R. A. Açores</title>
           <path
             id='path165'
             fill='#8bc98b'

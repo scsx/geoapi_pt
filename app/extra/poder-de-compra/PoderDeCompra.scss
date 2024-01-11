@@ -1,0 +1,17 @@
+.podertable {
+  td {
+    &.maintitle {
+        font-weight: bold;
+        background-color: #f3f3f3;
+        vertical-align: middle;
+    }
+    &.titulos,
+    &.valores {
+        padding: 0;
+    }
+    &.regiao {
+        font-weight: bold;
+        background-color: #f3f3f3;
+    }
+  }
+}
