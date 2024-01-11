@@ -34,10 +34,10 @@ function Header() {
             </span>
             <span className='nome'>geoapi.pt</span>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
+          <Navbar.Toggle aria-controls='maincollapse' />
+          <Navbar.Collapse id='maincollapse'>
             <Nav className='me-auto'>
-              <NavDropdown title='Distritos' id='basic-nav-dropdown'>
+              <NavDropdown title='Distritos'>
                 <NavDropdown.Item href='/distritos/Lisboa'>
                   Lisboa
                 </NavDropdown.Item>
@@ -58,6 +58,11 @@ function Header() {
               <Nav.Link as='span'>
                 <Link href='/freguesias'>Freguesias</Link>
               </Nav.Link>
+              <NavDropdown title='Extra'>
+                <NavDropdown.Item href='/extra/poder-de-compra'>
+                  Poder de compra
+                </NavDropdown.Item>
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
           <Navbar.Collapse className='justify-content-end'>

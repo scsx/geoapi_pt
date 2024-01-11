@@ -675,6 +675,9 @@ const PoderDeCompra = () => {
                     <td className='regiao'>Área Metropolitana de Lisboa</td>
                   </tr>
                   <tr>
+                    <td className='regiao'>Área Metropolitana de Lisboa</td>
+                  </tr>
+                  <tr>
                     <td>Alcochete</td>
                   </tr>
                   <tr>
@@ -978,6 +981,9 @@ const PoderDeCompra = () => {
                     <td className='regiao'>Região Autónoma dos Açores</td>
                   </tr>
                   <tr>
+                    <td className='regiao'>Região Autónoma dos Açores</td>
+                  </tr>
+                  <tr>
                     <td>Ilha de Santa Maria</td>
                   </tr>
                   <tr>
@@ -1060,6 +1066,9 @@ const PoderDeCompra = () => {
                   </tr>
                   <tr>
                     <td>Corvo</td>
+                  </tr>
+                  <tr>
+                    <td className='regiao'>Autónoma da Madeira</td>
                   </tr>
                   <tr>
                     <td className='regiao'>Autónoma da Madeira</td>
