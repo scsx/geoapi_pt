@@ -1,6 +1,6 @@
 import './PortugalSVG.scss'
 
-const PortugalSVG = ({ distritoIn, distritoOut }) => {
+const PortugalSVG = ({ distritoIn, distritoOut, distritoVisit }) => {
   return (
     <div className='portugal_svg'>
       <svg
@@ -17,7 +17,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape24-55'
           transform='translate(80,-93.7889)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title154'>Madeira</title>
           <path
             id='path158'
@@ -52,7 +53,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape25-58'
           transform='translate(-80,-40.53486)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title161'>Açores</title>
           <path
             id='path165'
@@ -100,7 +102,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape28-63'
           transform='translate(201.446,-351.582)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title173'>Viseu</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -174,7 +177,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape29-66'
           transform='translate(150.208,-188.065)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title182'>Santarém</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -249,7 +253,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape30-69'
           transform='translate(176.746,-130.74)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title191'>Évora</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -325,7 +330,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape31-72'
           transform='translate(109.728,-182.476)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title200'>Lisboa</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -376,7 +382,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape32-75'
           transform='translate(163.573,-43.277)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title209'>Beja</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -454,7 +461,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape33-78'
           transform='translate(168.874,-421.133)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title218'>Porto</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -514,7 +522,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape43-105'
           transform='translate(161.818,-483.405)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title299'>Viana do Castelo</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -564,7 +573,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape34-81'
           transform='translate(167.265,-453.721)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title227'>Braga</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -623,7 +633,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape35-84'
           transform='translate(219.295,-433.431)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title236'>Vila Real</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -687,7 +698,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape36-87'
           transform='translate(274.087,-424.32)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title245'>Bragança</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -747,7 +759,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape38-90'
           transform='translate(117.978,-237.808)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title254'>Leiria</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -819,7 +832,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape39-93'
           transform='translate(201.08,-190.405)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title263'>Portalegre</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -885,7 +899,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape40-96'
           transform='translate(168.349,-346.883)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title272'>Aveiro</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -951,7 +966,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape41-99'
           transform='translate(240.913,-341.79)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title281'>Guarda</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -1015,7 +1031,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape42-102'
           transform='translate(158.353,-311.143)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title290'>Coimbra</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -1084,7 +1101,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape44-109'
           transform='translate(126.939,-86.6921)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title310'>Setúbal</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -1151,7 +1169,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape45-112'
           transform='translate(149.058,-6.51057)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title319'>Faro</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
@@ -1260,7 +1279,8 @@ const PortugalSVG = ({ distritoIn, distritoOut }) => {
           id='shape37-115'
           transform='translate(206.782,-270.826)'
           onMouseEnter={(e) => distritoIn(e)}
-          onMouseLeave={distritoOut}>
+          onMouseLeave={distritoOut}
+          onClick={(e) => distritoVisit(e)}>
           <title id='title328'>Castelo Branco</title>
           <vTextBlock vmargins='rect(0,0,0,0)'></vTextBlock>
           <vTextRect
