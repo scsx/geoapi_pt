@@ -9,6 +9,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
 
 import useDistrictFlag from '@/hooks/useDistrictFlag'
 
+import PoderDeCompraMun from './PoderDeCompraMun'
 import MunicipioEdificios from './MunicipioEdificios'
 import MunicipioSaldo from './MunicipioSaldo'
 import Loading from '@/components/Loading'
@@ -163,10 +164,13 @@ const MunicipioDetalhe = ({ params }) => {
                 <div className='brasao'>
                   <DistritoImage />
                 </div>
+
+                <h3 className='mt-5 mb-4'>Poder de compra</h3>
+                <PoderDeCompraMun municipio={municipioId} />
               </Col>
             </Row>
 
-            <h3 className='mt-5 mb-4'>Edifícios</h3>
+            <h3 className='mt-5 mb-4'>Edifícios por ano de construção</h3>
             <MunicipioEdificios
               censos={municipioData.censos2021}
               total={toLocaleString(

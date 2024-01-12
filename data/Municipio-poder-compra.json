@@ -1,0 +1,2122 @@
+{
+  "dados": [
+    {
+      "sitio": "Portugal",
+      "valor1993": "100,0",
+      "valor2011": "100,0",
+      "valor2021": "100,0"
+    },
+    {
+      "sitio": "Continente",
+      "valor1993": "101,8",
+      "valor2011": "100,8",
+      "valor2021": "100,6"
+    },
+    {
+      "sitio": "Norte",
+      "valor1993": "81,7",
+      "valor2011": "89,2",
+      "valor2021": "92,9"
+    },
+    {
+      "sitio": "Alto Minho",
+      "valor1993": "55,3",
+      "valor2011": "77,6",
+      "valor2021": "82,3"
+    },
+    {
+      "sitio": "Arcos de Valdevez",
+      "valor1993": "36,5",
+      "valor2011": "62,0",
+      "valor2021": "72,8"
+    },
+    {
+      "sitio": "Caminha",
+      "valor1993": "78,2",
+      "valor2011": "81,8",
+      "valor2021": "86,5"
+    },
+    {
+      "sitio": "Melgaço",
+      "valor1993": "50,4",
+      "valor2011": "62,5",
+      "valor2021": "64,0"
+    },
+    {
+      "sitio": "Monção",
+      "valor1993": "43,5",
+      "valor2011": "69,4",
+      "valor2021": "75,1"
+    },
+    {
+      "sitio": "Paredes de Coura",
+      "valor1993": "27,5",
+      "valor2011": "59,3",
+      "valor2021": "69,4"
+    },
+    {
+      "sitio": "Ponte da Barca",
+      "valor1993": "43,0",
+      "valor2011": "60,2",
+      "valor2021": "67,2"
+    },
+    {
+      "sitio": "Ponte de Lima",
+      "valor1993": "29,5",
+      "valor2011": "65,0",
+      "valor2021": "76,7"
+    },
+    {
+      "sitio": "Valença",
+      "valor1993": "71,4",
+      "valor2011": "85,1",
+      "valor2021": "84,8"
+    },
+    {
+      "sitio": "Viana do Castelo",
+      "valor1993": "76,9",
+      "valor2011": "93,1",
+      "valor2021": "92,1"
+    },
+    {
+      "sitio": "Vila Nova de Cerveira",
+      "valor1993": "55,3",
+      "valor2011": "79,9",
+      "valor2021": "84,9"
+    },
+    {
+      "sitio": "Cávado",
+      "valor1993": "66,2",
+      "valor2011": "85,9",
+      "valor2021": "91,7"
+    },
+    {
+      "sitio": "Amares",
+      "valor1993": "39,4",
+      "valor2011": "68,1",
+      "valor2021": "74,0"
+    },
+    {
+      "sitio": "Barcelos",
+      "valor1993": "48,0",
+      "valor2011": "72,6",
+      "valor2021": "81,6"
+    },
+    {
+      "sitio": "Braga",
+      "valor1993": "99,8",
+      "valor2011": "104,2",
+      "valor2021": "105,4"
+    },
+    {
+      "sitio": "Esposende",
+      "valor1993": "46,1",
+      "valor2011": "81,5",
+      "valor2021": "86,8"
+    },
+    {
+      "sitio": "Terras de Bouro",
+      "valor1993": "28,3",
+      "valor2011": "57,0",
+      "valor2021": "67,1"
+    },
+    {
+      "sitio": "Vila Verde",
+      "valor1993": "31,7",
+      "valor2011": "64,3",
+      "valor2021": "74,2"
+    },
+    {
+      "sitio": "Ave",
+      "valor1993": "x",
+      "valor2011": "79,4",
+      "valor2021": "85,7"
+    },
+    {
+      "sitio": "Cabeceiras de Basto",
+      "valor1993": "28,1",
+      "valor2011": "57,5",
+      "valor2021": "69,0"
+    },
+    {
+      "sitio": "Fafe",
+      "valor1993": "52,4",
+      "valor2011": "69,7",
+      "valor2021": "76,9"
+    },
+    {
+      "sitio": "Guimarães",
+      "valor1993": "67,7",
+      "valor2011": "85,8",
+      "valor2021": "89,3"
+    },
+    {
+      "sitio": "Mondim de Basto",
+      "valor1993": "24,5",
+      "valor2011": "57,2",
+      "valor2021": "64,6"
+    },
+    {
+      "sitio": "Póvoa de Lanhoso",
+      "valor1993": "41,5",
+      "valor2011": "68,4",
+      "valor2021": "72,0"
+    },
+    {
+      "sitio": "Vieira do Minho",
+      "valor1993": "29,4",
+      "valor2011": "66,1",
+      "valor2021": "67,5"
+    },
+    {
+      "sitio": "Vila Nova de Famalicão",
+      "valor1993": "60,3",
+      "valor2011": "83,9",
+      "valor2021": "92,1"
+    },
+    {
+      "sitio": "Vizela",
+      "valor1993": "//",
+      "valor2011": "72,1",
+      "valor2021": "81,4"
+    },
+    {
+      "sitio": "Área Metropolitana do Porto",
+      "valor1993": "x",
+      "valor2011": "103,5",
+      "valor2021": "103,3"
+    },
+    {
+      "sitio": "Arouca",
+      "valor1993": "38,9",
+      "valor2011": "65,2",
+      "valor2021": "74,3"
+    },
+    {
+      "sitio": "Espinho",
+      "valor1993": "112,9",
+      "valor2011": "99,7",
+      "valor2021": "95,9"
+    },
+    {
+      "sitio": "Gondomar",
+      "valor1993": "84,4",
+      "valor2011": "80,4",
+      "valor2021": "85,9"
+    },
+    {
+      "sitio": "Maia",
+      "valor1993": "109,0",
+      "valor2011": "112,3",
+      "valor2021": "108,7"
+    },
+    {
+      "sitio": "Matosinhos",
+      "valor1993": "132,2",
+      "valor2011": "124,4",
+      "valor2021": "118,1"
+    },
+    {
+      "sitio": "Oliveira de Azeméis",
+      "valor1993": "64,8",
+      "valor2011": "80,6",
+      "valor2021": "84,5"
+    },
+    {
+      "sitio": "Paredes",
+      "valor1993": "45,3",
+      "valor2011": "74,6",
+      "valor2021": "79,3"
+    },
+    {
+      "sitio": "Porto",
+      "valor1993": "226,9",
+      "valor2011": "161,7",
+      "valor2021": "147,6"
+    },
+    {
+      "sitio": "Póvoa de Varzim",
+      "valor1993": "90,6",
+      "valor2011": "92,7",
+      "valor2021": "94,5"
+    },
+    {
+      "sitio": "Santa Maria da Feira",
+      "valor1993": "61,0",
+      "valor2011": "82,6",
+      "valor2021": "88,4"
+    },
+    {
+      "sitio": "Santo Tirso",
+      "valor1993": "68,3",
+      "valor2011": "80,6",
+      "valor2021": "84,8"
+    },
+    {
+      "sitio": "São João da Madeira",
+      "valor1993": "183,7",
+      "valor2011": "129,9",
+      "valor2021": "116,7"
+    },
+    {
+      "sitio": "Trofa",
+      "valor1993": "//",
+      "valor2011": "86,5",
+      "valor2021": "93,1"
+    },
+    {
+      "sitio": "Vale de Cambra",
+      "valor1993": "61,8",
+      "valor2011": "82,5",
+      "valor2021": "87,8"
+    },
+    {
+      "sitio": "Valongo",
+      "valor1993": "78,4",
+      "valor2011": "86,5",
+      "valor2021": "92,7"
+    },
+    {
+      "sitio": "Vila do Conde",
+      "valor1993": "58,9",
+      "valor2011": "93,9",
+      "valor2021": "93,6"
+    },
+    {
+      "sitio": "Vila Nova de Gaia",
+      "valor1993": "103,5",
+      "valor2011": "99,1",
+      "valor2021": "101,0"
+    },
+    {
+      "sitio": "Alto Tâmega",
+      "valor1993": "x",
+      "valor2011": "66,5",
+      "valor2021": "73,5"
+    },
+    {
+      "sitio": "Boticas",
+      "valor1993": "24,6",
+      "valor2011": "52,6",
+      "valor2021": "65,8"
+    },
+    {
+      "sitio": "Chaves",
+      "valor1993": "69,8",
+      "valor2011": "79,1",
+      "valor2021": "82,5"
+    },
+    {
+      "sitio": "Montalegre",
+      "valor1993": "28,9",
+      "valor2011": "57,8",
+      "valor2021": "65,1"
+    },
+    {
+      "sitio": "Ribeira de Pena",
+      "valor1993": "21,3",
+      "valor2011": "50,8",
+      "valor2021": "65,8"
+    },
+    {
+      "sitio": "Valpaços",
+      "valor1993": "27,6",
+      "valor2011": "54,6",
+      "valor2021": "63,9"
+    },
+    {
+      "sitio": "Vila Pouca de Aguiar",
+      "valor1993": "32,8",
+      "valor2011": "62,4",
+      "valor2021": "70,3"
+    },
+    {
+      "sitio": "Tâmega e Sousa",
+      "valor1993": "x",
+      "valor2011": "66,5",
+      "valor2021": "75,9"
+    },
+    {
+      "sitio": "Amarante",
+      "valor1993": "39,4",
+      "valor2011": "69,1",
+      "valor2021": "75,3"
+    },
+    {
+      "sitio": "Baião",
+      "valor1993": "21,8",
+      "valor2011": "52,6",
+      "valor2021": "62,7"
+    },
+    {
+      "sitio": "Castelo de Paiva",
+      "valor1993": "36,5",
+      "valor2011": "58,9",
+      "valor2021": "70,6"
+    },
+    {
+      "sitio": "Celorico de Basto",
+      "valor1993": "19,9",
+      "valor2011": "49,8",
+      "valor2021": "63,3"
+    },
+    {
+      "sitio": "Cinfães",
+      "valor1993": "18,9",
+      "valor2011": "49,9",
+      "valor2021": "64,1"
+    },
+    {
+      "sitio": "Felgueiras",
+      "valor1993": "49,5",
+      "valor2011": "73,6",
+      "valor2021": "81,2"
+    },
+    {
+      "sitio": "Lousada",
+      "valor1993": "35,9",
+      "valor2011": "64,6",
+      "valor2021": "74,6"
+    },
+    {
+      "sitio": "Marco de Canaveses",
+      "valor1993": "41,3",
+      "valor2011": "70,5",
+      "valor2021": "75,5"
+    },
+    {
+      "sitio": "Paços de Ferreira",
+      "valor1993": "45,5",
+      "valor2011": "71,6",
+      "valor2021": "82,4"
+    },
+    {
+      "sitio": "Penafiel",
+      "valor1993": "40,4",
+      "valor2011": "69,6",
+      "valor2021": "80,4"
+    },
+    {
+      "sitio": "Resende",
+      "valor1993": "22,1",
+      "valor2011": "54,7",
+      "valor2021": "65,7"
+    },
+    {
+      "sitio": "Douro",
+      "valor1993": "x",
+      "valor2011": "74,1",
+      "valor2021": "79,8"
+    },
+    {
+      "sitio": "Alijó",
+      "valor1993": "37,3",
+      "valor2011": "60,9",
+      "valor2021": "65,3"
+    },
+    {
+      "sitio": "Armamar",
+      "valor1993": "22,7",
+      "valor2011": "58,4",
+      "valor2021": "71,2"
+    },
+    {
+      "sitio": "Carrazeda de Ansiães",
+      "valor1993": "28,8",
+      "valor2011": "54,6",
+      "valor2021": "67,9"
+    },
+    {
+      "sitio": "Freixo de Espada à Cinta",
+      "valor1993": "40,0",
+      "valor2011": "57,0",
+      "valor2021": "68,3"
+    },
+    {
+      "sitio": "Lamego",
+      "valor1993": "52,7",
+      "valor2011": "79,4",
+      "valor2021": "83,6"
+    },
+    {
+      "sitio": "Mesão Frio",
+      "valor1993": "23,7",
+      "valor2011": "57,8",
+      "valor2021": "69,1"
+    },
+    {
+      "sitio": "Moimenta da Beira",
+      "valor1993": "41,6",
+      "valor2011": "63,1",
+      "valor2021": "72,8"
+    },
+    {
+      "sitio": "Murça",
+      "valor1993": "40,4",
+      "valor2011": "57,6",
+      "valor2021": "65,3"
+    },
+    {
+      "sitio": "Penedono",
+      "valor1993": "37,3",
+      "valor2011": "56,5",
+      "valor2021": "66,1"
+    },
+    {
+      "sitio": "Peso da Régua",
+      "valor1993": "70,8",
+      "valor2011": "79,2",
+      "valor2021": "84,8"
+    },
+    {
+      "sitio": "Sabrosa",
+      "valor1993": "25,8",
+      "valor2011": "60,3",
+      "valor2021": "67,4"
+    },
+    {
+      "sitio": "Santa Marta de Penaguião",
+      "valor1993": "36,2",
+      "valor2011": "55,7",
+      "valor2021": "64,4"
+    },
+    {
+      "sitio": "São João da Pesqueira",
+      "valor1993": "31,5",
+      "valor2011": "57,9",
+      "valor2021": "69,2"
+    },
+    {
+      "sitio": "Sernancelhe",
+      "valor1993": "28,0",
+      "valor2011": "54,3",
+      "valor2021": "64,3"
+    },
+    {
+      "sitio": "Tabuaço",
+      "valor1993": "26,8",
+      "valor2011": "50,9",
+      "valor2021": "64,1"
+    },
+    {
+      "sitio": "Tarouca",
+      "valor1993": "21,7",
+      "valor2011": "63,6",
+      "valor2021": "70,2"
+    },
+    {
+      "sitio": "Torre de Moncorvo",
+      "valor1993": "50,3",
+      "valor2011": "61,0",
+      "valor2021": "68,8"
+    },
+    {
+      "sitio": "Vila Nova de Foz Côa",
+      "valor1993": "38,4",
+      "valor2011": "63,6",
+      "valor2021": "72,0"
+    },
+    {
+      "sitio": "Vila Real",
+      "valor1993": "77,1",
+      "valor2011": "101,5",
+      "valor2021": "99,1"
+    },
+    {
+      "sitio": "Terras de Trás-os-Montes",
+      "valor1993": "x",
+      "valor2011": "75,9",
+      "valor2021": "81,5"
+    },
+    {
+      "sitio": "Alfândega da Fé",
+      "valor1993": "34,4",
+      "valor2011": "57,1",
+      "valor2021": "68,3"
+    },
+    {
+      "sitio": "Bragança",
+      "valor1993": "88,5",
+      "valor2011": "96,5",
+      "valor2021": "95,9"
+    },
+    {
+      "sitio": "Macedo de Cavaleiros",
+      "valor1993": "46,0",
+      "valor2011": "69,5",
+      "valor2021": "76,8"
+    },
+    {
+      "sitio": "Miranda do Douro",
+      "valor1993": "49,7",
+      "valor2011": "68,3",
+      "valor2021": "75,2"
+    },
+    {
+      "sitio": "Mirandela",
+      "valor1993": "57,9",
+      "valor2011": "80,4",
+      "valor2021": "85,1"
+    },
+    {
+      "sitio": "Mogadouro",
+      "valor1993": "35,0",
+      "valor2011": "59,9",
+      "valor2021": "70,5"
+    },
+    {
+      "sitio": "Vila Flor",
+      "valor1993": "34,8",
+      "valor2011": "60,2",
+      "valor2021": "65,9"
+    },
+    {
+      "sitio": "Vimioso",
+      "valor1993": "47,3",
+      "valor2011": "54,4",
+      "valor2021": "63,2"
+    },
+    {
+      "sitio": "Vinhais",
+      "valor1993": "29,6",
+      "valor2011": "51,3",
+      "valor2021": "61,9"
+    },
+    {
+      "sitio": "Centro",
+      "valor1993": "72,9",
+      "valor2011": "87,5",
+      "valor2021": "89,9"
+    },
+    {
+      "sitio": "Oeste",
+      "valor1993": "78,8",
+      "valor2011": "89,5",
+      "valor2021": "90,2"
+    },
+    {
+      "sitio": "Alcobaça",
+      "valor1993": "81,8",
+      "valor2011": "83,4",
+      "valor2021": "86,3"
+    },
+    {
+      "sitio": "Alenquer",
+      "valor1993": "64,6",
+      "valor2011": "92,6",
+      "valor2021": "88,8"
+    },
+    {
+      "sitio": "Arruda dos Vinhos",
+      "valor1993": "70,8",
+      "valor2011": "93,4",
+      "valor2021": "103,2"
+    },
+    {
+      "sitio": "Bombarral",
+      "valor1993": "75,4",
+      "valor2011": "77,7",
+      "valor2021": "85,3"
+    },
+    {
+      "sitio": "Cadaval",
+      "valor1993": "49,5",
+      "valor2011": "71,1",
+      "valor2021": "76,0"
+    },
+    {
+      "sitio": "Caldas da Rainha",
+      "valor1993": "110,7",
+      "valor2011": "100,5",
+      "valor2021": "98,8"
+    },
+    {
+      "sitio": "Lourinhã",
+      "valor1993": "62,4",
+      "valor2011": "77,8",
+      "valor2021": "85,3"
+    },
+    {
+      "sitio": "Nazaré",
+      "valor1993": "87,6",
+      "valor2011": "84,6",
+      "valor2021": "88,1"
+    },
+    {
+      "sitio": "Óbidos",
+      "valor1993": "48,7",
+      "valor2011": "78,2",
+      "valor2021": "81,3"
+    },
+    {
+      "sitio": "Peniche",
+      "valor1993": "83,3",
+      "valor2011": "86,3",
+      "valor2021": "87,7"
+    },
+    {
+      "sitio": "Sobral de Monte Agraço",
+      "valor1993": "63,7",
+      "valor2011": "84,1",
+      "valor2021": "85,8"
+    },
+    {
+      "sitio": "Torres Vedras",
+      "valor1993": "78,3",
+      "valor2011": "97,8",
+      "valor2021": "93,8"
+    },
+    {
+      "sitio": "Região de Aveiro",
+      "valor1993": "x",
+      "valor2011": "91,3",
+      "valor2021": "93,1"
+    },
+    {
+      "sitio": "Águeda",
+      "valor1993": "71,1",
+      "valor2011": "85,2",
+      "valor2021": "87,9"
+    },
+    {
+      "sitio": "Albergaria-a-Velha",
+      "valor1993": "56,7",
+      "valor2011": "80,2",
+      "valor2021": "85,4"
+    },
+    {
+      "sitio": "Anadia",
+      "valor1993": "60,5",
+      "valor2011": "76,3",
+      "valor2021": "82,0"
+    },
+    {
+      "sitio": "Aveiro",
+      "valor1993": "131,0",
+      "valor2011": "126,7",
+      "valor2021": "119,7"
+    },
+    {
+      "sitio": "Estarreja",
+      "valor1993": "67,6",
+      "valor2011": "80,1",
+      "valor2021": "86,2"
+    },
+    {
+      "sitio": "Ílhavo",
+      "valor1993": "74,2",
+      "valor2011": "89,4",
+      "valor2021": "87,9"
+    },
+    {
+      "sitio": "Murtosa",
+      "valor1993": "67,3",
+      "valor2011": "69,8",
+      "valor2021": "73,1"
+    },
+    {
+      "sitio": "Oliveira do Bairro",
+      "valor1993": "66,2",
+      "valor2011": "81,8",
+      "valor2021": "85,5"
+    },
+    {
+      "sitio": "Ovar",
+      "valor1993": "65,7",
+      "valor2011": "87,3",
+      "valor2021": "89,1"
+    },
+    {
+      "sitio": "Sever do Vouga",
+      "valor1993": "55,8",
+      "valor2011": "71,5",
+      "valor2021": "80,4"
+    },
+    {
+      "sitio": "Vagos",
+      "valor1993": "47,0",
+      "valor2011": "70,0",
+      "valor2021": "79,5"
+    },
+    {
+      "sitio": "Região de Coimbra",
+      "valor1993": "x",
+      "valor2011": "93,9",
+      "valor2021": "94,0"
+    },
+    {
+      "sitio": "Arganil",
+      "valor1993": "42,5",
+      "valor2011": "65,2",
+      "valor2021": "72,1"
+    },
+    {
+      "sitio": "Cantanhede",
+      "valor1993": "57,6",
+      "valor2011": "80,7",
+      "valor2021": "84,4"
+    },
+    {
+      "sitio": "Coimbra",
+      "valor1993": "128,9",
+      "valor2011": "131,7",
+      "valor2021": "119,8"
+    },
+    {
+      "sitio": "Condeixa-a-Nova",
+      "valor1993": "46,9",
+      "valor2011": "80,5",
+      "valor2021": "84,1"
+    },
+    {
+      "sitio": "Figueira da Foz",
+      "valor1993": "89,7",
+      "valor2011": "96,5",
+      "valor2021": "94,8"
+    },
+    {
+      "sitio": "Góis",
+      "valor1993": "32,5",
+      "valor2011": "59,3",
+      "valor2021": "68,3"
+    },
+    {
+      "sitio": "Lousã",
+      "valor1993": "67,8",
+      "valor2011": "80,1",
+      "valor2021": "84,4"
+    },
+    {
+      "sitio": "Mealhada",
+      "valor1993": "58,8",
+      "valor2011": "83,9",
+      "valor2021": "88,8"
+    },
+    {
+      "sitio": "Mira",
+      "valor1993": "41,2",
+      "valor2011": "73,6",
+      "valor2021": "77,1"
+    },
+    {
+      "sitio": "Miranda do Corvo",
+      "valor1993": "39,1",
+      "valor2011": "64,0",
+      "valor2021": "73,7"
+    },
+    {
+      "sitio": "Montemor-o-Velho",
+      "valor1993": "35,4",
+      "valor2011": "71,3",
+      "valor2021": "75,6"
+    },
+    {
+      "sitio": "Mortágua",
+      "valor1993": "52,2",
+      "valor2011": "69,7",
+      "valor2021": "80,2"
+    },
+    {
+      "sitio": "Oliveira do Hospital",
+      "valor1993": "53,7",
+      "valor2011": "70,1",
+      "valor2021": "75,1"
+    },
+    {
+      "sitio": "Pampilhosa da Serra",
+      "valor1993": "40,3",
+      "valor2011": "56,3",
+      "valor2021": "65,0"
+    },
+    {
+      "sitio": "Penacova",
+      "valor1993": "32,9",
+      "valor2011": "59,1",
+      "valor2021": "69,7"
+    },
+    {
+      "sitio": "Penela",
+      "valor1993": "24,0",
+      "valor2011": "65,7",
+      "valor2021": "77,5"
+    },
+    {
+      "sitio": "Soure",
+      "valor1993": "43,6",
+      "valor2011": "68,6",
+      "valor2021": "74,6"
+    },
+    {
+      "sitio": "Tábua",
+      "valor1993": "37,5",
+      "valor2011": "63,7",
+      "valor2021": "73,8"
+    },
+    {
+      "sitio": "Vila Nova de Poiares",
+      "valor1993": "62,9",
+      "valor2011": "68,9",
+      "valor2021": "77,8"
+    },
+    {
+      "sitio": "Região de Leiria",
+      "valor1993": "x",
+      "valor2011": "91,0",
+      "valor2021": "94,2"
+    },
+    {
+      "sitio": "Alvaiázere",
+      "valor1993": "34,7",
+      "valor2011": "63,5",
+      "valor2021": "72,7"
+    },
+    {
+      "sitio": "Ansião",
+      "valor1993": "39,8",
+      "valor2011": "69,1",
+      "valor2021": "76,2"
+    },
+    {
+      "sitio": "Batalha",
+      "valor1993": "88,5",
+      "valor2011": "86,8",
+      "valor2021": "89,3"
+    },
+    {
+      "sitio": "Castanheira de Pêra",
+      "valor1993": "39,1",
+      "valor2011": "60,1",
+      "valor2021": "72,5"
+    },
+    {
+      "sitio": "Figueiró dos Vinhos",
+      "valor1993": "40,4",
+      "valor2011": "63,1",
+      "valor2021": "71,5"
+    },
+    {
+      "sitio": "Leiria",
+      "valor1993": "102,8",
+      "valor2011": "102,9",
+      "valor2021": "105,7"
+    },
+    {
+      "sitio": "Marinha Grande",
+      "valor1993": "112,8",
+      "valor2011": "95,8",
+      "valor2021": "92,7"
+    },
+    {
+      "sitio": "Pedrógão Grande",
+      "valor1993": "39,1",
+      "valor2011": "61,5",
+      "valor2021": "69,7"
+    },
+    {
+      "sitio": "Pombal",
+      "valor1993": "57,8",
+      "valor2011": "82,0",
+      "valor2021": "85,2"
+    },
+    {
+      "sitio": "Porto de Mós",
+      "valor1993": "76,4",
+      "valor2011": "79,4",
+      "valor2021": "82,4"
+    },
+    {
+      "sitio": "Viseu Dão Lafões",
+      "valor1993": "x",
+      "valor2011": "78,4",
+      "valor2021": "83,8"
+    },
+    {
+      "sitio": "Aguiar da Beira",
+      "valor1993": "26,2",
+      "valor2011": "61,6",
+      "valor2021": "70,5"
+    },
+    {
+      "sitio": "Carregal do Sal",
+      "valor1993": "41,0",
+      "valor2011": "69,0",
+      "valor2021": "72,9"
+    },
+    {
+      "sitio": "Castro Daire",
+      "valor1993": "31,2",
+      "valor2011": "60,5",
+      "valor2021": "67,8"
+    },
+    {
+      "sitio": "Mangualde",
+      "valor1993": "64,6",
+      "valor2011": "80,7",
+      "valor2021": "85,4"
+    },
+    {
+      "sitio": "Nelas",
+      "valor1993": "44,4",
+      "valor2011": "74,2",
+      "valor2021": "79,3"
+    },
+    {
+      "sitio": "Oliveira de Frades",
+      "valor1993": "45,2",
+      "valor2011": "79,5",
+      "valor2021": "81,1"
+    },
+    {
+      "sitio": "Penalva do Castelo",
+      "valor1993": "31,1",
+      "valor2011": "54,5",
+      "valor2021": "65,8"
+    },
+    {
+      "sitio": "Santa Comba Dão",
+      "valor1993": "52,0",
+      "valor2011": "69,1",
+      "valor2021": "75,0"
+    },
+    {
+      "sitio": "São Pedro do Sul",
+      "valor1993": "34,9",
+      "valor2011": "63,9",
+      "valor2021": "73,7"
+    },
+    {
+      "sitio": "Sátão",
+      "valor1993": "42,5",
+      "valor2011": "59,6",
+      "valor2021": "70,4"
+    },
+    {
+      "sitio": "Tondela",
+      "valor1993": "50,5",
+      "valor2011": "69,7",
+      "valor2021": "79,8"
+    },
+    {
+      "sitio": "Vila Nova de Paiva",
+      "valor1993": "42,0",
+      "valor2011": "57,6",
+      "valor2021": "66,9"
+    },
+    {
+      "sitio": "Viseu",
+      "valor1993": "88,5",
+      "valor2011": "96,1",
+      "valor2021": "96,8"
+    },
+    {
+      "sitio": "Vouzela",
+      "valor1993": "37,3",
+      "valor2011": "61,0",
+      "valor2021": "68,9"
+    },
+    {
+      "sitio": "Beira Baixa",
+      "valor1993": "x",
+      "valor2011": "82,6",
+      "valor2021": "86,6"
+    },
+    {
+      "sitio": "Castelo Branco",
+      "valor1993": "88,4",
+      "valor2011": "95,5",
+      "valor2021": "96,2"
+    },
+    {
+      "sitio": "Idanha-a-Nova",
+      "valor1993": "32,0",
+      "valor2011": "61,3",
+      "valor2021": "68,5"
+    },
+    {
+      "sitio": "Oleiros",
+      "valor1993": "32,5",
+      "valor2011": "54,8",
+      "valor2021": "66,6"
+    },
+    {
+      "sitio": "Penamacor",
+      "valor1993": "33,1",
+      "valor2011": "54,5",
+      "valor2021": "61,2"
+    },
+    {
+      "sitio": "Proença-a-Nova",
+      "valor1993": "41,7",
+      "valor2011": "64,5",
+      "valor2021": "74,8"
+    },
+    {
+      "sitio": "Vila Velha de Ródão",
+      "valor1993": "34,7",
+      "valor2011": "68,9",
+      "valor2021": "73,9"
+    },
+    {
+      "sitio": "Médio Tejo",
+      "valor1993": "x",
+      "valor2011": "84,5",
+      "valor2021": "87,2"
+    },
+    {
+      "sitio": "Abrantes",
+      "valor1993": "65,3",
+      "valor2011": "86,8",
+      "valor2021": "88,5"
+    },
+    {
+      "sitio": "Alcanena",
+      "valor1993": "65,3",
+      "valor2011": "81,5",
+      "valor2021": "85,3"
+    },
+    {
+      "sitio": "Constância",
+      "valor1993": "36,0",
+      "valor2011": "87,9",
+      "valor2021": "85,0"
+    },
+    {
+      "sitio": "Entroncamento",
+      "valor1993": "117,3",
+      "valor2011": "109,8",
+      "valor2021": "99,1"
+    },
+    {
+      "sitio": "Ferreira do Zêzere",
+      "valor1993": "43,7",
+      "valor2011": "62,8",
+      "valor2021": "74,1"
+    },
+    {
+      "sitio": "Mação",
+      "valor1993": "43,2",
+      "valor2011": "61,7",
+      "valor2021": "71,5"
+    },
+    {
+      "sitio": "Ourém",
+      "valor1993": "67,2",
+      "valor2011": "81,0",
+      "valor2021": "86,6"
+    },
+    {
+      "sitio": "Sardoal",
+      "valor1993": "40,4",
+      "valor2011": "68,5",
+      "valor2021": "74,3"
+    },
+    {
+      "sitio": "Sertã",
+      "valor1993": "38,3",
+      "valor2011": "70,5",
+      "valor2021": "76,3"
+    },
+    {
+      "sitio": "Tomar",
+      "valor1993": "83,6",
+      "valor2011": "85,1",
+      "valor2021": "88,8"
+    },
+    {
+      "sitio": "Torres Novas",
+      "valor1993": "77,8",
+      "valor2011": "95,0",
+      "valor2021": "95,0"
+    },
+    {
+      "sitio": "Vila de Rei",
+      "valor1993": "31,8",
+      "valor2011": "58,1",
+      "valor2021": "67,4"
+    },
+    {
+      "sitio": "Vila Nova da Barquinha",
+      "valor1993": "48,1",
+      "valor2011": "71,2",
+      "valor2021": "77,2"
+    },
+    {
+      "sitio": "Beiras e Serra da Estrela",
+      "valor1993": "x",
+      "valor2011": "76,8",
+      "valor2021": "80,5"
+    },
+    {
+      "sitio": "Almeida",
+      "valor1993": "50,3",
+      "valor2011": "74,8",
+      "valor2021": "72,9"
+    },
+    {
+      "sitio": "Belmonte",
+      "valor1993": "57,0",
+      "valor2011": "71,2",
+      "valor2021": "74,4"
+    },
+    {
+      "sitio": "Celorico da Beira",
+      "valor1993": "44,5",
+      "valor2011": "64,3",
+      "valor2021": "71,1"
+    },
+    {
+      "sitio": "Covilhã",
+      "valor1993": "83,2",
+      "valor2011": "84,6",
+      "valor2021": "86,9"
+    },
+    {
+      "sitio": "Figueira de Castelo Rodrigo",
+      "valor1993": "41,9",
+      "valor2011": "61,9",
+      "valor2021": "69,8"
+    },
+    {
+      "sitio": "Fornos de Algodres",
+      "valor1993": "37,2",
+      "valor2011": "57,3",
+      "valor2021": "64,7"
+    },
+    {
+      "sitio": "Fundão",
+      "valor1993": "61,4",
+      "valor2011": "75,1",
+      "valor2021": "79,8"
+    },
+    {
+      "sitio": "Gouveia",
+      "valor1993": "61,7",
+      "valor2011": "67,6",
+      "valor2021": "69,6"
+    },
+    {
+      "sitio": "Guarda",
+      "valor1993": "92,3",
+      "valor2011": "96,9",
+      "valor2021": "95,3"
+    },
+    {
+      "sitio": "Manteigas",
+      "valor1993": "44,6",
+      "valor2011": "61,5",
+      "valor2021": "71,6"
+    },
+    {
+      "sitio": "Mêda",
+      "valor1993": "36,2",
+      "valor2011": "57,9",
+      "valor2021": "68,0"
+    },
+    {
+      "sitio": "Pinhel",
+      "valor1993": "49,2",
+      "valor2011": "59,4",
+      "valor2021": "70,0"
+    },
+    {
+      "sitio": "Sabugal",
+      "valor1993": "28,2",
+      "valor2011": "59,8",
+      "valor2021": "64,1"
+    },
+    {
+      "sitio": "Seia",
+      "valor1993": "58,3",
+      "valor2011": "73,6",
+      "valor2021": "78,9"
+    },
+    {
+      "sitio": "Trancoso",
+      "valor1993": "47,1",
+      "valor2011": "64,2",
+      "valor2021": "71,4"
+    },
+    {
+      "sitio": "Área Metropolitana de Lisboa",
+      "valor1993": "162,7",
+      "valor2011": "131,0",
+      "valor2021": "121,4"
+    },
+    {
+      "sitio": "Área Metropolitana de Lisboa",
+      "valor1993": "162,7",
+      "valor2011": "131,0",
+      "valor2021": "121,4"
+    },
+    {
+      "sitio": "Alcochete",
+      "valor1993": "75,3",
+      "valor2011": "123,5",
+      "valor2021": "118,9"
+    },
+    {
+      "sitio": "Almada",
+      "valor1993": "119,9",
+      "valor2011": "109,8",
+      "valor2021": "104,5"
+    },
+    {
+      "sitio": "Amadora",
+      "valor1993": "132,6",
+      "valor2011": "105,7",
+      "valor2021": "102,3"
+    },
+    {
+      "sitio": "Barreiro",
+      "valor1993": "90,9",
+      "valor2011": "100,2",
+      "valor2021": "96,5"
+    },
+    {
+      "sitio": "Cascais",
+      "valor1993": "144,8",
+      "valor2011": "132,0",
+      "valor2021": "121,8"
+    },
+    {
+      "sitio": "Lisboa",
+      "valor1993": "291,0",
+      "valor2011": "216,9",
+      "valor2021": "186,3"
+    },
+    {
+      "sitio": "Loures",
+      "valor1993": "112,2",
+      "valor2011": "102,4",
+      "valor2021": "102,3"
+    },
+    {
+      "sitio": "Mafra",
+      "valor1993": "83,6",
+      "valor2011": "101,6",
+      "valor2021": "102,9"
+    },
+    {
+      "sitio": "Moita",
+      "valor1993": "84,6",
+      "valor2011": "81,3",
+      "valor2021": "82,3"
+    },
+    {
+      "sitio": "Montijo",
+      "valor1993": "95,5",
+      "valor2011": "104,0",
+      "valor2021": "102,5"
+    },
+    {
+      "sitio": "Odivelas",
+      "valor1993": "//",
+      "valor2011": "91,9",
+      "valor2021": "94,7"
+    },
+    {
+      "sitio": "Oeiras",
+      "valor1993": "139,7",
+      "valor2011": "193,7",
+      "valor2021": "165,5"
+    },
+    {
+      "sitio": "Palmela",
+      "valor1993": "76,4",
+      "valor2011": "100,0",
+      "valor2021": "97,7"
+    },
+    {
+      "sitio": "Seixal",
+      "valor1993": "105,1",
+      "valor2011": "94,1",
+      "valor2021": "96,0"
+    },
+    {
+      "sitio": "Sesimbra",
+      "valor1993": "115,5",
+      "valor2011": "96,1",
+      "valor2021": "94,1"
+    },
+    {
+      "sitio": "Setúbal",
+      "valor1993": "128,9",
+      "valor2011": "107,3",
+      "valor2021": "104,8"
+    },
+    {
+      "sitio": "Sintra",
+      "valor1993": "112,7",
+      "valor2011": "101,3",
+      "valor2021": "97,9"
+    },
+    {
+      "sitio": "Vila Franca de Xira",
+      "valor1993": "104,6",
+      "valor2011": "100,9",
+      "valor2021": "98,9"
+    },
+    {
+      "sitio": "Alentejo",
+      "valor1993": "71,3",
+      "valor2011": "88,0",
+      "valor2021": "90,6"
+    },
+    {
+      "sitio": "Alentejo Litoral",
+      "valor1993": "67,4",
+      "valor2011": "92,9",
+      "valor2021": "93,4"
+    },
+    {
+      "sitio": "Alcácer do Sal",
+      "valor1993": "52,8",
+      "valor2011": "79,7",
+      "valor2021": "87,7"
+    },
+    {
+      "sitio": "Grândola",
+      "valor1993": "71,7",
+      "valor2011": "91,8",
+      "valor2021": "95,4"
+    },
+    {
+      "sitio": "Odemira",
+      "valor1993": "41,8",
+      "valor2011": "71,8",
+      "valor2021": "79,5"
+    },
+    {
+      "sitio": "Santiago do Cacém",
+      "valor1993": "72,2",
+      "valor2011": "96,5",
+      "valor2021": "95,8"
+    },
+    {
+      "sitio": "Sines",
+      "valor1993": "121,3",
+      "valor2011": "137,0",
+      "valor2021": "120,3"
+    },
+    {
+      "sitio": "Baixo Alentejo",
+      "valor1993": "61,2",
+      "valor2011": "81,2",
+      "valor2021": "85,2"
+    },
+    {
+      "sitio": "Aljustrel",
+      "valor1993": "57,3",
+      "valor2011": "81,2",
+      "valor2021": "84,2"
+    },
+    {
+      "sitio": "Almodôvar",
+      "valor1993": "38,4",
+      "valor2011": "72,3",
+      "valor2021": "80,4"
+    },
+    {
+      "sitio": "Alvito",
+      "valor1993": "37,9",
+      "valor2011": "63,6",
+      "valor2021": "72,4"
+    },
+    {
+      "sitio": "Barrancos",
+      "valor1993": "30,7",
+      "valor2011": "58,7",
+      "valor2021": "67,2"
+    },
+    {
+      "sitio": "Beja",
+      "valor1993": "99,1",
+      "valor2011": "105,6",
+      "valor2021": "101,7"
+    },
+    {
+      "sitio": "Castro Verde",
+      "valor1993": "52,6",
+      "valor2011": "98,8",
+      "valor2021": "103,5"
+    },
+    {
+      "sitio": "Cuba",
+      "valor1993": "40,6",
+      "valor2011": "64,5",
+      "valor2021": "73,7"
+    },
+    {
+      "sitio": "Ferreira do Alentejo",
+      "valor1993": "56,7",
+      "valor2011": "70,2",
+      "valor2021": "74,9"
+    },
+    {
+      "sitio": "Mértola",
+      "valor1993": "31,6",
+      "valor2011": "61,3",
+      "valor2021": "68,9"
+    },
+    {
+      "sitio": "Moura",
+      "valor1993": "60,4",
+      "valor2011": "71,8",
+      "valor2021": "76,0"
+    },
+    {
+      "sitio": "Ourique",
+      "valor1993": "34,5",
+      "valor2011": "65,9",
+      "valor2021": "75,6"
+    },
+    {
+      "sitio": "Serpa",
+      "valor1993": "44,7",
+      "valor2011": "66,7",
+      "valor2021": "74,4"
+    },
+    {
+      "sitio": "Vidigueira",
+      "valor1993": "51,1",
+      "valor2011": "66,9",
+      "valor2021": "79,4"
+    },
+    {
+      "sitio": "Lezíria do Tejo",
+      "valor1993": "77,4",
+      "valor2011": "91,3",
+      "valor2021": "92,4"
+    },
+    {
+      "sitio": "Almeirim",
+      "valor1993": "80,7",
+      "valor2011": "85,2",
+      "valor2021": "88,3"
+    },
+    {
+      "sitio": "Alpiarça",
+      "valor1993": "67,8",
+      "valor2011": "69,9",
+      "valor2021": "81,3"
+    },
+    {
+      "sitio": "Azambuja",
+      "valor1993": "63,8",
+      "valor2011": "114,8",
+      "valor2021": "111,1"
+    },
+    {
+      "sitio": "Benavente",
+      "valor1993": "93,8",
+      "valor2011": "98,6",
+      "valor2021": "96,7"
+    },
+    {
+      "sitio": "Cartaxo",
+      "valor1993": "76,4",
+      "valor2011": "89,8",
+      "valor2021": "90,2"
+    },
+    {
+      "sitio": "Chamusca",
+      "valor1993": "45,3",
+      "valor2011": "67,9",
+      "valor2021": "74,5"
+    },
+    {
+      "sitio": "Coruche",
+      "valor1993": "53,1",
+      "valor2011": "73,9",
+      "valor2021": "78,0"
+    },
+    {
+      "sitio": "Golegã",
+      "valor1993": "65,0",
+      "valor2011": "78,4",
+      "valor2021": "84,1"
+    },
+    {
+      "sitio": "Rio Maior",
+      "valor1993": "85,2",
+      "valor2011": "87,0",
+      "valor2021": "89,8"
+    },
+    {
+      "sitio": "Salvaterra de Magos",
+      "valor1993": "49,5",
+      "valor2011": "78,4",
+      "valor2021": "81,2"
+    },
+    {
+      "sitio": "Santarém",
+      "valor1993": "100,0",
+      "valor2011": "101,5",
+      "valor2021": "99,5"
+    },
+    {
+      "sitio": "Alto Alentejo",
+      "valor1993": "x",
+      "valor2011": "81,7",
+      "valor2021": "85,3"
+    },
+    {
+      "sitio": "Alter do Chão",
+      "valor1993": "49,8",
+      "valor2011": "70,2",
+      "valor2021": "73,6"
+    },
+    {
+      "sitio": "Arronches",
+      "valor1993": "34,4",
+      "valor2011": "68,1",
+      "valor2021": "75,9"
+    },
+    {
+      "sitio": "Avis",
+      "valor1993": "56,8",
+      "valor2011": "69,4",
+      "valor2021": "78,6"
+    },
+    {
+      "sitio": "Campo Maior",
+      "valor1993": "71,6",
+      "valor2011": "90,0",
+      "valor2021": "90,6"
+    },
+    {
+      "sitio": "Castelo de Vide",
+      "valor1993": "37,8",
+      "valor2011": "76,1",
+      "valor2021": "79,4"
+    },
+    {
+      "sitio": "Crato",
+      "valor1993": "47,3",
+      "valor2011": "68,6",
+      "valor2021": "73,7"
+    },
+    {
+      "sitio": "Elvas",
+      "valor1993": "88,8",
+      "valor2011": "84,9",
+      "valor2021": "90,0"
+    },
+    {
+      "sitio": "Fronteira",
+      "valor1993": "48,3",
+      "valor2011": "72,0",
+      "valor2021": "76,2"
+    },
+    {
+      "sitio": "Gavião",
+      "valor1993": "28,0",
+      "valor2011": "63,4",
+      "valor2021": "70,9"
+    },
+    {
+      "sitio": "Marvão",
+      "valor1993": "38,5",
+      "valor2011": "61,2",
+      "valor2021": "69,3"
+    },
+    {
+      "sitio": "Monforte",
+      "valor1993": "38,8",
+      "valor2011": "64,0",
+      "valor2021": "71,6"
+    },
+    {
+      "sitio": "Nisa",
+      "valor1993": "56,7",
+      "valor2011": "67,4",
+      "valor2021": "76,4"
+    },
+    {
+      "sitio": "Ponte de Sor",
+      "valor1993": "58,5",
+      "valor2011": "80,6",
+      "valor2021": "83,9"
+    },
+    {
+      "sitio": "Portalegre",
+      "valor1993": "91,4",
+      "valor2011": "102,0",
+      "valor2021": "98,5"
+    },
+    {
+      "sitio": "Sousel",
+      "valor1993": "71,1",
+      "valor2011": "66,1",
+      "valor2021": "72,9"
+    },
+    {
+      "sitio": "Alentejo Central",
+      "valor1993": "x",
+      "valor2011": "89,9",
+      "valor2021": "93,7"
+    },
+    {
+      "sitio": "Alandroal",
+      "valor1993": "37,5",
+      "valor2011": "57,1",
+      "valor2021": "69,8"
+    },
+    {
+      "sitio": "Arraiolos",
+      "valor1993": "44,1",
+      "valor2011": "68,7",
+      "valor2021": "77,1"
+    },
+    {
+      "sitio": "Borba",
+      "valor1993": "62,2",
+      "valor2011": "71,3",
+      "valor2021": "75,8"
+    },
+    {
+      "sitio": "Estremoz",
+      "valor1993": "78,1",
+      "valor2011": "89,8",
+      "valor2021": "95,7"
+    },
+    {
+      "sitio": "Évora",
+      "valor1993": "112,0",
+      "valor2011": "112,5",
+      "valor2021": "112,0"
+    },
+    {
+      "sitio": "Montemor-o-Novo",
+      "valor1993": "66,1",
+      "valor2011": "83,1",
+      "valor2021": "88,6"
+    },
+    {
+      "sitio": "Mora",
+      "valor1993": "42,5",
+      "valor2011": "74,2",
+      "valor2021": "80,2"
+    },
+    {
+      "sitio": "Mourão",
+      "valor1993": "43,0",
+      "valor2011": "63,2",
+      "valor2021": "71,2"
+    },
+    {
+      "sitio": "Portel",
+      "valor1993": "32,5",
+      "valor2011": "56,8",
+      "valor2021": "68,2"
+    },
+    {
+      "sitio": "Redondo",
+      "valor1993": "49,7",
+      "valor2011": "66,2",
+      "valor2021": "74,1"
+    },
+    {
+      "sitio": "Reguengos de Monsaraz",
+      "valor1993": "63,9",
+      "valor2011": "86,8",
+      "valor2021": "90,9"
+    },
+    {
+      "sitio": "Vendas Novas",
+      "valor1993": "87,3",
+      "valor2011": "95,0",
+      "valor2021": "93,1"
+    },
+    {
+      "sitio": "Viana do Alentejo",
+      "valor1993": "44,2",
+      "valor2011": "72,2",
+      "valor2021": "78,8"
+    },
+    {
+      "sitio": "Vila Viçosa",
+      "valor1993": "81,6",
+      "valor2011": "81,2",
+      "valor2021": "82,8"
+    },
+    {
+      "sitio": "Algarve",
+      "valor1993": "109,0",
+      "valor2011": "96,7",
+      "valor2021": "99,5"
+    },
+    {
+      "sitio": "Algarve",
+      "valor1993": "109,0",
+      "valor2011": "96,7",
+      "valor2021": "99,5"
+    },
+    {
+      "sitio": "Albufeira",
+      "valor1993": "98,4",
+      "valor2011": "102,8",
+      "valor2021": "107,0"
+    },
+    {
+      "sitio": "Alcoutim",
+      "valor1993": "29,3",
+      "valor2011": "59,9",
+      "valor2021": "71,0"
+    },
+    {
+      "sitio": "Aljezur",
+      "valor1993": "41,9",
+      "valor2011": "66,7",
+      "valor2021": "71,6"
+    },
+    {
+      "sitio": "Castro Marim",
+      "valor1993": "28,6",
+      "valor2011": "75,0",
+      "valor2021": "81,2"
+    },
+    {
+      "sitio": "Faro",
+      "valor1993": "160,1",
+      "valor2011": "133,1",
+      "valor2021": "116,0"
+    },
+    {
+      "sitio": "Lagoa",
+      "valor1993": "104,5",
+      "valor2011": "87,1",
+      "valor2021": "91,4"
+    },
+    {
+      "sitio": "Lagos",
+      "valor1993": "116,5",
+      "valor2011": "93,3",
+      "valor2021": "94,4"
+    },
+    {
+      "sitio": "Loulé",
+      "valor1993": "132,0",
+      "valor2011": "100,2",
+      "valor2021": "115,4"
+    },
+    {
+      "sitio": "Monchique",
+      "valor1993": "53,8",
+      "valor2011": "53,9",
+      "valor2021": "65,7"
+    },
+    {
+      "sitio": "Olhão",
+      "valor1993": "87,4",
+      "valor2011": "81,4",
+      "valor2021": "84,5"
+    },
+    {
+      "sitio": "Portimão",
+      "valor1993": "137,8",
+      "valor2011": "103,1",
+      "valor2021": "102,1"
+    },
+    {
+      "sitio": "São Brás de Alportel",
+      "valor1993": "78,6",
+      "valor2011": "87,2",
+      "valor2021": "90,2"
+    },
+    {
+      "sitio": "Silves",
+      "valor1993": "68,7",
+      "valor2011": "73,8",
+      "valor2021": "83,8"
+    },
+    {
+      "sitio": "Tavira",
+      "valor1993": "77,6",
+      "valor2011": "88,5",
+      "valor2021": "93,7"
+    },
+    {
+      "sitio": "Vila do Bispo",
+      "valor1993": "50,7",
+      "valor2011": "59,7",
+      "valor2021": "67,2"
+    },
+    {
+      "sitio": "Vila Real de Santo António",
+      "valor1993": "131,1",
+      "valor2011": "91,9",
+      "valor2021": "93,8"
+    },
+    {
+      "sitio": "Região Autónoma dos Açores",
+      "valor1993": "67,6",
+      "valor2011": "82,4",
+      "valor2021": "87,4"
+    },
+    {
+      "sitio": "Região Autónoma dos Açores",
+      "valor1993": "67,6",
+      "valor2011": "82,4",
+      "valor2021": "87,4"
+    },
+    {
+      "sitio": "Ilha de Santa Maria",
+      "valor1993": "73,8",
+      "valor2011": "87,4",
+      "valor2021": "90,4"
+    },
+    {
+      "sitio": "Vila do Porto",
+      "valor1993": "73,8",
+      "valor2011": "87,4",
+      "valor2021": "90,4"
+    },
+    {
+      "sitio": "Ilha de São Miguel",
+      "valor1993": "70,8",
+      "valor2011": "83,3",
+      "valor2021": "87,6"
+    },
+    {
+      "sitio": "Lagoa [R.A.A.]",
+      "valor1993": "46,0",
+      "valor2011": "67,3",
+      "valor2021": "76,9"
+    },
+    {
+      "sitio": "Nordeste",
+      "valor1993": "28,1",
+      "valor2011": "55,9",
+      "valor2021": "63,9"
+    },
+    {
+      "sitio": "Ponta Delgada",
+      "valor1993": "99,1",
+      "valor2011": "104,3",
+      "valor2021": "102,6"
+    },
+    {
+      "sitio": "Povoação",
+      "valor1993": "35,4",
+      "valor2011": "57,8",
+      "valor2021": "67,1"
+    },
+    {
+      "sitio": "Ribeira Grande",
+      "valor1993": "43,9",
+      "valor2011": "63,3",
+      "valor2021": "73,0"
+    },
+    {
+      "sitio": "Vila Franca do Campo",
+      "valor1993": "47,2",
+      "valor2011": "59,2",
+      "valor2021": "70,6"
+    },
+    {
+      "sitio": "Ilha Terceira",
+      "valor1993": "70,2",
+      "valor2011": "84,2",
+      "valor2021": "90,3"
+    },
+    {
+      "sitio": "Angra do Heroísmo",
+      "valor1993": "79,2",
+      "valor2011": "91,2",
+      "valor2021": "94,8"
+    },
+    {
+      "sitio": "Vila da Praia da Vitória",
+      "valor1993": "56,3",
+      "valor2011": "72,6",
+      "valor2021": "82,6"
+    },
+    {
+      "sitio": "Ilha Graciosa",
+      "valor1993": "42,1",
+      "valor2011": "68,7",
+      "valor2021": "78,4"
+    },
+    {
+      "sitio": "Santa Cruz da Graciosa",
+      "valor1993": "42,1",
+      "valor2011": "68,7",
+      "valor2021": "78,4"
+    },
+    {
+      "sitio": "Ilha de São Jorge",
+      "valor1993": "42,4",
+      "valor2011": "68,8",
+      "valor2021": "81,4"
+    },
+    {
+      "sitio": "Calheta [R.A.A.]",
+      "valor1993": "38,5",
+      "valor2011": "63,7",
+      "valor2021": "72,3"
+    },
+    {
+      "sitio": "Velas",
+      "valor1993": "45,4",
+      "valor2011": "72,4",
+      "valor2021": "87,8"
+    },
+    {
+      "sitio": "Ilha do Pico",
+      "valor1993": "42,2",
+      "valor2011": "75,2",
+      "valor2021": "79,3"
+    },
+    {
+      "sitio": "Lajes do Pico",
+      "valor1993": "36,8",
+      "valor2011": "65,3",
+      "valor2021": "70,6"
+    },
+    {
+      "sitio": "Madalena",
+      "valor1993": "46,4",
+      "valor2011": "82,8",
+      "valor2021": "84,8"
+    },
+    {
+      "sitio": "São Roque do Pico",
+      "valor1993": "43,5",
+      "valor2011": "75,4",
+      "valor2021": "80,3"
+    },
+    {
+      "sitio": "Ilha do Faial",
+      "valor1993": "83,8",
+      "valor2011": "86,4",
+      "valor2021": "88,7"
+    },
+    {
+      "sitio": "Horta",
+      "valor1993": "83,8",
+      "valor2011": "86,4",
+      "valor2021": "88,7"
+    },
+    {
+      "sitio": "Ilha das Flores",
+      "valor1993": "53,0",
+      "valor2011": "74,2",
+      "valor2021": "83,4"
+    },
+    {
+      "sitio": "Lajes das Flores",
+      "valor1993": "45,0",
+      "valor2011": "64,3",
+      "valor2021": "82,6"
+    },
+    {
+      "sitio": "Santa Cruz das Flores",
+      "valor1993": "57,6",
+      "valor2011": "80,8",
+      "valor2021": "84,0"
+    },
+    {
+      "sitio": "Ilha do Corvo",
+      "valor1993": "45,6",
+      "valor2011": "63,1",
+      "valor2021": "75,7"
+    },
+    {
+      "sitio": "Corvo",
+      "valor1993": "45,6",
+      "valor2011": "63,1",
+      "valor2021": "75,7"
+    },
+    {
+      "sitio": "Autónoma da Madeira",
+      "valor1993": "67,0",
+      "valor2011": "85,1",
+      "valor2021": "87,2"
+    },
+    {
+      "sitio": "Autónoma da Madeira",
+      "valor1993": "67,0",
+      "valor2011": "85,1",
+      "valor2021": "87,2"
+    },
+    {
+      "sitio": "Ilha da Madeira",
+      "valor1993": "67,3",
+      "valor2011": "x",
+      "valor2021": "x"
+    },
+    {
+      "sitio": "Calheta [R.A.M.]",
+      "valor1993": "29,0",
+      "valor2011": "59,4",
+      "valor2021": "67,1"
+    },
+    {
+      "sitio": "Câmara de Lobos",
+      "valor1993": "28,1",
+      "valor2011": "53,1",
+      "valor2021": "63,5"
+    },
+    {
+      "sitio": "Funchal",
+      "valor1993": "103,6",
+      "valor2011": "113,4",
+      "valor2021": "109,6"
+    },
+    {
+      "sitio": "Machico",
+      "valor1993": "33,2",
+      "valor2011": "72,8",
+      "valor2021": "77,0"
+    },
+    {
+      "sitio": "Ponta do Sol",
+      "valor1993": "31,5",
+      "valor2011": "52,9",
+      "valor2021": "60,7"
+    },
+    {
+      "sitio": "Porto Moniz",
+      "valor1993": "25,1",
+      "valor2011": "52,9",
+      "valor2021": "61,0"
+    },
+    {
+      "sitio": "Ribeira Brava",
+      "valor1993": "33,8",
+      "valor2011": "65,1",
+      "valor2021": "68,2"
+    },
+    {
+      "sitio": "Santa Cruz",
+      "valor1993": "43,3",
+      "valor2011": "73,5",
+      "valor2021": "76,1"
+    },
+    {
+      "sitio": "Santana",
+      "valor1993": "30,1",
+      "valor2011": "54,8",
+      "valor2021": "64,6"
+    },
+    {
+      "sitio": "São Vicente",
+      "valor1993": "25,6",
+      "valor2011": "59,6",
+      "valor2021": "66,1"
+    },
+    {
+      "sitio": "Ilha de Porto Santo",
+      "valor1993": "50,6",
+      "valor2011": "96,1",
+      "valor2021": "97,5"
+    },
+    {
+      "sitio": "Porto Santo",
+      "valor1993": "50,6",
+      "valor2011": "96,1",
+      "valor2021": "97,5"
+    }
+  ]
+}
