@@ -33,7 +33,7 @@
 
     &__UF {
       font-family: 'Poppins';
-      font-size: .75rem;
+      font-size: 0.75rem;
       text-decoration: none;
     }
 
@@ -115,6 +115,59 @@
       &.neg {
         background-color: #f78585;
       }
+    }
+  }
+
+  .compra {
+    &__barras {
+      position: relative;
+      padding: 1rem 0;
+      display: block;
+    }
+
+    &__ano {
+      position: relative;
+      font-family: 'RestoraBold';
+      padding: 0.5rem;
+      margin: 5px 0;
+      width: 60px;
+      text-align: right;
+    }
+
+    &__bar {
+      position: absolute;
+      text-align: left;
+      padding: 0.5rem;
+      height: 100%;
+      top: 0;
+      left: 100%;
+      color: white;
+
+      &.pos {
+        background-color: #8bc98b;
+      }
+
+      &.neg {
+        background-color: #f78585;
+      }
+    }
+
+    &__linha {
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $griege;
+      left: 160px;
+      bottom: 0;
+    }
+
+    &__media {
+      text-align: center;
+      padding-top: 5px;
+      width: 320px;
+      font-size: 13px;
+      font-style: italic;
+      color: darken($griege, 20%);
     }
   }
 }
